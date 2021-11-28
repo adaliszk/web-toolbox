@@ -1,5 +1,5 @@
 {
-  "version": "4.5.1",
+  "version": "4.5.2",
   "name": "@adaliszk/typescript",
   "description": "Meta-package for Typescript Stack",
   "repository": "gitlab:adaliszk/node-toolbox",
@@ -13,7 +13,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@adaliszk/typescript-eslint": "^8.3.1",
+    "@adaliszk/typescript-eslint": "^8.3.2",
     "typescript": "^4.5"
   }
 }
