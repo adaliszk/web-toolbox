@@ -20,12 +20,18 @@
   "contributors": [],
   "scripts": {
     "workspace": "yarn workspace",
-    "lerna": "lerna"
+    "lerna": "yarn dlx lerna"
   },
   "workspaces": [
     "metas/*",
     "packages/*",
     "specifications/*",
     "stacks/*"
-  ]
+  ],
+  "peerDependencies": {
+    "lerna": "^4.0"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
