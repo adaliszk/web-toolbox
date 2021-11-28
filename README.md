@@ -4,7 +4,7 @@ AdaLiszk's Node Toolbox
 =======================
 Working with the Node ecosystem and building many projects and packages can become 
 pretty heavy to maintain as each individual project depends on the same set of 
-dependencies but on a different versions. While many automation tools does try to
+dependencies but on different versions. While many automation tools does try to
 combat this, it is very common to abstract away frequently used package groups into
 meta-packages. This allows a centralised location to enforce versions, configs,
 and tool usage alongside of simplifying imports and automation burden.
@@ -43,6 +43,7 @@ Packages
 | `@adaliszk/react` | Stack | _TBD_ | -
 | `@adaliszk/react-jest` | Meta | _TBD_ | -
 | `@adaliszk/typescript` | Stack | _TBD_ | -
+| [`@adaliszk/typescript-eslint`](metas/typescript-eslint/README.md) | Meta | [![NPM](https://img.shields.io/npm/v/@adaliszk/typescript-eslint.svg)](https://www.npmjs.com/package/@adaliszk/typescript-eslint) | ![GitHub issue custom search](https://img.shields.io/github/issues-search?label=label%3A%20typescript-eslint&query=repo%3Aadaliszk%2Fnode-toolbox%20label%3Atypescript-eslint)
 | `@adaliszk/typescript-jest` | Meta | _TBD_ | -
 | `@adaliszk/typescript-rollup` | Meta | _TBD_ | -
 | `@adaliszk/webcomponent` | Stack | _TBD_ | -

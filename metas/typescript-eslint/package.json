@@ -1,0 +1,20 @@
+{
+  "version": "8.3.0",
+  "name": "@adaliszk/typescript-eslint",
+  "description": "Meta-package for ESLint usage within Typescript",
+  "repository": "gitlab:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/metas/typescript-eslint",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
+  "license": "BSD-3-Clause",
+  "main": ".eslintrc.json",
+  "files": [
+    ".eslintrc.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4",
+    "@typescript-eslint/parser": "^5.4",
+    "eslint": "^8.3",
+    "eslint-config-standard": "^16.0"
+  }
+}

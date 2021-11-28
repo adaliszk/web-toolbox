@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "standard"
+  ],
+  "ignorePatterns": [
+    "**/node_modules/*",
+    "**/temp/*",
+    "**/dist/*"
+  ]
+}
