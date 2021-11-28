@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "yarn@3.1.1",
   "name": "@adaliszk/node-toolbox",
   "description": "AdaLiszk's frequently used NPM packages wrapped up into easy-to-use packs",
   "keywords": [
@@ -28,10 +28,8 @@
     "specifications/*",
     "stacks/*"
   ],
-  "peerDependencies": {
-    "lerna": "^4.0"
-  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@yarnpkg/pnpify": "^3.1",
+    "lerna": "^4.0"
   }
 }
