@@ -3,6 +3,7 @@
   "name": "@adaliszk/typescript-eslint",
   "description": "Meta-package for ESLint usage within Typescript",
   "repository": "gitlab:adaliszk/node-toolbox",
+  "gitHead": "f61affbc17e9b9f6d1200df3905dae1f24816cde",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/metas/typescript-eslint",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
   "license": "BSD-3-Clause",

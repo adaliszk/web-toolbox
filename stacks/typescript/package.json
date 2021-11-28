@@ -3,6 +3,7 @@
   "name": "@adaliszk/typescript",
   "description": "Meta-package for Typescript Stack",
   "repository": "gitlab:adaliszk/node-toolbox",
+  "gitHead": "f61affbc17e9b9f6d1200df3905dae1f24816cde",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stack/typescript",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript",
   "license": "BSD-3-Clause",
