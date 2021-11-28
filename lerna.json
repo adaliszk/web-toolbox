@@ -2,9 +2,9 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "includeMergedTags": true,
   "command": {
     "publish": {
-      "conventionalCommits": true,
       "from-package": true,
       "yes": true
     }
