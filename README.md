@@ -42,8 +42,8 @@ Packages
 | `@adaliszk/next-pwa` | Stack | _TBD_ | -
 | `@adaliszk/react` | Stack | _TBD_ | -
 | `@adaliszk/react-jest` | Meta | _TBD_ | -
-| `@adaliszk/typescript` | Stack | _TBD_ | -
-| [`@adaliszk/typescript-eslint`](metas/typescript-eslint/README.md) | Meta | [![NPM](https://img.shields.io/npm/v/@adaliszk/typescript-eslint.svg)](https://www.npmjs.com/package/@adaliszk/typescript-eslint) | ![GitHub issue custom search](https://img.shields.io/github/issues-search?label=label%3A%20typescript-eslint&query=repo%3Aadaliszk%2Fnode-toolbox%20label%3Atypescript-eslint)
+| [`@adaliszk/typescript`](stacks/typescript/README.md) | Stack |[![NPM](https://img.shields.io/npm/v/@adaliszk/typescript.svg)](https://www.npmjs.com/package/@adaliszk/typescript) | ![Issues for Typescript](https://img.shields.io/github/issues-search?label=label%3A%20typescript&query=repo%3Aadaliszk%2Fnode-toolbox%20label%3Atypescript)
+| [`@adaliszk/typescript-eslint`](metas/typescript-eslint/README.md) | Meta | [![NPM](https://img.shields.io/npm/v/@adaliszk/typescript-eslint.svg)](https://www.npmjs.com/package/@adaliszk/typescript-eslint) | ![Issues for Typescript-ESLint](https://img.shields.io/github/issues-search?label=label%3A%20typescript-eslint&query=repo%3Aadaliszk%2Fnode-toolbox%20label%3Atypescript-eslint)
 | `@adaliszk/typescript-jest` | Meta | _TBD_ | -
 | `@adaliszk/typescript-rollup` | Meta | _TBD_ | -
 | `@adaliszk/webcomponent` | Stack | _TBD_ | -
