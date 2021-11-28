@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "packageManager": "yarn@3.1.0",
+  "name": "@adaliszk/node-toolbox",
+  "description": "AdaLiszk's frequently used NPM packages wrapped up into easy-to-use packs",
+  "keywords": [
+    "node",
+    "npm",
+    "packages",
+    "tools",
+    "configs",
+    "plugins",
+    "packs"
+  ],
+  "repository": "gitlab:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox",
+  "bugs": "https://github.com/adaliszk/node-toolbox/issues",
+  "license": "BSD-3-Clause",
+  "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
+  "contributors": [],
+  "scripts": {}
+}

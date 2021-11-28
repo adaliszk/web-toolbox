@@ -1,0 +1,18 @@
+# IDE and Editors
+.idea/workspace.xml
+.vscode
+
+# Distribution
+**/dist
+**/.env
+.env
+
+# NPM / Yarn
+**/node_modules
+node_modules
+.yarn
+.pnp*
+
+# Temporary files
+**/temp
+**.log
