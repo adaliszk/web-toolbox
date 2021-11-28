@@ -18,5 +18,14 @@
   "license": "BSD-3-Clause",
   "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
   "contributors": [],
-  "scripts": {}
+  "scripts": {
+    "workspace": "yarn workspace",
+    "lerna": "lerna"
+  },
+  "workspaces": [
+    "metas/*",
+    "packages/*",
+    "specifications/*",
+    "stacks/*"
+  ]
 }
