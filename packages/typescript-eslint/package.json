@@ -1,0 +1,36 @@
+{
+  "version": "8.4.0",
+  "name": "@adaliszk/typescript-eslint",
+  "description": "Meta-package for ESLint usage within Typescript",
+  "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "f61affbc17e9b9f6d1200df3905dae1f24816cde",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-eslint",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
+  "license": "BSD-3-Clause",
+  "main": ".eslintrc.json",
+  "files": [
+    ".eslintrc.json",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "eslint ."
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4",
+    "@typescript-eslint/parser": "^5.4",
+    "eslint": "^8.4",
+    "eslint-config-standard": "^16.0",
+    "eslint-plugin-import": "^2.25",
+    "eslint-plugin-node": "^11.1",
+    "eslint-plugin-promise": "^5.2"
+  },
+  "keywords": [
+    "meta-package",
+    "eslint",
+    "jslint",
+    "tslint",
+    "lint",
+    "standard",
+    "config"
+  ]
+}
