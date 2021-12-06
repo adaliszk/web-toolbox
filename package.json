@@ -12,7 +12,7 @@
     "plugins",
     "packs"
   ],
-  "repository": "gitlab:adaliszk/node-toolbox",
+  "repository": "github:adaliszk/node-toolbox",
   "homepage": "https://github.com/adaliszk/node-toolbox",
   "bugs": "https://github.com/adaliszk/node-toolbox/issues",
   "license": "BSD-3-Clause",
@@ -23,13 +23,12 @@
     "lerna": "yarn dlx lerna"
   },
   "workspaces": [
-    "metas/*",
     "packages/*",
     "specifications/*",
-    "stacks/*"
+    "stacks/*",
+    "tools/*"
   ],
   "devDependencies": {
-    "@yarnpkg/pnpify": "^3.1",
     "lerna": "^4.0"
   }
 }

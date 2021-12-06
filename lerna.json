@@ -10,9 +10,9 @@
     }
   },
   "packages": [
-    "metas/*",
     "packages/*",
     "specifications/*",
-    "stacks/*"
+    "stacks/*",
+    "tools/*"
   ]
 }
