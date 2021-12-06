@@ -1,9 +1,9 @@
 {
-  "version": "4.5.5",
+  "version": "4.5.1",
   "name": "@adaliszk/typescript",
   "description": "Meta-package for Typescript with a default configuration",
   "repository": "github:adaliszk/node-toolbox",
-  "gitHead": "c22f65dea688a0cfd37c019cb99b12202a5aa14f",
+  "gitHead": "c6ea15bad45681a09b01daa1ffea0aa8e46ca41b",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript",
   "license": "BSD-3-Clause",
@@ -13,7 +13,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@adaliszk/typescript-eslint": "^8.4.1",
+    "@adaliszk/typescript-eslint": "^8.3.2",
     "@types/node": "^16",
     "tslib": "^2.3",
     "typescript": "^4.5"
