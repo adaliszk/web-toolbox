@@ -1,5 +1,5 @@
 {
-  "version": "4.5.3",
+  "version": "4.5.4",
   "name": "@adaliszk/typescript",
   "description": "Meta-package for Typescript with a default configuration",
   "repository": "github:adaliszk/node-toolbox",
