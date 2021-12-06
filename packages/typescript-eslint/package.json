@@ -1,9 +1,9 @@
 {
-  "version": "8.4.0",
+  "version": "8.4.1",
   "name": "@adaliszk/typescript-eslint",
   "description": "Meta-package for ESLint usage within Typescript",
   "repository": "github:adaliszk/node-toolbox",
-  "gitHead": "f61affbc17e9b9f6d1200df3905dae1f24816cde",
+  "gitHead": "c22f65dea688a0cfd37c019cb99b12202a5aa14f",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-eslint",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
   "license": "BSD-3-Clause",
