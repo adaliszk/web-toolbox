@@ -1,5 +1,5 @@
 {
-  "version": "27.4.2",
+  "version": "27.4.3",
   "name": "@adaliszk/typescript-jest",
   "description": "Meta-Package for testing Typescript with Jest",
   "repository": "github:adaliszk/node-toolbox",
