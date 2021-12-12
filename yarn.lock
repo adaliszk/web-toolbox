@@ -5,11 +5,11 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@adaliszk/eslint-config-typescript@^8.4.4, @adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.4.5, @adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
-    "@adaliszk/typescript": ^4.5.9
+    "@adaliszk/typescript": ^4.5.10
     "@typescript-eslint/eslint-plugin": ^5.4
     "@typescript-eslint/parser": ^5.4
     eslint: ^8.4
@@ -29,11 +29,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/typescript-jest@workspace:packages/typescript-jest":
+"@adaliszk/typescript-jest@workspace:stacks/typescript-jest":
   version: 0.0.0-use.local
-  resolution: "@adaliszk/typescript-jest@workspace:packages/typescript-jest"
+  resolution: "@adaliszk/typescript-jest@workspace:stacks/typescript-jest"
   dependencies:
-    "@adaliszk/typescript": ^4.5.9
+    "@adaliszk/typescript": ^4.5.10
     "@testdeck/jest": ^0.2
     "@types/chai": ^4.3
     chai: ^4.3
@@ -43,11 +43,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/typescript@^4.5.9, @adaliszk/typescript@workspace:packages/typescript":
+"@adaliszk/typescript@^4.5.10, @adaliszk/typescript@workspace:packages/typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript@workspace:packages/typescript"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.4.4
+    "@adaliszk/eslint-config-typescript": ^8.4.5
     "@types/node": ^16
     tslib: ^2.3
     typescript: ^4.5
