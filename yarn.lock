@@ -5,17 +5,9 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@adaliszk/node-toolbox@workspace:.":
+"@adaliszk/eslint-config-typescript@^8.4.2, @adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
-  resolution: "@adaliszk/node-toolbox@workspace:."
-  dependencies:
-    lerna: ^4.0
-  languageName: unknown
-  linkType: soft
-
-"@adaliszk/typescript-eslint@^8.4.1, @adaliszk/typescript-eslint@workspace:packages/typescript-eslint":
-  version: 0.0.0-use.local
-  resolution: "@adaliszk/typescript-eslint@workspace:packages/typescript-eslint"
+  resolution: "@adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.4
     "@typescript-eslint/parser": ^5.4
@@ -27,11 +19,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@adaliszk/node-toolbox@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@adaliszk/node-toolbox@workspace:."
+  dependencies:
+    lerna: ^4.0
+  languageName: unknown
+  linkType: soft
+
 "@adaliszk/typescript@workspace:packages/typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript@workspace:packages/typescript"
   dependencies:
-    "@adaliszk/typescript-eslint": ^8.4.1
+    "@adaliszk/eslint-config-typescript": ^8.4.2
     "@types/node": ^16
     tslib: ^2.3
     typescript: ^4.5
