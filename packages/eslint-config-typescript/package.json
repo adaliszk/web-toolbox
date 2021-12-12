@@ -11,12 +11,10 @@
     "prepublish": "yarn build",
     "lint": "tsc && eslint ."
   },
-  "main": "dist/eslint-config-typescript.js",
-  "types": "dist/eslint-config-typescript.d.ts",
+  "main": "eslint-config.cjs",
   "files": [
-    "CHANGELOG.md",
-    "README.md",
-    "dist"
+    "eslint-config.cjs",
+    "*.md"
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4",
@@ -26,10 +24,6 @@
     "eslint-plugin-import": "^2.25",
     "eslint-plugin-node": "^11.1",
     "eslint-plugin-promise": "^5.2"
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "^4.5.10",
-    "typescript": "^4.5"
   },
   "keywords": [
     "meta-package",

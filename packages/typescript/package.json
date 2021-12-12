@@ -12,7 +12,7 @@
   "main": "tsconfig.json",
   "files": [
     "tsconfig.json",
-    "README.md"
+    "*.md"
   ],
   "dependencies": {
     "@adaliszk/eslint-config-typescript": "^8.4.5",

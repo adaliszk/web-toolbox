@@ -1,2 +1,0 @@
-extends:
-  - "./dist/eslint-config-typescript.js"

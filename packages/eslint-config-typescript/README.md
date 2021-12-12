@@ -11,9 +11,6 @@ but overwrites some rules:
 
 - Two empty lines are required between imports and top level blocks, similar to PEP8
 
-- Explicit any is disabled because with TDD/BDD often it is a step to define an any type before
-  it becomes more restrained
-
 - Inferrable type removals are disabled because many type reflection libraries depends on having
   the types declared even if otherwise it could be inferred.
 
