@@ -26,7 +26,7 @@
     "ts-jest": "^27.1"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:^",
+    "@adaliszk/typescript": "^4.5.8",
     "typescript": "^4.5"
   },
   "keywords": [
