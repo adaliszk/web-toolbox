@@ -19,7 +19,7 @@
   "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
   "contributors": [],
   "scripts": {
-    "workspace": "yarn workspace",
+    "build": "yarn workspaces build",
     "lerna": "lerna"
   },
   "workspaces": [
