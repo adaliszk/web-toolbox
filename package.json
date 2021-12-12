@@ -1,17 +1,7 @@
 {
   "private": true,
-  "packageManager": "yarn@3.1.1",
   "name": "@adaliszk/node-toolbox",
   "description": "AdaLiszk's frequently used NPM packages wrapped up into easy-to-use packs",
-  "keywords": [
-    "node",
-    "npm",
-    "packages",
-    "tools",
-    "configs",
-    "plugins",
-    "packs"
-  ],
   "repository": "github:adaliszk/node-toolbox",
   "homepage": "https://github.com/adaliszk/node-toolbox",
   "bugs": "https://github.com/adaliszk/node-toolbox/issues",
@@ -22,13 +12,27 @@
     "build": "yarn workspaces build",
     "lerna": "lerna"
   },
-  "workspaces": [
-    "packages/*",
-    "specifications/*",
-    "stacks/*",
-    "tools/*"
-  ],
+  "workspaces": {
+    "nohoist": [
+      "**/@adaliszk/eslint-config-typescript",
+      "**/@adaliszk/typescript"
+    ],
+    "packages": [
+      "packages/*",
+      "specifications/*",
+      "stacks/*"
+    ]
+  },
   "devDependencies": {
     "lerna": "^4.0"
-  }
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "meta-packages",
+    "packages",
+    "configs",
+    "plugins",
+    "packs"
+  ]
 }
