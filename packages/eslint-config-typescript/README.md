@@ -32,13 +32,13 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
 - Add an `.eslintrc.yml` with the content of:
   ```yaml
   extends:
-    - @adaliszk/typescript-eslint 
+    - @adaliszk/eslint-config-typescript 
   ```
   or define your own rules:
   ```yaml
   extends:
-    - plugin:@typescript-eslint/eslint-recommended
-    - plugin:@typescript-eslint/recommended
+    - plugin:@eslint-config-typescript/eslint-recommended
+    - plugin:@eslint-config-typescript/recommended
     - eslint:recommended
     - standard
   # ...
