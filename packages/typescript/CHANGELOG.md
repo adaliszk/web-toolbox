@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.12](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/typescript@4.5.11...@adaliszk/typescript@4.5.12) (2021-12-12)
+
+
+### Bug Fixes
+
+* SPDX pattern for the LICENSE fields (and move git head) ([4db323e](https://github.com/adaliszk/node-toolbox/commit/4db323e0cb18a4132e3f0d55b8d8ee85527dae3a))
+
+
+
+
+
 ## [4.5.11](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/typescript@4.5.10...@adaliszk/typescript@4.5.11) (2021-12-12)
 
 **Note:** Version bump only for package @adaliszk/typescript

@@ -1,5 +1,5 @@
 {
-  "version": "8.4.6",
+  "version": "8.4.7",
   "name": "@adaliszk/eslint-config-typescript",
   "description": "Meta-package for ESLint usage within Typescript",
   "repository": "github:adaliszk/node-toolbox",
