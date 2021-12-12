@@ -20,7 +20,7 @@
   "contributors": [],
   "scripts": {
     "workspace": "yarn workspace",
-    "lerna": "yarn dlx lerna"
+    "lerna": "lerna"
   },
   "workspaces": [
     "packages/*",
