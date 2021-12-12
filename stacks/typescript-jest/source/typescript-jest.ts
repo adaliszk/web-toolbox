@@ -1,5 +1,5 @@
-import testdeckSrc from '@testdeck/jest'
-import chaiSrc from 'chai'
+import * as testdeckSrc from '@testdeck/jest'
+import * as chaiSrc from 'chai'
 
 // region Testdeck
 
