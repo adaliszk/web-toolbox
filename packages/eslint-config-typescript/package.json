@@ -3,18 +3,21 @@
   "name": "@adaliszk/eslint-config-typescript",
   "description": "Meta-package for ESLint usage within Typescript",
   "repository": "github:adaliszk/node-toolbox",
-  "gitHead": "c6ea15bad45681a09b01daa1ffea0aa8e46ca41b",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-eslint",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
-  "license": "BSD-3-Clause",
-  "main": "config.cjs",
-  "files": [
-    "config.cjs",
-    "README.md"
-  ],
+  "license": "BSD-3-Clause & MIT",
   "scripts": {
-    "test": "eslint ."
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "lint": "tsc && eslint ."
   },
+  "main": "dist/eslint-config-typescript.js",
+  "types": "dist/eslint-config-typescript.d.ts",
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "dist"
+  ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4",
     "@typescript-eslint/parser": "^5.4",
@@ -23,6 +26,10 @@
     "eslint-plugin-import": "^2.25",
     "eslint-plugin-node": "^11.1",
     "eslint-plugin-promise": "^5.2"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "^4.5.9",
+    "typescript": "^4.5"
   },
   "keywords": [
     "meta-package",

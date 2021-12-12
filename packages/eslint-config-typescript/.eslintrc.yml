@@ -1,2 +1,2 @@
 extends:
-  - "./config.cjs"
+  - "./dist/eslint-config-typescript.js"

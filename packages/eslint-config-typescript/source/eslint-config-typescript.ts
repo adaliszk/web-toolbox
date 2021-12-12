@@ -1,16 +1,16 @@
-module.exports = {
-    'extends': [
+export default {
+    extends: [
         'plugin:@eslint-config-typescript/eslint-recommended',
         'plugin:@eslint-config-typescript/recommended',
         'eslint:recommended',
         'standard'
     ],
-    'ignorePatterns': [
+    ignorePatterns: [
         '**/node_modules/*',
         '**/temp/*',
         '**/dist/*'
     ],
-    'rules': {
+    rules: {
         'indent': [
             'error',
             4
