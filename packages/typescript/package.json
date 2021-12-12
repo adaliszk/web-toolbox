@@ -3,6 +3,7 @@
   "name": "@adaliszk/typescript",
   "description": "Meta-package for Typescript with a default configuration",
   "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript",
   "license": "BSD-3-Clause",

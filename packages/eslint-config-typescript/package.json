@@ -3,13 +3,12 @@
   "name": "@adaliszk/eslint-config-typescript",
   "description": "Meta-package for ESLint usage within Typescript",
   "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-eslint",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
-  "license": "BSD-3-Clause & MIT",
+  "license": "BSD-3-Clause and MIT",
   "scripts": {
-    "build": "tsc",
-    "prepublish": "yarn build",
-    "lint": "tsc && eslint ."
+    "build": "echo 'Nothing to build, skipping...' && exit 0"
   },
   "main": "eslint-config.cjs",
   "files": [

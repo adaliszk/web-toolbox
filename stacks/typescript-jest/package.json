@@ -3,6 +3,7 @@
   "name": "@adaliszk/typescript-jest",
   "description": "Meta-Package for testing Typescript with Jest",
   "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stacks/typescript-jest",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-jest",
   "license": "BSD-3-Clause & MIT & Apache-2.0",
