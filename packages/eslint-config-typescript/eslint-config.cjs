@@ -1,9 +1,9 @@
 // region Configuration
 
-const currentParser = "@typescript-eslint/parser"
+const currentParser = '@typescript-eslint/parser'
 
 const pluginList = [
-    "@typescript-eslint"
+    '@typescript-eslint'
 ]
 
 const extendsList = [
@@ -65,6 +65,13 @@ ruleMap['padding-line-between-statements'] = [
         prev: 'class',
         blankLine: 'always',
         next: 'block-like',
+    }
+]
+
+ruleMap['no-multiple-empty-lines'] = [
+    'warn',
+    {
+        max: 2
     }
 ]
 
