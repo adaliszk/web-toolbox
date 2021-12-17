@@ -3,7 +3,7 @@
 const currentParser = '@typescript-eslint/parser'
 
 const pluginList = [
-    '@typescript-eslint'
+    '@typescript-eslint',
 ]
 
 const extendsList = [
@@ -15,7 +15,7 @@ const extendsList = [
 const ignorePatternList = [
     '**/node_modules/*',
     '**/temp/*',
-    '**/dist/*'
+    '**/dist/*',
 ]
 
 // endregion
@@ -36,43 +36,37 @@ ruleMap['function-call-argument-newline'] = ['warn', 'consistent']
 ruleMap['object-curly-newline'] = [
     'warn',
     {
-        ImportDeclaration: {
-            consistent: true,
-            minProperties: 6
-        },
-        ObjectPattern: {
-            multiline: true,
-            consistent: true,
-            minProperties: 2
-        },
-        ObjectExpression: {
-            multiline: true,
-            consistent: true,
-            minProperties: 4
-        },
-        ExportDeclaration: {
-            multiline: true,
-            consistent: true,
-            minProperties: 4
-        }
-    }
+        ObjectPattern: { consistent: true, multiline: true, minProperties: 3 },
+        ObjectExpression: { consistent: true, multiline: true, minProperties: 4 },
+        ImportDeclaration: { consistent: true, minProperties: 6 },
+        ExportDeclaration: { consistent: true, multiline: true, minProperties: 4 },
+    },
 ]
 
 // Have 2 empty lines between top level blocks just like in PEP8
 ruleMap['padding-line-between-statements'] = [
     'warn',
-    {
-        prev: 'class',
-        blankLine: 'always',
-        next: 'block-like',
-    }
+    { blankLine: 'always', prev: 'class', next: 'block-like' },
+    { blankLine: 'always', prev: 'export', next: 'block-like' },
+    { blankLine: 'always', prev: 'cjs-export', next: 'block-like' },
+    { blankLine: 'always', prev: 'block', next: 'block-like' },
 ]
 
 ruleMap['no-multiple-empty-lines'] = [
     'warn',
+    { max: 2 },
+]
+
+// Always use dangling comma when multiple is used
+ruleMap['comma-dangle'] = [
+    'warn',
     {
-        max: 2
-    }
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        functions: 'always-multiline',
+        imports: 'never',
+        exports: 'never',
+    },
 ]
 
 // When using Reflection solutions the types do need to be defined even if they could be inferred
@@ -85,5 +79,5 @@ module.exports = {
     plugins: pluginList,
     extends: extendsList,
     ignorePatterns: ignorePatternList,
-    rules: ruleMap
+    rules: ruleMap,
 }

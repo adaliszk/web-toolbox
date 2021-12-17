@@ -24,7 +24,6 @@
     </TypeScriptCodeStyleSettings>
     <codeStyleSettings language="JavaScript">
       <option name="BLOCK_COMMENT_ADD_SPACE" value="true" />
-      <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
       <option name="BRACE_STYLE" value="2" />
       <option name="CLASS_BRACE_STYLE" value="2" />
       <option name="METHOD_BRACE_STYLE" value="2" />
@@ -40,7 +39,6 @@
     </codeStyleSettings>
     <codeStyleSettings language="TypeScript">
       <option name="BLOCK_COMMENT_ADD_SPACE" value="true" />
-      <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
       <option name="BRACE_STYLE" value="2" />
       <option name="CLASS_BRACE_STYLE" value="2" />
       <option name="METHOD_BRACE_STYLE" value="2" />

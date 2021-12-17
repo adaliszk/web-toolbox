@@ -6,9 +6,10 @@
   "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-eslint",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-eslint",
-  "license": "BSD-3-Clause and MIT",
+  "license": "BSD-3-Clause",
   "scripts": {
-    "build": "echo 'Nothing to build, skipping...' && exit 0"
+    "build": "echo 'Nothing to build, skipping...' && exit 0",
+    "lint": "eslint ./eslint-config.cjs"
   },
   "main": "eslint-config.cjs",
   "files": [
