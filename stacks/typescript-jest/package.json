@@ -1,5 +1,5 @@
 {
-  "version": "27.4.7",
+  "version": "27.4.8",
   "name": "@adaliszk/typescript-jest",
   "description": "Meta-Package for testing Typescript with Jest",
   "repository": "github:adaliszk/node-toolbox",
@@ -26,7 +26,7 @@
     "ts-jest": "^27.1"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.5.14"
+    "@adaliszk/typescript": "^4.5.15"
   },
   "keywords": [
     "typescript",
