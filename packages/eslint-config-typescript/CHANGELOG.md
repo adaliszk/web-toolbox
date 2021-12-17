@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.8](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.4.7...@adaliszk/eslint-config-typescript@8.4.8) (2021-12-17)
+
+
+### Bug Fixes
+
+* **eslint-config-typescript:** add missing parser and plugins to the configuration ([719a953](https://github.com/adaliszk/node-toolbox/commit/719a95358b93e8b3e4d52bcbe2eff434ec13c6f6))
+
+
+
+
+
 ## [8.4.7](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.4.6...@adaliszk/eslint-config-typescript@8.4.7) (2021-12-12)
 
 
