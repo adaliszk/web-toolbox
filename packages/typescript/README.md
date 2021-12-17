@@ -3,8 +3,8 @@ _Meta-package for Typescript with a default configuration_
 
 ### Provides
 - `@adaliszk/eslint-config-typescript`
-- `typescript`
-- `tslib`
+- `typescript`, `tslib`, and `@types/node`
+- `ts-node`
 
 
 ### Usage
