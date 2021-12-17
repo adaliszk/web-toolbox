@@ -1,5 +1,5 @@
 {
-  "version": "4.5.16",
+  "version": "4.5.17",
   "name": "@adaliszk/typescript",
   "description": "Meta-package for Typescript with a default configuration",
   "repository": "github:adaliszk/node-toolbox",
@@ -16,7 +16,7 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/eslint-config-typescript": "^8.4.10",
+    "@adaliszk/eslint-config-typescript": "^8.4.11",
     "@types/node": "^16",
     "ts-node": "^10.4",
     "tslib": "^2.3",
