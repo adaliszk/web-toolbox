@@ -14,9 +14,8 @@
   "main": "dist/typescript-jest.js",
   "types": "dist/typescript-jest.d.ts",
   "files": [
-    "CHANGELOG.md",
-    "README.md",
-    "dist"
+    "dist",
+    "*.md"
   ],
   "dependencies": {
     "@testdeck/jest": "^0.2",
