@@ -6,7 +6,7 @@
   "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stacks/typescript-jest",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-jest",
-  "license": "BSD-3-Clause & MIT & Apache-2.0",
+  "license": "BSD-3-Clause and MIT and Apache-2.0",
   "scripts": {
     "build": "tsc",
     "prepublish": "yarn build"
