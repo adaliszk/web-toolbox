@@ -34,8 +34,7 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
   or define your own rules:
   ```yaml
   extends:
-    - plugin:@eslint-config-typescript/eslint-recommended
-    - plugin:@eslint-config-typescript/recommended
+    - plugin:@typescript-eslint/recommended
     - eslint:recommended
     - standard
   # ...

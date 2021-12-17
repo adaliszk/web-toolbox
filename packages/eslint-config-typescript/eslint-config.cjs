@@ -7,10 +7,9 @@ const pluginList = [
 ]
 
 const extendsList = [
+    'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
     'standard',
-    'plugin:@eslint-config-typescript/eslint-recommended',
-    'plugin:@eslint-config-typescript/recommended',
 ]
 
 const ignorePatternList = [
