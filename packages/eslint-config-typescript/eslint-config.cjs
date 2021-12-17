@@ -1,5 +1,11 @@
 // region Configuration
 
+const currentParser = "@typescript-eslint/parser"
+
+const pluginList = [
+    "@typescript-eslint"
+]
+
 const extendsList = [
     'plugin:@eslint-config-typescript/eslint-recommended',
     'plugin:@eslint-config-typescript/recommended',
@@ -69,6 +75,8 @@ ruleMap['@typescript-eslint/no-inferrable-types'] = ['off']
 // endregion
 
 module.exports = {
+    parser: currentParser,
+    plugins: pluginList,
     extends: extendsList,
     ignorePatterns: ignorePatternList,
     rules: ruleMap
