@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [27.4.9](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/typescript-jest@27.4.8...@adaliszk/typescript-jest@27.4.9) (2021-12-17)
+
+
+### Bug Fixes
+
+* **typescript-jest:** fix SPDX expression for the license ([77a7c7f](https://github.com/adaliszk/node-toolbox/commit/77a7c7f6692f1fc12aa69e0274afb2fa047cdf26))
+
+
+
+
+
 ## [27.4.8](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/typescript-jest@27.4.7...@adaliszk/typescript-jest@27.4.8) (2021-12-17)
 
 **Note:** Version bump only for package @adaliszk/typescript-jest

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.10](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.4.9...@adaliszk/eslint-config-typescript@8.4.10) (2021-12-17)
+
+
+### Bug Fixes
+
+* **eslint-config-typescript:** allow multiple empty lines (up to 2 lines) ([2850104](https://github.com/adaliszk/node-toolbox/commit/2850104e80ca6210df88d4c9ea8e514e815dfda7))
+
+
+
+
+
 ## [8.4.9](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.4.8...@adaliszk/eslint-config-typescript@8.4.9) (2021-12-17)
 
 
