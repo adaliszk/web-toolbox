@@ -2,8 +2,6 @@ _Meta-package for using Parcel with Typescript_
 
 ### Provides
 
-- `parcel`, `@babel/core`, and `postcss`
-- `@adaliszk/parcel-config-typescript`
 - `@adaliszk/babel-typescript-preset`
 
 ### Usage

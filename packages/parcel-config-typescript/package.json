@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "name": "@adaliszk/parcel-config-typescript",
+  "description": "Configuration for using Typescript with Parcel",
+  "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/parcel-config-typescript",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/parcel-config-typescript",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "echo 'Nothing to build, skipping...' && exit 0"
+  },
+  "main": "parcel-config.cjs",
+  "files": [
+    "parcel-config.cjs",
+    "*.md"
+  ],
+  "dependencies": {
+    "@adaliszk/babel-typescript-preset": "^7.16"
+  },
+  "keywords": [
+    "meta-package",
+    "parcel",
+    "configuration",
+    "config"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "2.0.0",
   "name": "@adaliszk/parcel-typescript",
   "description": "Meta-package for using Parcel with Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -11,12 +11,8 @@
     "build": "echo 'Nothing to build, skipping...' && exit 0",
     "lint": "eslint ."
   },
-  "main": "parcel-config.cjs",
-  "files": [
-    "parcel-config.cjs",
-    "*.md"
-  ],
   "dependencies": {
+    "@adaliszk/parcel-config-typescript": "^7.16",
     "@adaliszk/babel-typescript-preset": "^7.16",
     "@babel/core": "^7.16",
     "parcel": "^2.0",
