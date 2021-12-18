@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "name": "@adaliszk/parcel-typescript",
+  "description": "Meta-package for using Parcel with Typescript",
+  "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-parcel",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-parcel",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "echo 'Nothing to build, skipping...' && exit 0",
+    "lint": "eslint ."
+  },
+  "main": "parcel-config.cjs",
+  "files": [
+    "parcel-config.cjs",
+    "*.md"
+  ],
+  "dependencies": {
+    "@adaliszk/babel-typescript-preset": "^7.16",
+    "parcel": "^2.0",
+    "@babel/core": "^7.16",
+    "postcss": "^8.4"
+  },
+  "keywords": [
+    "meta-package",
+    "bundler",
+    "parcel"
+  ]
+}
