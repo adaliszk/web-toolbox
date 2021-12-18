@@ -1,5 +1,5 @@
 {
-  "version": "2.0.2",
+  "version": "2.0.3",
   "name": "@adaliszk/parcel-config-typescript",
   "description": "Configuration for using Typescript with Parcel",
   "repository": "github:adaliszk/node-toolbox",
