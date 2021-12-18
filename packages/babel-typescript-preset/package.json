@@ -1,0 +1,30 @@
+{
+  "version": "7.15.0",
+  "name": "@adaliszk/babel-typescript-preset",
+  "description": "Meta-package containing a typescript preset for babel",
+  "repository": "github:adaliszk/node-toolbox",
+  "gitHead": "",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/babel-typescript-preset",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/babel-typescript-preset",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "echo 'Nothing to build, skipping...' && exit 0"
+  },
+  "main": "babel-preset.cjs",
+  "files": [
+    "babel-preset.cjs",
+    "*.md"
+  ],
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.16",
+    "@babel/plugin-proposal-decorators": "^7.16"
+  },
+  "keywords": [
+    "meta-package",
+    "babel",
+    "configuration",
+    "preset",
+    "typescript",
+    "esnext"
+  ]
+}
