@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@adaliszk/babel-typescript-preset": "^7.16",
-    "@adaliszk/parcel-config-typescript": "^7.16",
+    "@adaliszk/parcel-config-typescript": "^2.0",
     "@babel/core": "^7.16",
     "parcel": "^2.0",
     "postcss": "^8.4"
