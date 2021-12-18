@@ -3,6 +3,7 @@ _Meta-package for using Parcel with Typescript_
 ### Provides
 
 - `@adaliszk/babel-typescript-preset`
+- `parcel-transformer-ts-css-modules`
 
 ### Usage
 

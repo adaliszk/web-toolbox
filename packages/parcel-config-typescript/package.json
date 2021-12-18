@@ -10,13 +10,14 @@
   "scripts": {
     "build": "echo 'Nothing to build, skipping...' && exit 0"
   },
-  "main": "parcel-config.cjs",
+  "main": "parcel-config.json5",
   "files": [
-    "parcel-config.cjs",
+    "parcel-config.json5",
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/babel-typescript-preset": "^7.16"
+    "@adaliszk/babel-typescript-preset": "^7.16",
+    "parcel-transformer-ts-css-modules": "^1.0"
   },
   "keywords": [
     "meta-package",
