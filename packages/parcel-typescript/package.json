@@ -4,8 +4,8 @@
   "description": "Meta-package for using Parcel with Typescript",
   "repository": "github:adaliszk/node-toolbox",
   "gitHead": "",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript-parcel",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-parcel",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/parcel-typescript",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/parcel-typescript",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "echo 'Nothing to build, skipping...' && exit 0",
