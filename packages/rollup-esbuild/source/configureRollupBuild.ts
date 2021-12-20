@@ -1,5 +1,5 @@
 import { ModuleFormat, Plugin, RollupOptions } from 'rollup'
-import { configureEsbuild } from './configureEsbuild'
+import configureEsbuild from './configureEsbuild'
 
 
 export interface RollupBuildOptions
