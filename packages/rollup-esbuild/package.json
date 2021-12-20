@@ -1,5 +1,5 @@
 {
-  "version": "2.61.1",
+  "version": "2.61.2",
   "name": "@adaliszk/rollup-esbuild",
   "description": "Meta-package and autoconfiguration for Rollup using ESBuild",
   "repository": "github:adaliszk/node-toolbox",
@@ -30,10 +30,10 @@
   ],
   "dependencies": {
     "esbuild": "^0.14",
+    "rimraf": "^3.0",
     "rollup": "^2.61",
     "rollup-plugin-dts": "^4.0",
-    "rollup-plugin-esbuild": "^4.7",
-    "rimraf": "^3.0"
+    "rollup-plugin-esbuild": "^4.7"
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.5.19",
