@@ -4,6 +4,7 @@ _Meta-package containing a typescript preset for babel_
 
 - `@babel/plugin-proposal-class-properties`
 - `@babel/plugin-proposal-decorators`
+- `@babel/core`
 
 ### Usage
 
