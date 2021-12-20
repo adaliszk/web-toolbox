@@ -17,13 +17,13 @@
     "*.md"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.4",
-    "@typescript-eslint/parser": "^5.4",
-    "eslint": "^8.4",
+    "@typescript-eslint/eslint-plugin": "^5.7",
+    "@typescript-eslint/parser": "^5.7",
+    "eslint": "^8.5",
     "eslint-config-standard": "^16.0",
     "eslint-plugin-import": "^2.25",
     "eslint-plugin-node": "^11.1",
-    "eslint-plugin-promise": "^5.2"
+    "eslint-plugin-promise": "^6.0"
   },
   "keywords": [
     "meta-package",
