@@ -1,26 +1,31 @@
 import { RollupOptions } from 'rollup'
+import { promisify } from 'util'
+import { existsSync as fileExists, readFileSync as fileRead } from 'fs'
+import { resolve, sep as DIRECTORY_SEPARATOR } from 'path'
+import { exec as execCallback } from 'child_process'
+
 import rollupTypescriptDefinitions from 'rollup-plugin-dts'
 import configureRollupBuild from './configureRollupBuild'
-import * as path from 'path'
-import * as fs from 'fs'
+
+const exec = promisify(execCallback)
 
 
-export function autoconfig (): RollupOptions[]
+export async function autoconfig (): Promise<RollupOptions[]>
 {
-    const pkgFile = path.resolve(process.cwd(), 'package.json')
-    if (!fs.existsSync(pkgFile)) throw ReferenceError('CWD has no package.json, are you executing this from the correct WORK-PATH?')
+    const pkgFile = resolve(process.cwd(), 'package.json')
+    if (!fileExists(pkgFile)) throw ReferenceError('CWD has no package.json, are you executing this from the correct WORK-PATH?')
 
     // read package.json
-    const pkg = JSON.parse(fs.readFileSync(pkgFile).toString())
+    const pkg = JSON.parse(fileRead(pkgFile).toString())
     if (!pkg.config) throw SyntaxError('$.config is not specified in your package.json!')
 
     // resolve source file for the bundle, required
     if (!pkg.config.sourceFile) throw SyntaxError('$.config.sourceFile is not specified, please point to your bundle source file!')
-    const sourceFile = path.resolve(pkg.config.sourceFile).replace(`${process.cwd()}${path.sep}`, '')
+    const sourceFile = resolve(pkg.config.sourceFile).replace(`${process.cwd()}${DIRECTORY_SEPARATOR}`, '')
 
     // collect multiple outputs
     const buildList: RollupOptions[] = []
-    const externalDependencies = [...Object.keys(pkg.dependencies), ...Object.keys(pkg.config?.externalDependencies ?? [])]
+    const externalDependencies = [...Object.keys(pkg.dependencies), ...pkg.config?.externalDependencies ?? []]
     const tsconfigFile = pkg.config?.tsconfig ?? 'tsconfig.json'
     const buildConfig = {
         tsconfigFile,
@@ -28,18 +33,21 @@ export function autoconfig (): RollupOptions[]
         sourceFile,
     }
 
-    function addBuild (outFile: string)
+    async function addBuild (outFile: string)
     {
-        const config = { ...buildConfig, outFile }
+        const config = {
+            ...buildConfig,
+            outFile,
+        }
 
-        if (outFile.match(/\.cjs$/)) buildList.push(configureRollupBuild({ ...config, outFormat: 'cjs' }))
-        if (outFile.match(/\.mjs$/)) buildList.push(configureRollupBuild({ ...config, outFormat: 'esm' }))
+        if (outFile.match(/\.mjs$/)) buildList.push(configureRollupBuild('esm', config))
+        if (outFile.match(/\.cjs$/)) buildList.push(configureRollupBuild('cjs', config))
         if (outFile.match(/\.d.ts$/))
         {
+            await exec(`tsc --outDir ${resolve(process.cwd(), 'temp')} --emitDeclarationOnly`)
             const definitionFile = sourceFile.replace(/source|src/, 'temp').replace(/\.ts$/, '.d.ts')
-            buildList.push(configureRollupBuild({
+            buildList.push(configureRollupBuild('es', {
                 ...config,
-                outFormat: 'es',
                 sourceFile: definitionFile,
                 pluginList: [
                     rollupTypescriptDefinitions(),
@@ -50,11 +58,11 @@ export function autoconfig (): RollupOptions[]
 
     // resolve main bundle file, required
     if (!pkg.main) throw SyntaxError('$.main is not specified, cannot build a bundle!')
-    addBuild(path.resolve(pkg.main))
+    await addBuild(resolve(pkg.main))
 
     // additional builds
-    if (pkg.module) addBuild(path.resolve(pkg.module))
-    if (pkg.types) addBuild(path.resolve(pkg.types))
+    if (pkg.module) await addBuild(resolve(pkg.module))
+    if (pkg.types) await addBuild(resolve(pkg.types))
 
     return buildList
 }

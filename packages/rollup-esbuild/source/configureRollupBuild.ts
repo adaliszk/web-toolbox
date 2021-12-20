@@ -5,7 +5,6 @@ import configureEsbuild from './configureEsbuild'
 export interface RollupBuildOptions
 {
     sourceFile: string,
-    outFormat: ModuleFormat,
     outFile: string,
     externalDependencies?: string[]
     pluginList?: Plugin[],
@@ -27,9 +26,9 @@ function RollupBuildTarget (format: ModuleFormat)
 }
 
 
-export default function configureRollupBuild (config: RollupBuildOptions): RollupOptions
+export default function configureRollupBuild (outFormat: ModuleFormat, config: RollupBuildOptions): RollupOptions
 {
-    const buildTarget = RollupBuildTarget(config.outFormat)
+    const buildTarget = RollupBuildTarget(outFormat)
 
     return {
         input: config.sourceFile,
@@ -41,7 +40,7 @@ export default function configureRollupBuild (config: RollupBuildOptions): Rollu
             }),
         ],
         output: {
-            format: config.outFormat,
+            format: outFormat,
             file: config.outFile,
             sourcemap: true,
         },
