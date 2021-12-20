@@ -13,7 +13,11 @@
     "build:dist": "rimraf dist && rollup -c"
   },
   "config": {
-    "sourceFile": "source/rollup-esbuild.ts"
+    "sourceFile": "source/rollup-esbuild.ts",
+    "externalDependencies": [
+      "path",
+      "fs"
+    ]
   },
   "main": "dist/rollup-esbuild.cjs",
   "module": "dist/rollup-esbuild.mjs",
@@ -32,10 +36,6 @@
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.5.18"
-  },
-  "peerDependencies": {
-    "fs": "*",
-    "path": "*"
   },
   "eslintConfig": {
     "extends": [

@@ -20,7 +20,7 @@ export function autoconfig (): RollupOptions[]
 
     // collect multiple outputs
     const buildList: RollupOptions[] = []
-    const externalDependencies = [...Object.keys(pkg.dependencies), ...Object.keys(pkg?.peerDependencies ?? [])]
+    const externalDependencies = [...Object.keys(pkg.dependencies), ...Object.keys(pkg.config?.externalDependencies ?? [])]
     const tsconfigFile = pkg.config?.tsconfig ?? 'tsconfig.json'
     const buildConfig = {
         tsconfigFile,
