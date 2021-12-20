@@ -1,5 +1,5 @@
 {
-  "version": "2.0.3",
+  "version": "2.0.4",
   "name": "@adaliszk/parcel-config-typescript",
   "description": "Configuration for using Typescript with Parcel",
   "repository": "github:adaliszk/node-toolbox",
@@ -16,7 +16,7 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/babel-typescript-preset": "^7.16",
+    "@adaliszk/babel-typescript-preset": "^7.16.1",
     "parcel-transformer-ts-css-modules": "^1.0"
   },
   "keywords": [

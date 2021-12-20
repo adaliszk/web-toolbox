@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.5.0](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.4.11...@adaliszk/eslint-config-typescript@8.5.0) (2021-12-20)
+
+
+### Features
+
+* **eslint-config-typescript:** raise eslint version to 8.5 ([86a8eaf](https://github.com/adaliszk/node-toolbox/commit/86a8eaf43b710f822aa777868f2da9607b20a38d))
+
+
+
+
+
 ## [8.4.11](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.4.10...@adaliszk/eslint-config-typescript@8.4.11) (2021-12-17)
 
 **Note:** Version bump only for package @adaliszk/eslint-config-typescript

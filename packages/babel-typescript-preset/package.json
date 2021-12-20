@@ -1,5 +1,5 @@
 {
-  "version": "7.16.0",
+  "version": "7.16.1",
   "name": "@adaliszk/babel-typescript-preset",
   "description": "Meta-package containing a typescript preset for babel",
   "repository": "github:adaliszk/node-toolbox",
@@ -16,9 +16,9 @@
     "*.md"
   ],
   "dependencies": {
+    "@babel/core": "^7.16",
     "@babel/plugin-proposal-class-properties": "^7.16",
-    "@babel/plugin-proposal-decorators": "^7.16",
-    "@babel/core": "^7.16"
+    "@babel/plugin-proposal-decorators": "^7.16"
   },
   "keywords": [
     "meta-package",

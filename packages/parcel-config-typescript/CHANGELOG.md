@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/parcel-config-typescript@2.0.3...@adaliszk/parcel-config-typescript@2.0.4) (2021-12-20)
+
+**Note:** Version bump only for package @adaliszk/parcel-config-typescript
+
+
+
+
+
 ## [2.0.3](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/parcel-config-typescript@2.0.2...@adaliszk/parcel-config-typescript@2.0.3) (2021-12-18)
 
 
