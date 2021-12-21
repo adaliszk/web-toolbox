@@ -10,7 +10,7 @@ import configureRollupBuild from './configureRollupBuild'
 const exec = promisify(execCallback)
 
 
-export async function autoconfig (): Promise<RollupOptions[]>
+export async function autoconfig (fn: (builds: RollupOptions[]) => Promise<RollupOptions[]>): Promise<RollupOptions[]>
 {
     const pkgFile = resolve(process.cwd(), 'package.json')
     if (!fileExists(pkgFile)) throw ReferenceError('CWD has no package.json, are you executing this from the correct WORK-PATH?')
@@ -24,7 +24,7 @@ export async function autoconfig (): Promise<RollupOptions[]>
     const sourceFile = resolve(pkg.config.sourceFile).replace(`${process.cwd()}${DIRECTORY_SEPARATOR}`, '')
 
     // collect multiple outputs
-    const buildList: RollupOptions[] = []
+    let buildList: RollupOptions[] = []
     const externalDependencies = [...Object.keys(pkg.dependencies), ...pkg.config?.externalDependencies ?? []]
     const tsconfigFile = pkg.config?.tsconfig ?? 'tsconfig.json'
     const buildConfig = {
@@ -63,6 +63,8 @@ export async function autoconfig (): Promise<RollupOptions[]>
     // additional builds
     if (pkg.module) await addBuild(resolve(pkg.module))
     if (pkg.types) await addBuild(resolve(pkg.types))
+
+    if (fn) buildList = await fn(buildList)
 
     return buildList
 }
