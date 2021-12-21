@@ -10,9 +10,17 @@ import configureRollupBuild from './configureRollupBuild'
 const exec = promisify(execCallback)
 
 
+interface RollupBuilds
+{
+    main?: RollupOptions,
+    modules?: RollupOptions,
+    types?: RollupOptions,
+}
+
+
 interface callback
 {
-    (builds: RollupOptions[]): Promise<RollupOptions[]>
+    (builds: RollupBuilds): Promise<RollupBuilds>
 }
 
 
@@ -30,7 +38,7 @@ export async function autoconfig (fn?: callback): Promise<RollupOptions[]>
     const sourceFile = resolve(pkg.config.sourceFile).replace(`${process.cwd()}${DIRECTORY_SEPARATOR}`, '')
 
     // collect multiple outputs
-    let buildList: RollupOptions[] = []
+    let buildList: RollupBuilds = {}
     const externalDependencies = [...Object.keys(pkg.dependencies), ...pkg.config?.externalDependencies ?? []]
     const tsconfigFile = pkg.config?.tsconfig ?? 'tsconfig.json'
     const buildConfig = {
@@ -39,38 +47,38 @@ export async function autoconfig (fn?: callback): Promise<RollupOptions[]>
         sourceFile,
     }
 
-    async function addBuild (outFile: string)
+    async function addBuild (build: 'main' | 'module' | 'types', outFile: string)
     {
         const config = {
             ...buildConfig,
             outFile,
         }
 
-        if (outFile.match(/\.mjs$/)) buildList.push(configureRollupBuild('esm', config))
-        if (outFile.match(/\.cjs$/)) buildList.push(configureRollupBuild('cjs', config))
+        if (outFile.match(/\.mjs$/)) buildList[build] = configureRollupBuild('esm', config)
+        if (outFile.match(/\.cjs$/)) buildList[build] = configureRollupBuild('cjs', config)
         if (outFile.match(/\.d.ts$/))
         {
             await exec(`tsc --outDir ${resolve(process.cwd(), 'temp')} --emitDeclarationOnly`)
             const definitionFile = sourceFile.replace(/source|src/, 'temp').replace(/\.ts$/, '.d.ts')
-            buildList.push(configureRollupBuild('es', {
+            buildList[build] = configureRollupBuild('es', {
                 ...config,
                 sourceFile: definitionFile,
                 pluginList: [
                     rollupTypescriptDefinitions(),
                 ],
-            }))
+            })
         }
     }
 
     // resolve main bundle file, required
     if (!pkg.main) throw SyntaxError('$.main is not specified, cannot build a bundle!')
-    await addBuild(resolve(pkg.main))
+    await addBuild('main', resolve(pkg.main))
 
     // additional builds
-    if (pkg.module) await addBuild(resolve(pkg.module))
-    if (pkg.types) await addBuild(resolve(pkg.types))
+    if (pkg.module) await addBuild('module', resolve(pkg.module))
+    if (pkg.types) await addBuild('types', resolve(pkg.types))
 
     if (fn) buildList = await fn(buildList)
 
-    return buildList
+    return Object.values(buildList)
 }
