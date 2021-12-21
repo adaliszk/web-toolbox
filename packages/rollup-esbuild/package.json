@@ -10,7 +10,8 @@
   "scripts": {
     "build": "yarn build:temp && yarn build:dist",
     "build:temp": "rimraf temp && tsc",
-    "build:dist": "rimraf dist && rollup -c"
+    "build:dist": "rimraf dist && rollup -c",
+    "prepublish": "yarn build"
   },
   "config": {
     "sourceFile": "source/rollup-esbuild.ts",
