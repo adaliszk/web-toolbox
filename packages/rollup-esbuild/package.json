@@ -29,6 +29,7 @@
     "*.md"
   ],
   "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0",
     "esbuild": "^0.14",
     "rimraf": "^3.0",
     "rollup": "^2.61",

@@ -1,5 +1,6 @@
 import { ModuleFormat, Plugin, RollupOptions } from 'rollup'
 import configureEsbuild from './configureEsbuild'
+import commonjs from '@rollup/plugin-commonjs'
 
 
 export interface RollupBuildOptions
@@ -34,6 +35,7 @@ export default function configureRollupBuild (outFormat: ModuleFormat, config: R
         input: config.sourceFile,
         external: config.externalDependencies ?? [],
         plugins: config.pluginList ?? [
+            commonjs(),
             configureEsbuild({
                 tsconfig: config.tsconfigFile,
                 target: buildTarget,
