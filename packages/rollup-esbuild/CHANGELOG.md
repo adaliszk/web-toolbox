@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.61.4](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.3...@adaliszk/rollup-esbuild@2.61.4) (2021-12-21)
+
+
+### Bug Fixes
+
+* **rollup-esbuild:** make customisation optional ([281bb56](https://github.com/adaliszk/node-toolbox/commit/281bb561d4c2a931b4f401b98bc97f628978ac2e))
+
+
+
+
+
 ## [2.61.3](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.2...@adaliszk/rollup-esbuild@2.61.3) (2021-12-21)
 
 
