@@ -18,7 +18,7 @@ export default function configureEsbuild (config: EsbuildConfig): Plugin
         sourceMap: true,
         minify: true,
         loaders: {
-            '.json': 'json'
+            '.json': 'json',
         },
     })
 }

@@ -3,7 +3,7 @@
   "name": "@adaliszk/rollup-esbuild",
   "description": "Meta-package and autoconfiguration for Rollup using ESBuild",
   "repository": "github:adaliszk/node-toolbox",
-  "gitHead": "",
+  "gitHead": "ae8b832f2adb4c6774476ef6fdd2d339dadf2151",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/rollup-esbuild",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/rollup-esbuild",
   "license": "BSD-3-Clause",
