@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.61.6](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.5...@adaliszk/rollup-esbuild@2.61.6) (2021-12-21)
+
+
+### Bug Fixes
+
+* **rollup-esbuild:** add build step before publishing a package ([c62551d](https://github.com/adaliszk/node-toolbox/commit/c62551d3708a83ab518ddf3f8ead28721b86d1d0))
+
+
+
+
+
 ## [2.61.5](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.4...@adaliszk/rollup-esbuild@2.61.5) (2021-12-21)
 
 **Note:** Version bump only for package @adaliszk/rollup-esbuild
