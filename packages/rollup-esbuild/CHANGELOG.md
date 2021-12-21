@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.61.3](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.2...@adaliszk/rollup-esbuild@2.61.3) (2021-12-21)
+
+
+### Bug Fixes
+
+* **rollup-esbuild:** import commonjs plugin for .json imports ([874e7a4](https://github.com/adaliszk/node-toolbox/commit/874e7a463acda09f349f593b7ae7822e8d261b21))
+
+
+
+
+
 ## [2.61.2](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.1...@adaliszk/rollup-esbuild@2.61.2) (2021-12-20)
 
 **Note:** Version bump only for package @adaliszk/rollup-esbuild
