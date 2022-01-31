@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.8.1](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.7.1...@adaliszk/eslint-config-typescript@8.8.1) (2022-01-31)
+
+**Note:** Version bump only for package @adaliszk/eslint-config-typescript
+
+
+
+
+
 ## [8.7.1](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/eslint-config-typescript@8.5.0...@adaliszk/eslint-config-typescript@8.7.1) (2022-01-31)
 
 **Note:** Version bump only for package @adaliszk/eslint-config-typescript
