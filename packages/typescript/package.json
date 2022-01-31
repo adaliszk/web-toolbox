@@ -16,7 +16,7 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/eslint-config-typescript": "^8.8.0",
+    "@adaliszk/eslint-config-typescript": "^8.7.0",
     "@types/node": "^16",
     "ts-node": "^10.4",
     "tslib": "^2.3",
