@@ -10,9 +10,6 @@
 # NPM / Yarn
 **/node_modules
 node_modules
-.yarn/*
-!.yarn/releases
-.pnp*
 
 # Temporary files
 **/temp

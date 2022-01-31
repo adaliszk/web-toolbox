@@ -12,17 +12,11 @@
     "build": "yarn workspaces build",
     "lerna": "lerna"
   },
-  "workspaces": {
-    "nohoist": [
-      "**/@adaliszk/eslint-config-typescript",
-      "**/@adaliszk/typescript"
-    ],
-    "packages": [
-      "packages/*",
-      "specifications/*",
-      "stacks/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*",
+    "specifications/*",
+    "stacks/*"
+  ],
   "devDependencies": {
     "lerna": "^4.0"
   },
