@@ -22,7 +22,7 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
 
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`
-- `eslint-config-standard` + (`eslint-plugin-import`, `eslint-plugin-promise`, `eslint-plugin-node`)
+- `eslint-config-standard` + (`eslint-plugin-import`, `eslint-plugin-promise`, `eslint-plugin-n`)
 - `eslint`
 
 ### Usage
@@ -31,24 +31,21 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
 - Add an `.eslintrc.yml` with the content of:
   ```yaml
   extends:
-    - @adaliszk/typescript 
+    - "@adaliszk/typescript"
   ```
-  or define your own rules:
+  or to avoid clutter, put it into your `package.json`:
   ```yaml
-  extends:
-    - plugin:@typescript-eslint/recommended
-    - eslint:recommended
-    - standard
-  # ...
+  "eslintConfig": {
+    "extemds": [
+      "@adaliszk/typescript"
+    ]
+  }
   ```
 
 ### Caveats
 
 - When using node module based workspaces, you must include this package as a no-hoist so that eslint would find the
   configuration correctly.
-
-- The ESLint Standard plugin does not support v8 correctly just yet, as it waits on its dependencies to support the
-  newer version: https://github.com/standard/eslint-config-standard/pull/193
 
 ### Versioning
 
