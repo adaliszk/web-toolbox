@@ -7,8 +7,8 @@ _Meta-package for using Parcel with Typescript_
 
 ### Usage
 
-- Install: `yarn add -D @adaliszk/parcel-typescript`
+- Install: `yarn add -D @adaliszk/parcel-config-typescript`
 - Add a `.parcelrc` with the content of:
   ```json5
-  {"extends": ["@adaliszk/typescript"]}
+  {"extends": ["@adaliszk/parcel-config-typescript"]}
   ```
