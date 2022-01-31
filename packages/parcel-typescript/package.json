@@ -1,5 +1,5 @@
 {
-  "version": "2.0.5",
+  "version": "2.0.6",
   "name": "@adaliszk/parcel-typescript",
   "description": "Meta-package for using Parcel with Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -12,8 +12,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@adaliszk/babel-typescript-preset": "^7.16.1",
-    "@adaliszk/parcel-config-typescript": "^2.0.4",
+    "@adaliszk/babel-typescript-preset": "^7.16.3",
+    "@adaliszk/parcel-config-typescript": "^2.0.5",
     "@babel/core": "^7.16.12",
     "parcel": "^2.2.1",
     "postcss": "^8.4.5"

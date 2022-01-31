@@ -1,5 +1,5 @@
 {
-  "version": "7.16.2",
+  "version": "7.16.3",
   "name": "@adaliszk/babel-typescript-preset",
   "description": "Meta-package containing a typescript preset for babel",
   "repository": "github:adaliszk/node-toolbox",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [27.4.14](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/typescript-testing@27.4.13...@adaliszk/typescript-testing@27.4.14) (2022-01-31)
+
+**Note:** Version bump only for package @adaliszk/typescript-testing
+
+
+
+
+
 ## [27.4.13](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/typescript-testing@27.4.12...@adaliszk/typescript-testing@27.4.13) (2021-12-20)
 
 **Note:** Version bump only for package @adaliszk/typescript-testing
