@@ -14,9 +14,9 @@
   "dependencies": {
     "@adaliszk/babel-typescript-preset": "^7.16.1",
     "@adaliszk/parcel-config-typescript": "^2.0.4",
-    "@babel/core": "^7.16",
-    "parcel": "^2.0",
-    "postcss": "^8.4"
+    "@babel/core": "^7.16.12",
+    "parcel": "^2.2.1",
+    "postcss": "^8.4.5"
   },
   "keywords": [
     "meta-package",

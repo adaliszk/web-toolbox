@@ -5,7 +5,7 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@adaliszk/babel-typescript-preset@workspace:^, @adaliszk/babel-typescript-preset@workspace:packages/babel-typescript-preset":
+"@adaliszk/babel-typescript-preset@^7.16.1, @adaliszk/babel-typescript-preset@workspace:packages/babel-typescript-preset":
   version: 0.0.0-use.local
   resolution: "@adaliszk/babel-typescript-preset@workspace:packages/babel-typescript-preset"
   dependencies:
@@ -15,7 +15,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/eslint-config-typescript@workspace:^, @adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.8.0, @adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:packages/eslint-config-typescript"
   dependencies:
@@ -37,11 +37,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/parcel-config-typescript@workspace:^, @adaliszk/parcel-config-typescript@workspace:packages/parcel-config-typescript":
+"@adaliszk/parcel-config-typescript@^2.0.4, @adaliszk/parcel-config-typescript@workspace:packages/parcel-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/parcel-config-typescript@workspace:packages/parcel-config-typescript"
   dependencies:
-    "@adaliszk/babel-typescript-preset": "workspace:^"
+    "@adaliszk/babel-typescript-preset": ^7.16.1
     parcel-transformer-ts-css-modules: ^1.0.12
   languageName: unknown
   linkType: soft
@@ -50,8 +50,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/parcel-typescript@workspace:packages/parcel-typescript"
   dependencies:
-    "@adaliszk/babel-typescript-preset": "workspace:^"
-    "@adaliszk/parcel-config-typescript": "workspace:^"
+    "@adaliszk/babel-typescript-preset": ^7.16.1
+    "@adaliszk/parcel-config-typescript": ^2.0.4
     "@babel/core": ^7.16.12
     parcel: ^2.2.1
     postcss: ^8.4.5
@@ -79,7 +79,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript-testing@workspace:packages/typescript-testing"
   dependencies:
-    "@adaliszk/typescript": "workspace:^"
+    "@adaliszk/typescript": ^4.5.19
     "@testdeck/jest": ^0.2
     "@types/chai": ^4.3
     chai: ^4.3
@@ -89,11 +89,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/typescript@^4.5.19, @adaliszk/typescript@workspace:^, @adaliszk/typescript@workspace:packages/typescript":
+"@adaliszk/typescript@^4.5.19, @adaliszk/typescript@workspace:packages/typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript@workspace:packages/typescript"
   dependencies:
-    "@adaliszk/eslint-config-typescript": "workspace:^"
+    "@adaliszk/eslint-config-typescript": ^8.8.0
     "@types/node": ^16
     ts-node: ^10.4
     tslib: ^2.3
