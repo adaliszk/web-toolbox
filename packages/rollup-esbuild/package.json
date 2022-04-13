@@ -1,5 +1,5 @@
 {
-  "version": "2.70.0",
+  "version": "2.70.1",
   "name": "@adaliszk/rollup-esbuild",
   "description": "Meta-package and autoconfiguration for Rollup using ESBuild",
   "repository": "github:adaliszk/node-toolbox",

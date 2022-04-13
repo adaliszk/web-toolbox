@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.70.1](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.62.0...@adaliszk/rollup-esbuild@2.70.1) (2022-04-13)
+
+**Note:** Version bump only for package @adaliszk/rollup-esbuild
+
+
+
+
+
 # [2.62.0](https://github.com/adaliszk/node-toolbox/compare/@adaliszk/rollup-esbuild@2.61.9...@adaliszk/rollup-esbuild@2.62.0) (2022-04-13)
 
 
