@@ -12,19 +12,12 @@ const exec = promisify(execCallback)
 
 interface RollupBuilds
 {
-    main?: RollupOptions,
-    modules?: RollupOptions,
-    types?: RollupOptions,
+    [index: string]: RollupOptions
 }
 
 
-interface callback
-{
-    (builds: RollupBuilds): Promise<RollupBuilds>
-}
 
-
-export async function autoconfig (fn?: callback): Promise<RollupOptions[]>
+export async function autoconfig (fn?: (config: RollupBuilds) => Promise<RollupBuilds>): Promise<RollupOptions[]>
 {
     const pkgFile = resolve(process.cwd(), 'package.json')
     if (!fileExists(pkgFile)) throw ReferenceError('CWD has no package.json, are you executing this from the correct WORK-PATH?')
