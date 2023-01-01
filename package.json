@@ -13,7 +13,7 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "propose": "turbo run build lint test && changeset version",
-    "release": "turbo run build lint test && changeset publish",
+    "release": "changeset publish",
     "changeset": "changeset",
     "turbo": "turbo",
     "workspace": "yarn workspace"
