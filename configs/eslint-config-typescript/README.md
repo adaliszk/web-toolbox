@@ -36,9 +36,15 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
   or to avoid clutter, put it into your `package.json`:
   ```yaml
   "eslintConfig": {
-    "extemds": [
+    "extends": [
       "@adaliszk/typescript"
     ]
+  }
+  ```
+- Hook up with a script:
+  ```yaml
+  "scripts": {
+    "lint": "eslint source/** tests/**"
   }
   ```
 
