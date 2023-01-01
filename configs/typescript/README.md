@@ -8,7 +8,7 @@ _Meta-package for Typescript with a default configuration_
 
 
 ### Usage
-- Install the package `yarn add -D @adaliszk/typescript`
+- Install the package `yarn add -D @adaliszk/typescript typescript`
 - Add an `tsconfig.json` with:
   ```json
   {
