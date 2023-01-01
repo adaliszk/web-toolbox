@@ -1,5 +1,5 @@
 {
-  "version": "27.4.15",
+  "version": "4.9.1",
   "name": "@adaliszk/typescript-testing",
   "description": "Meta-Package for testing Typescript Testing with Jest",
   "repository": "github:adaliszk/node-toolbox",
@@ -8,25 +8,28 @@
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-testing",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup source/typescript-testing.ts --format cjs --dts",
+    "lint": "eslint source/**",
     "prepublish": "yarn build"
   },
-  "main": "dist/typescript-jest.js",
-  "types": "dist/typescript-jest.d.ts",
+  "main": "dist/typescript-testing.js",
+  "types": "dist/typescript-testing.d.ts",
   "files": [
     "dist",
     "*.md"
   ],
   "dependencies": {
-    "@testdeck/jest": "^0.2",
+    "@testdeck/vitest": "^0.3",
     "@types/chai": "^4.3",
     "chai": "^4.3",
-    "jest": "^27.4",
-    "ts-jest": "^27.1",
-    "typescript": "^4.5"
+    "vitest": "^0.26"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.5.21"
+    "@adaliszk/typescript": "workspace:*",
+    "@swc/core": "latest",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
   },
   "keywords": [
     "typescript",

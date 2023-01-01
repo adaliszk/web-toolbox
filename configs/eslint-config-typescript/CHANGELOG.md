@@ -1,1 +1,7 @@
 # TBD
+
+## 8.31.1
+
+### Patch Changes
+
+- Update tooling to reflect my latest workflow

@@ -1,6 +1,6 @@
-# TBD
+# @adaliszk/eslint
 
-## 4.9.1
+## 8.31.1
 
 ### Patch Changes
 
