@@ -9,24 +9,32 @@
   "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
   "contributors": [],
   "scripts": {
-    "build": "yarn workspaces build",
-    "lerna": "lerna"
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "release": "turbo run build lint test && changeset version && changeset publish",
+    "changeset": "changeset",
+    "turbo": "turbo",
+    "workspace": "yarn workspace"
   },
   "workspaces": [
+    "configs/*",
     "packages/*",
     "specifications/*",
     "stacks/*"
   ],
   "devDependencies": {
-    "lerna": "^4.0"
+    "@changesets/cli": "^2.26",
+    "turbo": "^1.6"
   },
   "keywords": [
     "node",
     "npm",
-    "meta-packages",
+    "toolbox",
     "packages",
     "configs",
     "plugins",
     "packs"
-  ]
+  ],
+  "packageManager": "yarn@3.3.1"
 }
