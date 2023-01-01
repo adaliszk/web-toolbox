@@ -6,7 +6,8 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -18,7 +19,7 @@
     "sourceMap": true,
     "lib": [
       "dom",
-      "dom.iterable",
+      "webworker",
       "esnext"
     ]
   },
