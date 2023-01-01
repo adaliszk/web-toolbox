@@ -19,6 +19,7 @@
     "*.md"
   ],
   "dependencies": {
+    "@testdeck/core": "^0.3",
     "@testdeck/vitest": "^0.3",
     "@types/chai": "^4.3",
     "chai": "^4.3",

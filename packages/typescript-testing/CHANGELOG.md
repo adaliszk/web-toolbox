@@ -1,4 +1,4 @@
-# TBD
+# @adaliszk/typescript-testing
 
 ## 4.9.1
 
