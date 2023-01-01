@@ -55,5 +55,5 @@ import { describe, it } from '@adaliszk/typescript-testing'
 
 ### Versioning
 
-Since this is a meta-package, the versioning reflect its main provided package, in this case `vitest`. However, only the
+Since this is a meta-package, the versioning reflect its main provided package, in this case `typescript`. However, only the
 Major and Minor versions are kept in sync. The Patch is used to bump the meta-package.
