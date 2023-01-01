@@ -9,7 +9,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "echo 'Nothing to build, skipping...' && exit 0",
-    "lint": "eslint"
+    "lint": "echo 'Nothing to lint, skipping...' && exit 0"
   },
   "main": "eslint-config.cjs",
   "files": [
@@ -18,8 +18,7 @@
   ],
   "dependencies": {
     "@adaliszk/eslint-config-typescript": "^8.31.1",
-    "eslint": "^8.31",
-    "typescript": "^4.9"
+    "eslint": "^8.31"
   },
   "keywords": [
     "meta-package",

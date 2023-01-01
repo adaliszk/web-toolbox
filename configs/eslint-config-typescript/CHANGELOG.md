@@ -1,4 +1,4 @@
-# TBD
+# @adaliszk/eslint-config-typescript
 
 ## 8.31.1
 

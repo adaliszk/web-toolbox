@@ -23,11 +23,10 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`
 - `eslint-config-standard` + (`eslint-plugin-import`, `eslint-plugin-promise`, `eslint-plugin-n`)
-- `eslint`
 
 ### Usage
 
-- Install: `yarn add -D @adaliszk/eslint-config-typescript`
+- Install: `yarn add -D @adaliszk/eslint-config-typescript eslint`
 - Add an `.eslintrc.yml` with the content of:
   ```yaml
   extends:
