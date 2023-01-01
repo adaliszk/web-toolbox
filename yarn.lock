@@ -5,19 +5,20 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-typescript@^8.31.0, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.31.1, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.47
     "@typescript-eslint/parser": ^5.47
+    eslint: ^8.31
     eslint-config-standard: ^17.0
     eslint-plugin-import: ^2.26
     eslint-plugin-n: ^15.6
     eslint-plugin-promise: ^6.1
+    typescript: ^4.9
   peerDependencies:
     eslint: ^8.31
-    typescript: ^4.9
   languageName: unknown
   linkType: soft
 
@@ -25,7 +26,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint@workspace:configs/eslint"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.31.0
+    "@adaliszk/eslint-config-typescript": ^8.31.1
     eslint: ^8.31
     typescript: ^4.9
   languageName: unknown
@@ -35,6 +36,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/node-toolbox@workspace:."
   dependencies:
+    "@changesets/changelog-git": ^0.1
     "@changesets/cli": ^2.26
     turbo: ^1.6
   languageName: unknown
@@ -45,12 +47,14 @@ __metadata:
   resolution: "@adaliszk/typescript-testing@workspace:packages/typescript-testing"
   dependencies:
     "@adaliszk/typescript": "workspace:*"
+    "@swc/core": latest
+    "@testdeck/core": ^0.3
     "@testdeck/vitest": ^0.3
     "@types/chai": ^4.3
     chai: ^4.3
-    eslint: ^8.31
+    eslint: latest
     tsup: latest
-    typescript: ^4.9
+    typescript: latest
     vitest: ^0.26
   languageName: unknown
   linkType: soft
@@ -59,10 +63,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript@workspace:configs/typescript"
   dependencies:
-    "@swc/core": ^1.3
+    "@adaliszk/eslint-config-typescript": ^8.31.1
     "@types/node": ^18.11
     ts-node: ^10.9
     tslib: ^2.4
+  peerDependencies:
     typescript: ^4.9
   languageName: unknown
   linkType: soft
@@ -138,7 +143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/changelog-git@npm:^0.1.14":
+"@changesets/changelog-git@npm:^0.1, @changesets/changelog-git@npm:^0.1.14":
   version: 0.1.14
   resolution: "@changesets/changelog-git@npm:0.1.14"
   dependencies:
@@ -732,7 +737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.3":
+"@swc/core@npm:latest":
   version: 1.3.24
   resolution: "@swc/core@npm:1.3.24"
   dependencies:
@@ -773,7 +778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testdeck/core@npm:^0.3.3":
+"@testdeck/core@npm:^0.3, @testdeck/core@npm:^0.3.3":
   version: 0.3.3
   resolution: "@testdeck/core@npm:0.3.3"
   checksum: c275df1c731b21b81fc43d64b0d3f3e11cde1d8b2012789a1bd83c823138cb8dc1781e9229b8cd22d688b46c398a9eb8e8f2ede3b780ad39caf7275fab94cb39
@@ -2342,7 +2347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.31":
+"eslint@npm:^8.31, eslint@npm:latest":
   version: 8.31.0
   resolution: "eslint@npm:8.31.0"
   dependencies:
@@ -5207,7 +5212,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9":
+"typescript@npm:^4.9, typescript@npm:latest":
   version: 4.9.4
   resolution: "typescript@npm:4.9.4"
   bin:
@@ -5217,7 +5222,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.9#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9#~builtin<compat/typescript>, typescript@patch:typescript@latest#~builtin<compat/typescript>":
   version: 4.9.4
   resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
   bin:

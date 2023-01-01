@@ -12,7 +12,8 @@
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "release": "turbo run build lint test && changeset version && changeset publish",
+    "propose": "turbo run build lint test && changeset version",
+    "release": "turbo run build lint test && changeset publish",
     "changeset": "changeset",
     "turbo": "turbo",
     "workspace": "yarn workspace"
@@ -24,6 +25,7 @@
     "stacks/*"
   ],
   "devDependencies": {
+    "@changesets/changelog-git": "^0.1",
     "@changesets/cli": "^2.26",
     "turbo": "^1.6"
   },
