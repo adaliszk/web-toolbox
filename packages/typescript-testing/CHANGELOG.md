@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.2
+
+### Patch Changes
+
+- e1d2b70: Fix documentation
+
 ## 4.9.1
 
 ### Patch Changes
