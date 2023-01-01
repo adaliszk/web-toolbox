@@ -20,9 +20,9 @@
   },
   "workspaces": [
     "configs/*",
+    "helpers/*",
     "packages/*",
-    "specifications/*",
-    "stacks/*"
+    "packs/*"
   ],
   "devDependencies": {
     "@changesets/changelog-git": "^0.1",
