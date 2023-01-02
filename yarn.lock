@@ -13,9 +13,9 @@ __metadata:
     "@typescript-eslint/parser": ^5.47
     eslint: ^8.31
     eslint-config-standard: ^17.0
-    eslint-plugin-import: ^2.26
-    eslint-plugin-n: ^15.6
-    eslint-plugin-promise: ^6.1
+    eslint-plugin-import: ^2.25
+    eslint-plugin-n: ^15.0
+    eslint-plugin-promise: ^6.0
     typescript: ^4.9
   peerDependencies:
     eslint: ^8.31
@@ -28,7 +28,6 @@ __metadata:
   dependencies:
     "@adaliszk/eslint-config-typescript": ^8.31.1
     eslint: ^8.31
-    typescript: ^4.9
   languageName: unknown
   linkType: soft
 
@@ -2236,7 +2235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.26":
+"eslint-plugin-import@npm:^2.25":
   version: 2.26.0
   resolution: "eslint-plugin-import@npm:2.26.0"
   dependencies:
@@ -2259,7 +2258,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-n@npm:^15.6":
+"eslint-plugin-n@npm:^15.0":
   version: 15.6.0
   resolution: "eslint-plugin-n@npm:15.6.0"
   dependencies:
@@ -2277,7 +2276,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:^6.1":
+"eslint-plugin-promise@npm:^6.0":
   version: 6.1.1
   resolution: "eslint-plugin-promise@npm:6.1.1"
   peerDependencies:
