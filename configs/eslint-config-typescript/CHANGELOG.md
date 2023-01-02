@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.31.2
+
+### Patch Changes
+
+- 21eb6e5: Fix peer dependency version mismatches
+
 ## 8.31.1
 
 ### Patch Changes
