@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-typescript@^8.31.1, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.31.1, @adaliszk/eslint-config-typescript@^8.31.2, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript"
   dependencies:
@@ -26,7 +26,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint@workspace:configs/eslint"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.31.1
+    "@adaliszk/eslint-config-typescript": ^8.31.2
     eslint: ^8.31
   languageName: unknown
   linkType: soft
