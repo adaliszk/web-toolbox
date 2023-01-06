@@ -1,5 +1,11 @@
 # @adaliszk/typescript
 
+## 4.9.2
+
+### Patch Changes
+
+- 9a5fd9c: Update dependency versions
+
 ## 4.9.1
 
 ### Patch Changes
