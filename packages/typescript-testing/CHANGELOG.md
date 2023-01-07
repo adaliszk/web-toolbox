@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.3
+
+### Patch Changes
+
+- fe9600e: Reference updates
+
 ## 4.9.2
 
 ### Patch Changes
