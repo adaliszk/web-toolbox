@@ -1,0 +1,18 @@
+{
+  "version": "0.0.0",
+  "name": "@adaliszk/nestjs-function",
+  "description": "Nest.js preset for building functions",
+  "scripts": {
+    "build": "tsup "
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.2",
+    "@nestjs/core": "^9.2"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "latest",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
+  }
+}
