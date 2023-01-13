@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "@adaliszk/fission",
   "description": "Types for Fission Node.js Functions",
   "repository": "github:adaliszk/node-toolbox",
@@ -20,10 +20,12 @@
   "devDependencies": {
     "@adaliszk/typescript": "latest",
     "@types/express": "latest",
+    "@types/ws": "latest",
     "eslint": "latest",
     "express": "latest",
     "tsup": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "ws": "latest"
   },
   "keywords": [
     "typescript",
