@@ -1,0 +1,28 @@
+{
+  "version": "0.0.0",
+  "name": "@adaliszk/fission",
+  "description": "Types for Fission Node.js Functions",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/fission",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/fission",
+  "license": "BSD-3-Clause",
+  "types": "dist/types.d.ts",
+  "main": "dist/types.js",
+  "files": [
+    "dist",
+    "*.md"
+  ],
+  "scripts": {
+    "build": "tsup source/types.ts --format cjs --minify --dts",
+    "lint": "eslint source/**",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "latest",
+    "@types/express": "latest",
+    "eslint": "latest",
+    "express": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
+  }
+}
