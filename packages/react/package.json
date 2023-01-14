@@ -1,0 +1,40 @@
+{
+  "version": "18.2.0",
+  "name": "@adaliszk/react",
+  "description": "React stack and configuration for Development using Typescript",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/react",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/react",
+  "license": "BSD-3-Clause",
+  "types": "dist/bundle.d.ts",
+  "module": "dist/bundle.mjs",
+  "main": "dist/bundle.js",
+  "files": [
+    "dist",
+    "*.json",
+    "*.md"
+  ],
+  "scripts": {
+    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
+    "lint": "eslint source/**",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "^4.9.3",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [
+    "typescript",
+    "fission",
+    "functions",
+    "types"
+  ]
+}
