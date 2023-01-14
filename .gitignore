@@ -1,6 +1,6 @@
 # IDE and Editors
-.idea/workspace.xml
 .vscode
+.idea
 
 # Distribution
 **/dist
