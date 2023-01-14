@@ -1,0 +1,2 @@
+# @adaliszk/eslint-config-react
+

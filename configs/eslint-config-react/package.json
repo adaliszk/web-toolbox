@@ -1,0 +1,37 @@
+{
+  "version": "18.2.0",
+  "name": "@adaliszk/eslint-config-react",
+  "description": "Configuration for ESLint usage within React Typescript",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/configs/eslint-config-react",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/eslint-config-react",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "echo 'Nothing to build, skipping...' && exit 0",
+    "lint": "eslint ./eslint-config.cjs"
+  },
+  "main": "eslint-config.cjs",
+  "files": [
+    "eslint-config.cjs",
+    "*.md"
+  ],
+  "dependencies": {
+    "@adaliszk/eslint-config-typescript": "^8.31.2",
+    "eslint-plugin-react": "^7.32.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31"
+  },
+  "peerDependencies": {
+    "react": "^18.2"
+  },
+  "keywords": [
+    "eslint",
+    "jslint",
+    "tslint",
+    "lint",
+    "standard",
+    "config",
+    "react"
+  ]
+}
