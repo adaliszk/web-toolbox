@@ -9,11 +9,11 @@ _Types for Node.js Fission Functions_
 
 ### Types
 
-- `FunctionHandler`: Combined type for any function handler export
+- `FunctionHandler<T>`: Combined type for any function handler export
     ```typescript
     import { FunctionHandler } from '@adaliszk/fission'
 
-    export const handler1: FunctionHandler = (context) =>
+    export const handler1: FunctionHandler<string> = (context) =>
     {
         return {
             status: 200,
@@ -21,7 +21,7 @@ _Types for Node.js Fission Functions_
         }
     }
   
-    export const handler2: FunctionHandler = (context, callback) =>
+    export const handler2: FunctionHandler<string> = (context, callback) =>
     {
         callback(200, 'OK')
     }
@@ -33,20 +33,20 @@ _Types for Node.js Fission Functions_
         })
     }
     ```
-- `FunctionCallbackHandler`: Callback-style handler function:
+- `FunctionCallbackHandler<T>`: Callback-style handler function
     ```typescript
     import { FunctionCallbackHandler } from '@adaliszk/fission'
   
-    export const handler: FunctionCallbackHandler = (context, callback) =>
+    export const handler: FunctionCallbackHandler<string> = (context, callback) =>
     {
         callback(200, 'OK')
     } 
     ```
-- `FunctionResponseHandler`: Generic Request-Response handler:
+- `FunctionResponseHandler<T>`: Generic Request-Response handler
     ```typescript
     import { FunctionResponseHandler } from '@adaliszk/fission'
 
-    export const handler: FunctionResponseHandler = (context) =>
+    export const handler: FunctionResponseHandler<string> = (context) =>
     {
         return {
             status: 200,
@@ -54,7 +54,7 @@ _Types for Node.js Fission Functions_
         }
     } 
     ```
-- `FunctionSocketHandler`: Websocket function
+- `FunctionSocketHandler<T>`: Websocket function
     ```typescript
     import { FunctionSocketHandler } from '@adaliszk/fission'
 
