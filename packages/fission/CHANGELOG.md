@@ -1,5 +1,11 @@
 # @adaliszk/fission
 
+## 0.2.1
+
+### Patch Changes
+
+- a97c9f6: Update documentation
+
 ## 0.2.0
 
 ### Minor Changes
