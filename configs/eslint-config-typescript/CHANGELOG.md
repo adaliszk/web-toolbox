@@ -1,10 +1,10 @@
 # @adaliszk/eslint-config-typescript
 
-## 18.2.2
+## 8.31.1
 
 ### Patch Changes
 
-- 6580164: release: add Web and React compilation with Vite
+- 793510f: Reset versions to their correct ones
 
 ## 8.31.2
 

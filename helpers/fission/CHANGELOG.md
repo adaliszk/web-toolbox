@@ -1,5 +1,11 @@
 # @adaliszk/fission
 
+## 0.2.2
+
+### Patch Changes
+
+- 793510f: Reset versions to their correct ones
+
 ## 0.2.1
 
 ### Patch Changes

@@ -1,5 +1,5 @@
 {
-  "version": "18.2.2",
+  "version": "8.31.1",
   "name": "@adaliszk/eslint-config-typescript",
   "description": "Configuration for ESLint usage within Typescript",
   "repository": "github:adaliszk/node-toolbox",

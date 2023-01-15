@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.5
+
+### Patch Changes
+
+- 793510f: Reset versions to their correct ones
+
 ## 4.9.4
 
 ### Patch Changes

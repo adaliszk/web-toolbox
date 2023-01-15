@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 4.9.5
+
+### Patch Changes
+
+- 793510f: Reset versions to their correct ones
+- Updated dependencies [793510f]
+  - @adaliszk/eslint-config-typescript@8.31.1
+
 ## 4.9.4
 
 ### Patch Changes

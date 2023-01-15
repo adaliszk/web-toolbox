@@ -1,5 +1,16 @@
 # @adaliszk/react-compiler
 
+## 0.2.0
+
+### Minor Changes
+
+- 793510f: Reset versions to their correct ones
+
+### Patch Changes
+
+- Updated dependencies [793510f]
+  - @adaliszk/web-compiler@0.2.0
+
 ## 0.1.0
 
 ### Minor Changes

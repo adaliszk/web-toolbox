@@ -1,5 +1,5 @@
 {
-  "version": "4.9.4",
+  "version": "4.9.5",
   "name": "@adaliszk/typescript-testing",
   "description": "Meta-Package for testing Typescript Testing with Jest",
   "repository": "github:adaliszk/node-toolbox",
@@ -26,7 +26,7 @@
     "vitest": "^0.26"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.9.4",
+    "@adaliszk/typescript": "^4.9.5",
     "@swc/core": "latest",
     "eslint": "latest",
     "tsup": "latest",
