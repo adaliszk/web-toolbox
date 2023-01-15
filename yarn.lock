@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-react@workspace:configs/eslint-config-react"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.31.2
+    "@adaliszk/eslint-config-typescript": ^8.31.1
     eslint: ^8.31
     eslint-plugin-react: ^7.32.0
   peerDependencies:
@@ -17,7 +17,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/eslint-config-typescript@^8.31.2, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.31.1, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript"
   dependencies:
@@ -38,7 +38,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint@workspace:packages/eslint"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.31.2
+    "@adaliszk/eslint-config-typescript": ^8.31.1
     eslint: ^8.31
   languageName: unknown
   linkType: soft
@@ -47,7 +47,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/fission@workspace:helpers/fission"
   dependencies:
-    "@adaliszk/typescript": latest
+    "@adaliszk/typescript": ^4.9.5
     "@types/express": latest
     "@types/ws": latest
     eslint: latest
@@ -72,8 +72,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/react-compiler@workspace:configs/react-compiler"
   dependencies:
-    "@adaliszk/typescript": ^4.9.3
-    "@adaliszk/web-compiler": ^0.0.0
+    "@adaliszk/typescript": ^4.9.5
+    "@adaliszk/web-compiler": ^0.2.0
     "@vitejs/plugin-react": ^3.0
     eslint: latest
     tsup: latest
@@ -86,7 +86,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/react@workspace:packages/react"
   dependencies:
-    "@adaliszk/typescript": ^4.9.3
+    "@adaliszk/typescript": ^4.9.5
     "@types/react": ^18
     "@types/react-dom": ^18
     eslint: latest
@@ -101,7 +101,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript-testing@workspace:packages/typescript-testing"
   dependencies:
-    "@adaliszk/typescript": ^4.9.3
+    "@adaliszk/typescript": ^4.9.5
     "@swc/core": latest
     "@testdeck/core": ^0.3
     "@testdeck/vitest": ^0.3
@@ -114,11 +114,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/typescript@^4.9.3, @adaliszk/typescript@workspace:configs/typescript":
+"@adaliszk/typescript@^4.9.5, @adaliszk/typescript@workspace:configs/typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript@workspace:configs/typescript"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.31.2
+    "@adaliszk/eslint-config-typescript": ^8.31.1
     "@types/node": ^18.11
     ts-node: ^10.9
     tslib: ^2.4
@@ -128,26 +128,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/typescript@npm:latest":
-  version: 4.9.3
-  resolution: "@adaliszk/typescript@npm:4.9.3"
-  dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.31.2
-    "@types/node": ^18.11
-    ts-node: ^10.9
-    tslib: ^2.4
-  peerDependencies:
-    eslint: ^8
-    typescript: ^4.9
-  checksum: f85a4da13b6dfc0f20c6c73f87d0ed3a6e8c5b423572f21824ad8abae88f0eff5be676e07febdc55196aa6ef74d3ee71325e820ebc4d89e29557dc1d2d5b7c10
-  languageName: node
-  linkType: hard
-
-"@adaliszk/web-compiler@^0.0.0, @adaliszk/web-compiler@workspace:configs/web-compiler":
+"@adaliszk/web-compiler@^0.2.0, @adaliszk/web-compiler@workspace:configs/web-compiler":
   version: 0.0.0-use.local
   resolution: "@adaliszk/web-compiler@workspace:configs/web-compiler"
   dependencies:
-    "@adaliszk/typescript": ^4.9.3
+    "@adaliszk/typescript": ^4.9.5
     "@originjs/vite-plugin-federation": ^1.1
     eslint: latest
     tsup: latest
