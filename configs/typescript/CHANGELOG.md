@@ -1,5 +1,12 @@
 # @adaliszk/typescript
 
+## 4.9.4
+
+### Patch Changes
+
+- Updated dependencies [6580164]
+  - @adaliszk/eslint-config-typescript@18.2.2
+
 ## 4.9.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.4
+
+### Patch Changes
+
+- 6580164: release: add Web and React compilation with Vite
+
 ## 4.9.3
 
 ### Patch Changes

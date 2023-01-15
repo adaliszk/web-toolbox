@@ -1,5 +1,12 @@
 # @adaliszk/eslint
 
+## 18.2.2
+
+### Patch Changes
+
+- Updated dependencies [6580164]
+  - @adaliszk/eslint-config-typescript@18.2.2
+
 ## 8.31.2
 
 ### Patch Changes
