@@ -2,18 +2,27 @@
   "$schema" : "https://unpkg.com/@changesets/config@2.3.0/schema.json",
   "changelog" : "@changesets/changelog-git",
   "commit" : true,
-  "fixed" : [
-    [
-      "@adaliszk/eslint",
-      "@adaliszk/eslint-config-typescript"
-    ]
-  ],
-  "linked" : [],
   "access" : "public",
   "baseBranch" : "release",
   "updateInternalDependencies" : "patch",
   "ignore" : [],
   "snapshot" : {
     "useCalculatedVersion" : true
-  }
+  },
+  "fixed" : [],
+  "linked" : [
+    [
+      "@adaliszk/eslint",
+      "@adaliszk/eslint-config-typescript",
+      "@adaliszk/eslint-config-react"
+    ],
+    [
+      "@adaliszk/web-compiler",
+      "@adaliszk/react-compiler"
+    ],
+    [
+      "@adaliszk/typescript",
+      "@adaliszk/typescript-testing"
+    ]
+  ]
 }
