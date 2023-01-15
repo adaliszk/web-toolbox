@@ -2,6 +2,7 @@
   "extends": "@adaliszk/typescript",
   "compilerOptions": {
     "sourceRoot": "source",
+    "jsx": "react",
     "baseUrl": "source",
     "outDir": "dist"
   },
