@@ -1,0 +1,38 @@
+{
+  "version": "0.0.0",
+  "name": "@adaliszk/react-compiler",
+  "description": "React configuration for Vite using Typescript",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
+  "license": "BSD-3-Clause",
+  "types": "dist/compiler.d.ts",
+  "module": "dist/compiler.mjs",
+  "main": "dist/compiler.js",
+  "files": [
+    "dist",
+    "*.md"
+  ],
+  "scripts": {
+    "build": "tsup source/compiler.ts --format cjs,esm --minify --sourcemap --dts",
+    "lint": "eslint source/**",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "@adaliszk/web-compiler": "^0.0.0",
+    "@vitejs/plugin-react": "^3.0",
+    "vite": "^4.0"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "^4.9.3",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "vite",
+    "compiler"
+  ]
+}
