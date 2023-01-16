@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.3.0
+
+### Minor Changes
+
+- 0cca5e4: feat: adding Post CSS plugins
+
 ## 0.2.0
 
 ### Minor Changes

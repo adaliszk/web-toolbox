@@ -1,5 +1,12 @@
 # @adaliszk/react-compiler
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies [0cca5e4]
+  - @adaliszk/web-compiler@0.3.0
+
 ## 0.2.0
 
 ### Minor Changes
