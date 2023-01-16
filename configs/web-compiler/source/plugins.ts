@@ -1,13 +1,20 @@
-import check from 'vite-plugin-checker'
-import tspath from 'vite-tsconfig-paths'
-import compress from 'vite-plugin-compression2'
-import mkcert from 'vite-plugin-mkcert'
-import { VitePWA as pwagen } from 'vite-plugin-pwa'
+import lint from 'vite-plugin-checker'
+import resolveTypescriptPaths from 'vite-tsconfig-paths'
+import compressAssets from 'vite-plugin-compression2'
+import generateCertificate from 'vite-plugin-mkcert'
+import { VitePWA as generateWebAppManifest } from 'vite-plugin-pwa'
+import minifyTemplateLiterals from 'rollup-plugin-html-literals'
+import cssUnwrapNesting from 'postcss-nested'
+import cssSimplifyCalc from 'postcss-calc'
+
 
 export {
-    tspath,
-    check,
-    compress,
-    mkcert,
-    pwagen,
+    resolveTypescriptPaths,
+    lint,
+    compressAssets,
+    minifyTemplateLiterals,
+    generateCertificate,
+    generateWebAppManifest,
+    cssUnwrapNesting,
+    cssSimplifyCalc,
 }

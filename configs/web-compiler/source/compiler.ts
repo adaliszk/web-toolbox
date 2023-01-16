@@ -1,10 +1,11 @@
-import { defineConfig, UserConfigExport, UserConfig } from 'vite'
+import { defineConfig } from 'vite'
+import { UserConfigExport, WebConfig } from './types'
 import * as plugin from './plugins'
 
 export * from 'vite'
 
 // noinspection JSUnusedGlobalSymbols
-export function webConfig (config?: UserConfig): UserConfigExport
+export function webConfig (config?: WebConfig): UserConfigExport
 {
     const customConfig = config ?? {}
 
@@ -16,13 +17,22 @@ export function webConfig (config?: UserConfig): UserConfigExport
                 protocol: 'wss'
             }
         },
+        css: {
+            postcss: {
+                plugins: [
+                    plugin.cssUnwrapNesting,
+                    plugin.cssSimplifyCalc,
+                ]
+            }
+        },
         plugins: [
-            plugin.tspath(),
+            plugin.resolveTypescriptPaths(),
             ...(customConfig?.plugins ?? []),
-            plugin.check({}),
-            plugin.compress(),
-            plugin.mkcert(),
-            plugin.pwagen(),
+            plugin.lint({}),
+            plugin.compressAssets(),
+            plugin.minifyTemplateLiterals(),
+            plugin.generateCertificate(),
+            plugin.generateWebAppManifest(),
         ],
     })
 }
