@@ -1,13 +1,7 @@
-# @adaliszk/react
+# @adaliszk/nestjs
 
-## 18.2.2
-
-### Patch Changes
-
-- 793510f: Reset versions to their correct ones
-
-## 18.2.1
+## 9.2.1
 
 ### Patch Changes
 
-- fde937c: release(react): publish react development bundle
+- a82d348: release(nestjs): add POC bundle
