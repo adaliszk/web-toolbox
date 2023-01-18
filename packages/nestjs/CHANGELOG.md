@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 9.2.3
+
+### Patch Changes
+
+- eb77590: Adding Winston Logger module generator with a mixed console and file output
+
 ## 9.2.2
 
 ### Patch Changes
