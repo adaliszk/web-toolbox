@@ -21,6 +21,8 @@ export {
     Winston,
 }
 
+export * from './logging'
+
 // Export for tsconfig
 // noinspection JSUnusedGlobalSymbols
 export default tsconfig

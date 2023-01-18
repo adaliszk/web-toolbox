@@ -80,6 +80,7 @@ __metadata:
     eslint: latest
     helmet: ^6.0.1
     nest-commander: ^3.4.0
+    nest-winston: ^1.8.0
     redis: ^4.5.1
     reflect-metadata: ^0.1.13
     rxjs: ^7.8.0
@@ -5424,7 +5425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-safe-stringify@npm:2.1.1":
+"fast-safe-stringify@npm:2.1.1, fast-safe-stringify@npm:^2.1.1":
   version: 2.1.1
   resolution: "fast-safe-stringify@npm:2.1.1"
   checksum: a851cbddc451745662f8f00ddb622d6766f9bd97642dabfd9a405fb0d646d69fc0b9a1243cbf67f5f18a39f40f6fa821737651ff1bceeba06c9992ca2dc5bd3d
@@ -7427,6 +7428,18 @@ __metadata:
     "@nestjs/core": ^8.0.0 || ^9.0.0
     "@types/inquirer": ^8.1.3
   checksum: 481021c6a6cf5da1acd81bef1b4395a0d149ff0dc86c81d2560cd60cbaf1bb3d3dd961ffc858e1991a5215bd3abee66374ab8ad721ea5483dd2fe2cc40fbcbbc
+  languageName: node
+  linkType: hard
+
+"nest-winston@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "nest-winston@npm:1.8.0"
+  dependencies:
+    fast-safe-stringify: ^2.1.1
+  peerDependencies:
+    "@nestjs/common": ^5.0.0 || ^6.6.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+    winston: ^3.0.0
+  checksum: 7837eea05d68af3b4b6b6a1771adbf915086f4b6dff03c0131be1b0800b562e6fde7ef580a5e626f5a3ab92996845889230ac037432fe1d0e14a61da93668314
   languageName: node
   linkType: hard
 
