@@ -1,6 +1,7 @@
 {
   "extends": "@adaliszk/typescript",
   "compilerOptions": {
+    "noImplicitAny": false,
     "emitDecoratorMetadata": true,
     "removeComments": true,
     "skipLibCheck": true,

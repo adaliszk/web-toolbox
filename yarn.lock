@@ -78,10 +78,9 @@ __metadata:
     class-transformer: ^0.5.1
     class-validator: ^0.14.0
     eslint: latest
-    helmet: ^6.0.1
     nest-commander: ^3.4.0
     nest-winston: ^1.8.0
-    redis: ^4.5.1
+    redis: ^3.1.2
     reflect-metadata: ^0.1.13
     rxjs: ^7.8.0
     tsup: latest
@@ -4417,6 +4416,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"denque@npm:^1.5.0":
+  version: 1.5.1
+  resolution: "denque@npm:1.5.1"
+  checksum: 4375ad19d5cea99f90effa82a8cecdaa10f4eb261fbcd7e47cd753ff2737f037aac8f7f4e031cc77f3966314c491c86a0d3b20c128aeee57f791b4662c45108e
+  languageName: node
+  linkType: hard
+
 "denque@npm:^2.0.1":
   version: 2.1.0
   resolution: "denque@npm:2.1.0"
@@ -5988,13 +5994,6 @@ __metadata:
   bin:
     he: bin/he
   checksum: 3d4d6babccccd79c5c5a3f929a68af33360d6445587d628087f39a965079d84f18ce9c3d3f917ee1e3978916fc833bb8b29377c3b403f919426f91bc6965e7a7
-  languageName: node
-  linkType: hard
-
-"helmet@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "helmet@npm:6.0.1"
-  checksum: 1ca20d0b7888b6208130bbb50d183e68d53bb5fa0caead2106226d6d53216dfc893b4b5c07528304e342884f75d87702003b80884b065cb5dcbc705fb4a6ad52
   languageName: node
   linkType: hard
 
@@ -8317,6 +8316,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"redis-commands@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "redis-commands@npm:1.7.0"
+  checksum: d1ff7fbcb5e54768c77f731f1d49679d2a62c3899522c28addb4e2e5813aea8bcac3f22519d71d330224c3f2937f935dfc3d8dc65e90db0f5fe22dc2c1515aa7
+  languageName: node
+  linkType: hard
+
 "redis-errors@npm:^1.0.0, redis-errors@npm:^1.2.0":
   version: 1.2.0
   resolution: "redis-errors@npm:1.2.0"
@@ -8333,7 +8339,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redis@npm:^4.3.1, redis@npm:^4.5.1":
+"redis@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "redis@npm:3.1.2"
+  dependencies:
+    denque: ^1.5.0
+    redis-commands: ^1.7.0
+    redis-errors: ^1.2.0
+    redis-parser: ^3.0.0
+  checksum: baec42198626b22d2dfc063b6a6f30394daee994c21f380e58ecf91c3edee333c4e32907c30f082fe66d2177695f7b2567902eef399ecb22da3e199ea6363a30
+  languageName: node
+  linkType: hard
+
+"redis@npm:^4.3.1":
   version: 4.5.1
   resolution: "redis@npm:4.5.1"
   dependencies:

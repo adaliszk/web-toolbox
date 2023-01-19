@@ -4,6 +4,7 @@ import Winston from 'winston'
 
 export * from '@nestjs/bull'
 export * as Nest from '@nestjs/core'
+export * from '@nestjs/microservices'
 export * from '@nestjs/common'
 export * from '@nestjs/config'
 export * from '@nestjs/event-emitter'
@@ -21,7 +22,11 @@ export {
     Winston,
 }
 
-export * from './logging'
+export * from './createLogger'
+export * from './createContext'
+export * from './createServer'
+export * from './defineApplication'
+export * from './types'
 
 // Export for tsconfig
 // noinspection JSUnusedGlobalSymbols
