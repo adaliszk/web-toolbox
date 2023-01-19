@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 9.2.4
+
+### Patch Changes
+
+- 6f25d61: Adding boostrap helpers
+
 ## 9.2.3
 
 ### Patch Changes
