@@ -58,6 +58,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@adaliszk/json-api@workspace:helpers/json-api":
+  version: 0.0.0-use.local
+  resolution: "@adaliszk/json-api@workspace:helpers/json-api"
+  dependencies:
+    "@adaliszk/typescript": ^4.9.5
+    "@swc/core": latest
+    eslint: latest
+    tsup: latest
+    typescript: latest
+  languageName: unknown
+  linkType: soft
+
 "@adaliszk/nestjs@workspace:packages/nestjs":
   version: 0.0.0-use.local
   resolution: "@adaliszk/nestjs@workspace:packages/nestjs"

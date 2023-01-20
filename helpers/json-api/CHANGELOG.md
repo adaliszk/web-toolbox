@@ -1,0 +1,1 @@
+# @adaliszk/json-api
