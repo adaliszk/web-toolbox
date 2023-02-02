@@ -24,6 +24,7 @@
     "postcss-calc": "^8.2",
     "postcss-import": "^15.1",
     "postcss-nested": "^6.0",
+    "rollup": "^3.12",
     "rollup-plugin-html-literals": "^1.1",
     "vite": "^4.0",
     "vite-plugin-checker": "^0.5",
@@ -35,7 +36,6 @@
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",
     "eslint": "latest",
-    "rollup": "latest",
     "tsup": "latest",
     "typescript": "latest"
   },

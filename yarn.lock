@@ -182,7 +182,7 @@ __metadata:
     postcss-calc: ^8.2
     postcss-import: ^15.1
     postcss-nested: ^6.0
-    rollup: latest
+    rollup: ^3.12
     rollup-plugin-html-literals: ^1.1
     tsup: latest
     typescript: latest
@@ -8635,7 +8635,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.2.5, rollup@npm:^3.7.0, rollup@npm:^3.7.2, rollup@npm:latest":
+"rollup@npm:^3.12":
+  version: 3.12.1
+  resolution: "rollup@npm:3.12.1"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: b6b3aa4bcc13b1f15c1945201f3837be07b249854ed8a73bd67411ffe56f691b808d5b563246b78ecea4110afdb9e9e6cc7d5a3f82965a5592187dbb10d3671f
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^3.2.5, rollup@npm:^3.7.0, rollup@npm:^3.7.2":
   version: 3.10.0
   resolution: "rollup@npm:3.10.0"
   dependencies:
