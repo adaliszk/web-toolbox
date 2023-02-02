@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.4.0
+
+### Minor Changes
+
+- ca063a0: Fixes #3
+
 ## 0.3.0
 
 ### Minor Changes
