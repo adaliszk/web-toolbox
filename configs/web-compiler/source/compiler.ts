@@ -29,7 +29,6 @@ export function webConfig (config?: WebConfig): UserConfigExport
             ...(customConfig?.plugins ?? []),
             plugin.lint({}),
             plugin.compressAssets(),
-            plugin.minifyTemplateLiterals(),
             plugin.generateCertificate(),
             plugin.generateWebAppManifest(),
         ],
