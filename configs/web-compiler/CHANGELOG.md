@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.4.1
+
+### Patch Changes
+
+- 16a3b3f: release(web-compiler): apply fixes #4 for server attributes
+
 ## 0.4.0
 
 ### Minor Changes
