@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { UserConfigExport, WebConfig } from './types'
+import type { UserConfigExport, WebConfig } from './types'
 import * as plugin from './plugins'
 
 export * from 'vite'
@@ -13,9 +13,8 @@ export function webConfig (config?: WebConfig): UserConfigExport
         ...customConfig,
         server: {
             https: true,
-            hmr: {
-                protocol: 'wss'
-            }
+            hmr: { protocol: 'wss' },
+            ...(customConfig?.server ?? {}),
         },
         css: {
             postcss: {
