@@ -2,7 +2,8 @@
   "extends": "@adaliszk/typescript",
   "compilerOptions": {
     "sourceRoot": "source",
-    "jsx": "react",
+    "jsx": "preserve",
+    "jsxImportSource": "react",
     "baseUrl": "source",
     "outDir": "dist"
   },
