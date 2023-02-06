@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.0
+
+### Minor Changes
+
+- 3489768: Update bundled plugins and binaries
+
 ## 0.4.1
 
 ### Patch Changes
