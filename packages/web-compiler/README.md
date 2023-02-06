@@ -11,7 +11,7 @@ Pre-configured Vite with:
 
 ### Usage
 
-1. Install the package `yarn add --dev @adaliszk/web-compiler vite`
+1. Install the package `yarn add --dev @adaliszk/web-compiler`
 2. Configure vite for development and bundling:
     ```typescript
    import { webConfig } from '@adaliszk/web-compiler'
@@ -21,8 +21,8 @@ Pre-configured Vite with:
 3. Add vite commands to your scope:
     ```json
    "scripts": {
-      "build": "vite build",
-      "preview": "vite preview"
-      "start": "vite"
+      "build": "web-compiler build",
+      "preview": "web-compiler preview"
+      "start": "web-compiler"
    }
    ```
