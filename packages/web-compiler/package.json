@@ -9,9 +9,7 @@
   "types": "dist/compiler.d.ts",
   "module": "dist/compiler.mjs",
   "main": "dist/compiler.js",
-  "bin": {
-    "web-compiler": "dist/cli.js"
-  },
+  "bin": "dist/cli.js",
   "files": [
     "dist",
     "*.md"
