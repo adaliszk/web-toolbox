@@ -8,6 +8,7 @@ export * from 'vite'
 export function webConfig (config?: WebConfig): UserConfigExport
 {
     const customConfig = config ?? {}
+    const tsConfig = config?.tsconfig ?? 'tsconfig.json'
 
     return defineConfig({
         ...customConfig,
@@ -25,12 +26,16 @@ export function webConfig (config?: WebConfig): UserConfigExport
             }
         },
         plugins: [
-            plugin.resolveTypescriptPaths(),
+            plugin.resolveTypescriptPaths({
+                projects: [tsConfig]
+            }),
             ...(customConfig?.plugins ?? []),
             plugin.lint({}),
             plugin.compressAssets(),
             plugin.generateCertificate(),
-            plugin.generateWebAppManifest(),
+            plugin.compileTypescriptDefinitions({
+                tsConfigFilePath: tsConfig
+            }),
         ],
     })
 }
