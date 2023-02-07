@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.1
+
+### Patch Changes
+
+- 4ef272a: Fine-tuning configuration
+
 ## 18.3.0
 
 ### Minor Changes
