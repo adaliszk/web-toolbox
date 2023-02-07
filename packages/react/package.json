@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",
+    "@swc/core": "latest",
     "eslint": "^8.31.0",
     "tsup": "latest",
     "typescript": "latest"
