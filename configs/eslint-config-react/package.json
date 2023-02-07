@@ -16,11 +16,11 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/eslint-config-typescript": "^8.31.5",
+    "@adaliszk/eslint-config-typescript": "^8.33.0",
     "eslint-plugin-react": "^7.32.0"
   },
   "devDependencies": {
-    "eslint": "^8.31"
+    "eslint": "^8.33.0"
   },
   "peerDependencies": {
     "react": "^18.2"
