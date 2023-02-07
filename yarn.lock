@@ -117,11 +117,12 @@ __metadata:
   dependencies:
     "@adaliszk/typescript": ^4.9.5
     "@adaliszk/web-compiler": ^0.5.0
-    "@vitejs/plugin-react": ^3.0
+    "@swc/core": latest
+    "@vitejs/plugin-react": ^3.1
     eslint: latest
     tsup: latest
     typescript: latest
-    vite: ^4.0
+    vite: ^4.1
   languageName: unknown
   linkType: soft
 
@@ -132,6 +133,7 @@ __metadata:
     "@adaliszk/eslint-config-react": ^18.2.3
     "@adaliszk/eslint-config-typescript": ^8.31.5
     "@adaliszk/typescript": ^4.9.5
+    "@swc/core": latest
     "@types/react": ^18
     "@types/react-dom": ^18
     eslint: ^8.31.0
@@ -224,7 +226,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.20.7":
+"@babel/core@npm:^7.20.12":
   version: 7.20.12
   resolution: "@babel/core@npm:7.20.12"
   dependencies:
@@ -2144,18 +2146,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:^3.0":
-  version: 3.0.1
-  resolution: "@vitejs/plugin-react@npm:3.0.1"
+"@vitejs/plugin-react@npm:^3.1":
+  version: 3.1.0
+  resolution: "@vitejs/plugin-react@npm:3.1.0"
   dependencies:
-    "@babel/core": ^7.20.7
+    "@babel/core": ^7.20.12
     "@babel/plugin-transform-react-jsx-self": ^7.18.6
     "@babel/plugin-transform-react-jsx-source": ^7.19.6
     magic-string: ^0.27.0
     react-refresh: ^0.14.0
   peerDependencies:
-    vite: ^4.0.0
-  checksum: fde9dd4d3a3387d3a93ea164f58b71a40786842d66b072e75b10ef3c1c1f30cbe545367c4adb980d15f310a70c3ca24f8bf36ea5e896d0fcae0adc926172ca58
+    vite: ^4.1.0-beta.0
+  checksum: 450fac79e67cba9e1581c860f78e687b44108ab4117663ef20db279316e03cd8e87f94fef376e27cc5e200bd52813dcc09b70ea570c7c7cc291fcd47eb260fbc
   languageName: node
   linkType: hard
 
@@ -8614,7 +8616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.0.0 || ^4.0.0, vite@npm:^4.0":
+"vite@npm:^3.0.0 || ^4.0.0":
   version: 4.0.4
   resolution: "vite@npm:4.0.4"
   dependencies:
