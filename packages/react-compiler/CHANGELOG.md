@@ -1,5 +1,16 @@
 # @adaliszk/react-compiler
 
+## 0.3.0
+
+### Minor Changes
+
+- d4dddd6: Update React Compilation and Linting
+
+### Patch Changes
+
+- Updated dependencies [d4dddd6]
+  - @adaliszk/web-compiler@0.5.1
+
 ## 0.2.3
 
 ### Patch Changes

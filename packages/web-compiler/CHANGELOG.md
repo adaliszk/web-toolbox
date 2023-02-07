@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.1
+
+### Patch Changes
+
+- d4dddd6: Update React Compilation and Linting
+
 ## 0.5.0
 
 ### Minor Changes

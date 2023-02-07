@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.5.1",
   "name": "@adaliszk/web-compiler",
   "description": "Web configuration for Vite using Typescript",
   "repository": "github:adaliszk/node-toolbox",

@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.0
+
+### Minor Changes
+
+- d4dddd6: Update React Compilation and Linting
+
 ## 18.2.2
 
 ### Patch Changes
