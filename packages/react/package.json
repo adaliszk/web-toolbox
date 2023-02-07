@@ -20,6 +20,8 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
+    "@adaliszk/eslint-config-react": "^18.2.3",
+    "@adaliszk/eslint-config-typescript": "^8.31.5",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "react": "^18.2.0",
@@ -27,7 +29,7 @@
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",
-    "eslint": "latest",
+    "eslint": "^8.31.0",
     "tsup": "latest",
     "typescript": "latest"
   },

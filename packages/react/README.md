@@ -1,22 +1,15 @@
-_Bundle for React-based development using Vite_
+_Facade for React-based development_
 
 ### Provides
 
+- Eslint config for React
 - React and React-DOM facades
 - Vite configuration
 
 ### Usage
 
 1. Install the package `yarn add --dev @adaliszk/react vite`
-2. Configure vite for development and bundling:  
-   `vite.config.ts`
-    ```typescript
-   import { reactConfig } from '@adaliszk/react'
-   
-   export default reactConfig()
-   ```  
-   
-   `tsconfig.json`
+2. Update your `tsconfig.json` to extend from the new config:
    ```json
    {
       "extends": "@adaliszk/react",
@@ -30,3 +23,7 @@ _Bundle for React-based development using Vite_
       ]
    }
    ```
+3. Use facades for quick access to React libraries
+   ```typescript
+   import { React, ReactDOM } from '@adaliszk/react'
+   ```  
