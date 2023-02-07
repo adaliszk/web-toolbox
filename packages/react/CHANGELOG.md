@@ -1,5 +1,13 @@
 # @adaliszk/react
 
+## 18.3.2
+
+### Patch Changes
+
+- 136be34: Forwarding Eslint peer dependency
+- Updated dependencies [136be34]
+  - @adaliszk/eslint-config-react@18.2.4
+
 ## 18.3.1
 
 ### Patch Changes
