@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.33.1
+
+### Patch Changes
+
+- 9afab94: Update typescript linting
+
 ## 8.31.1
 
 ### Patch Changes
