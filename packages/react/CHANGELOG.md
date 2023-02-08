@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.3
+
+### Patch Changes
+
+- 29567f0: Fix distribution
+
 ## 18.3.2
 
 ### Patch Changes
