@@ -9,6 +9,9 @@ module.exports = {
     plugins: [
         'react',
     ],
+    parserOptions: {
+        project: ['./tsconfig.json'],
+    },
     settings: {
         react: { version: 'detect' },
         linkComponents: [
