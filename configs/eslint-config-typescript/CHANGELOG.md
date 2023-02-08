@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.33.2
+
+### Patch Changes
+
+- 2567578: Update rules and dependencies
+
 ## 8.33.1
 
 ### Patch Changes

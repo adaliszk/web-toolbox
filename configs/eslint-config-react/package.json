@@ -1,5 +1,5 @@
 {
-  "version": "18.2.4",
+  "version": "18.2.5",
   "name": "@adaliszk/eslint-config-react",
   "description": "Configuration for ESLint usage within React Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -16,7 +16,7 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/eslint-config-typescript": "^8.33.0",
+    "@adaliszk/eslint-config-typescript": "^8.33.2",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint-plugin-import": "^2.27.5",
