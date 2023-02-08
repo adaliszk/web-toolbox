@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-react@workspace:configs/eslint-config-react"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.33.0
+    "@adaliszk/eslint-config-typescript": ^8.33.2
     "@typescript-eslint/eslint-plugin": ^5.51.0
     "@typescript-eslint/parser": ^5.51.0
     eslint: ^8.33.0
@@ -19,13 +19,13 @@ __metadata:
     eslint-plugin-react: ^7.32.0
     typescript: ^4.9
   peerDependencies:
-    eslint: ^8
+    eslint: ^8.33
     react: ^18.2
     typescript: ^4.9
   languageName: unknown
   linkType: soft
 
-"@adaliszk/eslint-config-typescript@^8.31.1, @adaliszk/eslint-config-typescript@^8.31.5, @adaliszk/eslint-config-typescript@^8.33.0, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.31.1, @adaliszk/eslint-config-typescript@^8.31.5, @adaliszk/eslint-config-typescript@^8.33.0, @adaliszk/eslint-config-typescript@^8.33.2, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript"
   dependencies:
@@ -151,7 +151,8 @@ __metadata:
     tsup: latest
     typescript: latest
   peerDependencies:
-    eslint: ^8
+    eslint: ^8.33
+    typescript: ^4.9
   languageName: unknown
   linkType: soft
 

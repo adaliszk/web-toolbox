@@ -19,6 +19,11 @@
     "lint": "eslint source/**",
     "prepublish": "yarn build"
   },
+  "eslintConfig": {
+    "extends": [
+      "@adaliszk/typescript"
+    ]
+  },
   "dependencies": {
     "@adaliszk/eslint-config-react": "^18.2.4",
     "@adaliszk/eslint-config-typescript": "^8.33.0",
@@ -30,12 +35,13 @@
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",
     "@swc/core": "latest",
-    "eslint": "^8.31.0",
+    "eslint": "latest",
     "tsup": "latest",
     "typescript": "latest"
   },
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^8.33",
+    "typescript": "^4.9"
   },
   "keywords": [
     "typescript",
