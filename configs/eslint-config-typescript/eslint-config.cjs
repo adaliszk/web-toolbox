@@ -31,15 +31,16 @@ ruleMap['indent'] = ['error', 4]
 // Use Allman-style for better readability by separating statements and declarations from the logic body
 ruleMap['brace-style'] = ['error', 'allman']
 ruleMap['function-call-argument-newline'] = ['warn', 'consistent']
+ruleMap['curly'] = ["error", "multi"]
 
 // Be consistent with Curly braces, and once there is too much in one line, then break it to multiline
 ruleMap['object-curly-newline'] = [
     'warn',
     {
-        ObjectPattern: { consistent: true, multiline: true, minProperties: 4 },
-        ObjectExpression: { consistent: true, multiline: true, minProperties: 4 },
-        ImportDeclaration: { consistent: true, minProperties: 6 },
-        ExportDeclaration: { consistent: true, multiline: true, minProperties: 6 },
+        ObjectPattern: { multiline: true, minProperties: 4 },
+        ObjectExpression: { multiline: true, minProperties: 4 },
+        ImportDeclaration: { minProperties: 6 },
+        ExportDeclaration: { multiline: true, minProperties: 6 },
     },
 ]
 

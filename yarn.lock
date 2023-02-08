@@ -5,15 +5,23 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-react@^18.2.3, @adaliszk/eslint-config-react@workspace:configs/eslint-config-react":
+"@adaliszk/eslint-config-react@^18.2.4, @adaliszk/eslint-config-react@workspace:configs/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-react@workspace:configs/eslint-config-react"
   dependencies:
     "@adaliszk/eslint-config-typescript": ^8.33.0
+    "@typescript-eslint/eslint-plugin": ^5.51.0
+    "@typescript-eslint/parser": ^5.51.0
     eslint: ^8.33.0
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-n: ^15.6.1
+    eslint-plugin-promise: ^6.1.1
     eslint-plugin-react: ^7.32.0
+    typescript: ^4.9
   peerDependencies:
+    eslint: ^8
     react: ^18.2
+    typescript: ^4.9
   languageName: unknown
   linkType: soft
 
@@ -31,6 +39,7 @@ __metadata:
     typescript: ^4.9.5
   peerDependencies:
     eslint: ^8.33
+    typescript: ^4.9
   languageName: unknown
   linkType: soft
 
@@ -130,7 +139,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/react@workspace:packages/react"
   dependencies:
-    "@adaliszk/eslint-config-react": ^18.2.3
+    "@adaliszk/eslint-config-react": ^18.2.4
     "@adaliszk/eslint-config-typescript": ^8.33.0
     "@adaliszk/typescript": ^4.9.5
     "@swc/core": latest
@@ -141,6 +150,8 @@ __metadata:
     react-dom: ^18.2.0
     tsup: latest
     typescript: latest
+  peerDependencies:
+    eslint: ^8
   languageName: unknown
   linkType: soft
 
@@ -8307,7 +8318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.5":
+"typescript@npm:^4.9, typescript@npm:^4.9.5":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -8337,7 +8348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=ad5954"
   bin:
