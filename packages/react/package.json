@@ -25,8 +25,8 @@
     ]
   },
   "dependencies": {
-    "@adaliszk/eslint-config-react": "^18.2.4",
-    "@adaliszk/eslint-config-typescript": "^8.33.0",
+    "@adaliszk/eslint-config-react": "^18.2.6",
+    "@adaliszk/eslint-config-typescript": "^8.33.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "react": "^18.2.0",
