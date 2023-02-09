@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.6
+
+### Patch Changes
+
+- 927c62d: Adding default configuration
+
 ## 18.2.5
 
 ### Patch Changes
