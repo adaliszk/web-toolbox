@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.4
+
+### Patch Changes
+
+- a713abd: Sync eslint configs with the latest
+
 ## 18.3.3
 
 ### Patch Changes

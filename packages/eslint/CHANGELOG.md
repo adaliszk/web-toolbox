@@ -1,5 +1,11 @@
 # @adaliszk/eslint
 
+## 8.33.1
+
+### Patch Changes
+
+- a713abd: Sync eslint configs with the latest
+
 ## 8.31.1
 
 ### Patch Changes
