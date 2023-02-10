@@ -1,0 +1,1 @@
+# @adaliszk/eslint-config-qwik

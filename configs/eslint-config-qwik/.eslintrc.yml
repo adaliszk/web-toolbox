@@ -1,0 +1,6 @@
+extends:
+  - ./eslint-config.cjs
+
+rules:
+  dot-notation:
+    - off
