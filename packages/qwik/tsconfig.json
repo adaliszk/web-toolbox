@@ -1,0 +1,12 @@
+{
+  "extends": "@adaliszk/typescript",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "qwik",
+    "baseUrl": "source",
+    "outDir": "dist"
+  },
+  "include": [
+    "source/**/*"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "0.17.0",
+  "name": "@adaliszk/qwik",
+  "description": "Qwik stack and configuration for Development using Typescript",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/qwik",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/qwik",
+  "license": "BSD-3-Clause",
+  "types": "dist/bundle.d.ts",
+  "module": "dist/bundle.mjs",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
+    "lint": "eslint source/**",
+    "prepublish": "yarn build && cp tsconfig.json config"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@adaliszk/qwik"
+    ]
+  },
+  "dependencies": {
+    "@adaliszk/eslint-config-qwik": "^0.17.0",
+    "@builder.io/qwik": "^0.17.5",
+    "@builder.io/qwik-city": "^0.1.0-beta14"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "^4.9.5",
+    "@swc/core": "latest",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest",
+    "undici": "latest"
+  },
+  "peerDependencies": {
+    "eslint": "^8.33",
+    "typescript": "^4.9",
+    "undici": "^5.18"
+  },
+  "keywords": [
+    "typescript",
+    "qwik",
+    "resumable react",
+    "static-content generator",
+    "server-side renderer",
+    "react-like"
+  ],
+  "files": [
+    "dist",
+    "config",
+    "*.json",
+    "*.md"
+  ]
+}

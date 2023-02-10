@@ -4,6 +4,7 @@
 
 # Distribution
 **/dist
+**/config
 **/.env
 .env
 
