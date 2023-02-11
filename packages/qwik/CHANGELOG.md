@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 0.17.2
+
+### Patch Changes
+
+- 5b68087: Fix Qwik TSConfig
+
 ## 0.17.1
 
 ### Patch Changes
