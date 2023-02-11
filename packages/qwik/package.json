@@ -10,9 +10,9 @@
   "module": "dist/bundle.mjs",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
+    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts && cp tsconfig.json config",
     "lint": "eslint source/**",
-    "prepublish": "yarn build && cp tsconfig.json config"
+    "prepublish": "yarn build"
   },
   "eslintConfig": {
     "extends": [

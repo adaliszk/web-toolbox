@@ -1,8 +1,8 @@
 {
   "extends": "@adaliszk/typescript",
   "compilerOptions": {
-    "jsx": "preserve",
-    "jsxImportSource": "qwik",
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
     "baseUrl": "source",
     "outDir": "dist"
   },
