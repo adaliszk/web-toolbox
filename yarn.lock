@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-qwik@^0.17.0, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
+"@adaliszk/eslint-config-qwik@^0.17.1, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik"
   dependencies:
@@ -29,6 +29,7 @@ __metadata:
   resolution: "@adaliszk/eslint-config-react@workspace:configs/eslint-config-react"
   dependencies:
     "@adaliszk/eslint-config-typescript": ^8.33.2
+    "@adaliszk/typescript": ^4.9.5
     "@typescript-eslint/eslint-plugin": ^5.51.0
     "@typescript-eslint/parser": ^5.51.0
     eslint: ^8.33.0
@@ -143,7 +144,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/qwik@workspace:packages/qwik"
   dependencies:
-    "@adaliszk/eslint-config-qwik": ^0.17.0
+    "@adaliszk/eslint-config-qwik": ^0.17.1
     "@adaliszk/typescript": ^4.9.5
     "@builder.io/qwik": ^0.17.5
     "@builder.io/qwik-city": ^0.1.0-beta14

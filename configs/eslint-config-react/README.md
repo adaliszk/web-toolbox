@@ -1,11 +1,20 @@
-_Typescript React ESLint Config_
+_Typescript-based React ESLint Config_
 
-This package contains an eslint configuration that extends my [`@adaliszk/eslint-config-typescript`]() settings and adds
-typescript-based react linting.
+This package contains an eslint configuration that extends
+my [`@adaliszk/eslint-config-typescript`](https://www.npmjs.com/package/@adaliszk/eslint-config-typescript) settings and
+adds typescript-based react linting.
 
 ### Provides
 
 - `eslint-plugin-react`
+
+### Rules
+
+- Always use the shorthand for `React.Fragment`
+- Indent JSX with 4 spaces
+- Allow up to depth of 4 with JSX elements
+- Force self-closing when possible
+- Use braces around JSX and HTML properties
 
 ### Usage
 
