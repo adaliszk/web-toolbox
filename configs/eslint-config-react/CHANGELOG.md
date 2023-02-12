@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.7
+
+### Patch Changes
+
+- a3cf3a2: Update to the latest changes
+
 ## 18.2.6
 
 ### Patch Changes

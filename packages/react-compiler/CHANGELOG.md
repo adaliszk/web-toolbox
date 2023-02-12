@@ -1,5 +1,11 @@
 # @adaliszk/react-compiler
 
+## 0.3.1
+
+### Patch Changes
+
+- a3cf3a2: Update to the latest changes
+
 ## 0.3.0
 
 ### Minor Changes

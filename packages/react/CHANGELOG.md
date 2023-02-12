@@ -1,5 +1,13 @@
 # @adaliszk/react
 
+## 18.3.5
+
+### Patch Changes
+
+- a3cf3a2: Update to the latest changes
+- Updated dependencies [a3cf3a2]
+  - @adaliszk/eslint-config-react@18.2.7
+
 ## 18.3.4
 
 ### Patch Changes

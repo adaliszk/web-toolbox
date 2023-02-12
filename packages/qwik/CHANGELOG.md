@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.17.3
+
+### Patch Changes
+
+- a3cf3a2: Update to the latest changes
+- Updated dependencies [a3cf3a2]
+  - @adaliszk/eslint-config-qwik@0.17.2
+
 ## 0.17.2
 
 ### Patch Changes
