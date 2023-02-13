@@ -4,7 +4,16 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik",
     "baseUrl": "source",
-    "outDir": "dist"
+    "outDir": "dist",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "WebWorker"
+    ],
+    "types": [
+      "node",
+      "vite/client"
+    ]
   },
   "include": [
     "source/**/*"
