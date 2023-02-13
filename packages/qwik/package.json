@@ -22,7 +22,8 @@
   "dependencies": {
     "@adaliszk/eslint-config-qwik": "^0.17.2",
     "@builder.io/qwik": "^0.17.5",
-    "@builder.io/qwik-city": "^0.1.0-beta14"
+    "@builder.io/qwik-city": "^0.1.1",
+    "@types/node": "^18"
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",

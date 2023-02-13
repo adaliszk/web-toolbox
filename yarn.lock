@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-qwik@^0.17.1, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
+"@adaliszk/eslint-config-qwik@^0.17.2, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik"
   dependencies:
@@ -24,7 +24,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/eslint-config-react@^18.2.6, @adaliszk/eslint-config-react@workspace:configs/eslint-config-react":
+"@adaliszk/eslint-config-react@^18.2.7, @adaliszk/eslint-config-react@workspace:configs/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-react@workspace:configs/eslint-config-react"
   dependencies:
@@ -144,11 +144,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/qwik@workspace:packages/qwik"
   dependencies:
-    "@adaliszk/eslint-config-qwik": ^0.17.1
+    "@adaliszk/eslint-config-qwik": ^0.17.2
     "@adaliszk/typescript": ^4.9.5
     "@builder.io/qwik": ^0.17.5
-    "@builder.io/qwik-city": ^0.1.0-beta14
+    "@builder.io/qwik-city": ^0.1.1
     "@swc/core": latest
+    "@types/node": ^18
     eslint: latest
     tsup: latest
     typescript: latest
@@ -179,7 +180,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/react@workspace:packages/react"
   dependencies:
-    "@adaliszk/eslint-config-react": ^18.2.6
+    "@adaliszk/eslint-config-react": ^18.2.7
     "@adaliszk/eslint-config-typescript": ^8.33.2
     "@adaliszk/typescript": ^4.9.5
     "@swc/core": latest
@@ -526,9 +527,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@builder.io/qwik-city@npm:^0.1.0-beta14":
-  version: 0.1.0
-  resolution: "@builder.io/qwik-city@npm:0.1.0"
+"@builder.io/qwik-city@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@builder.io/qwik-city@npm:0.1.1"
   dependencies:
     "@mdx-js/mdx": 2.2.1
     "@types/mdx": 2.0.3
@@ -537,7 +538,7 @@ __metadata:
     zod: ^3.20.2
   peerDependencies:
     "@builder.io/qwik": ">=0.17.0"
-  checksum: 8b14ca784271ef03e3232a1aee1e125bdee2dfceb0f56ff415609ef47dbccccc7b0f59c914d9cb52fcafbe400fd86fde775e5248f221252f4f28cde560962a85
+  checksum: 087d877954332fbbe27c145024ca89f4a4f7d737cc267b5d7faf483889653d32d91630d248ffb5b683b80f7e3b2ae05c9700d2d90363b232ff38363e23a3bf2f
   languageName: node
   linkType: hard
 
@@ -2081,6 +2082,13 @@ __metadata:
   version: 12.20.55
   resolution: "@types/node@npm:12.20.55"
   checksum: e4f86785f4092706e0d3b0edff8dca5a13b45627e4b36700acd8dfe6ad53db71928c8dee914d4276c7fd3b6ccd829aa919811c9eb708a2c8e4c6eb3701178c37
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18":
+  version: 18.13.0
+  resolution: "@types/node@npm:18.13.0"
+  checksum: 4ea10f8802848b01672bce938f678b6774ca2cee0c9774f12275ab064ae07818419c3e2e41d6257ce7ba846d1ea26c63214aa1dfa4166fa3746291752b8c6416
   languageName: node
   linkType: hard
 
