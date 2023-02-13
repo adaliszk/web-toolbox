@@ -157,10 +157,12 @@ __metadata:
     tsup: latest
     typescript: latest
     undici: latest
+    vite: latest
   peerDependencies:
     eslint: ^8.33
     typescript: ^4.9
     undici: ^5.18
+    vite: ^4.1
   languageName: unknown
   linkType: soft
 
@@ -9917,7 +9919,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.1":
+"vite@npm:^4.1, vite@npm:latest":
   version: 4.1.1
   resolution: "vite@npm:4.1.1"
   dependencies:

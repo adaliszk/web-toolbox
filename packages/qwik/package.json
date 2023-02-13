@@ -31,12 +31,14 @@
     "eslint": "latest",
     "tsup": "latest",
     "typescript": "latest",
-    "undici": "latest"
+    "undici": "latest",
+    "vite": "latest"
   },
   "peerDependencies": {
     "eslint": "^8.33",
     "typescript": "^4.9",
-    "undici": "^5.18"
+    "undici": "^5.18",
+    "vite": "^4.1"
   },
   "keywords": [
     "typescript",
