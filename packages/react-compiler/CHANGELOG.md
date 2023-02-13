@@ -1,5 +1,11 @@
 # @adaliszk/react-compiler
 
+## 0.3.2
+
+### Patch Changes
+
+- 354355f: Depend on react for rules with Qwik
+
 ## 0.3.1
 
 ### Patch Changes

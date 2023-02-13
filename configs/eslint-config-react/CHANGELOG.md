@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.8
+
+### Patch Changes
+
+- 354355f: Depend on react for rules with Qwik
+
 ## 18.2.7
 
 ### Patch Changes

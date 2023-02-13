@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.17.4
+
+### Patch Changes
+
+- 354355f: Depend on react for rules with Qwik
+- Updated dependencies [354355f]
+  - @adaliszk/eslint-config-qwik@0.17.3
+
 ## 0.17.3
 
 ### Patch Changes
