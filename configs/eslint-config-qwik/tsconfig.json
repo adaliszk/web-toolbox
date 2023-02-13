@@ -1,0 +1,12 @@
+{
+  "extends": "@adaliszk/typescript",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "baseUrl": "source",
+    "outDir": "dist"
+  },
+  "include": [
+    "eslint-config.cjs"
+  ]
+}

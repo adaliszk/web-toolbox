@@ -3,8 +3,7 @@
  */
 module.exports = {
     extends: [
-        'plugin:react/recommended',
-        '@adaliszk/typescript',
+        '@adaliszk/react',
         'plugin:qwik/recommended',
     ],
     parserOptions: {
