@@ -1,0 +1,40 @@
+{
+  "version": "0.18.0",
+  "name": "@adaliszk/qwik-compiler",
+  "description": "Qwik configuration for Vite Compilation",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
+  "license": "BSD-3-Clause",
+  "types": "dist/compiler.d.ts",
+  "module": "dist/compiler.mjs",
+  "main": "dist/compiler.js",
+  "files": [
+    "dist",
+    "*.md"
+  ],
+  "scripts": {
+    "build": "tsup source/compiler.ts --format cjs,esm --minify --sourcemap --dts",
+    "lint": "eslint source/**",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "@adaliszk/web-compiler": "^0.5.1",
+    "@builder.io/qwik": "^0.18.1",
+    "@builder.io/qwik-city": "^0.2.1",
+    "vite": "^4.1"
+  },
+  "devDependencies": {
+    "@adaliszk/typescript": "^4.9.5",
+    "@swc/core": "latest",
+    "eslint": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [
+    "typescript",
+    "qwik",
+    "vite",
+    "compiler"
+  ]
+}
