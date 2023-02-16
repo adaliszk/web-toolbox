@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.3.5
+
+### Patch Changes
+
+- 703f631: Rebuild distribution
+- Updated dependencies [703f631]
+  - @adaliszk/web-compiler@0.5.4
+
 ## 0.3.4
 
 ### Patch Changes

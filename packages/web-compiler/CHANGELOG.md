@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.4
+
+### Patch Changes
+
+- 703f631: Rebuild distribution
+
 ## 0.5.3
 
 ### Patch Changes

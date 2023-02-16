@@ -1,5 +1,14 @@
 # @adaliszk/react
 
+## 18.3.8
+
+### Patch Changes
+
+- 703f631: Rebuild distribution
+- Updated dependencies [703f631]
+  - @adaliszk/eslint-config-react@18.2.10
+  - @adaliszk/eslint-config-typescript@8.33.4
+
 ## 18.3.7
 
 ### Patch Changes

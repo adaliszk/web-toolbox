@@ -1,5 +1,13 @@
 # @adaliszk/qwik-compiler
 
+## 0.18.5
+
+### Patch Changes
+
+- 703f631: Rebuild distribution
+- Updated dependencies [703f631]
+  - @adaliszk/web-compiler@0.5.4
+
 ## 0.18.4
 
 ### Patch Changes

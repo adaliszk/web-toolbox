@@ -1,5 +1,5 @@
 {
-  "version": "0.18.3",
+  "version": "0.18.4",
   "name": "@adaliszk/eslint-config-qwik",
   "description": "Configuration for ESLint usage within Qwik",
   "repository": "github:adaliszk/node-toolbox",
@@ -16,7 +16,7 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/eslint-config-react": "^18.2.9",
+    "@adaliszk/eslint-config-react": "^18.2.10",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "eslint-plugin-import": "^2.27.5",
@@ -27,7 +27,7 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.9.5",
+    "@adaliszk/typescript": "^4.9.6",
     "eslint": "^8.33.0",
     "typescript": "^4.9"
   },

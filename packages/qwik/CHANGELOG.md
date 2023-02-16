@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.18.4
+
+### Patch Changes
+
+- 703f631: Rebuild distribution
+- Updated dependencies [703f631]
+  - @adaliszk/eslint-config-qwik@0.18.4
+
 ## 0.18.3
 
 ### Patch Changes

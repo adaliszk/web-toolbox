@@ -1,5 +1,5 @@
 {
-  "version": "18.3.7",
+  "version": "18.3.8",
   "name": "@adaliszk/react",
   "description": "React stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -25,15 +25,15 @@
     ]
   },
   "dependencies": {
-    "@adaliszk/eslint-config-react": "^18.2.9",
-    "@adaliszk/eslint-config-typescript": "^8.33.3",
+    "@adaliszk/eslint-config-react": "^18.2.10",
+    "@adaliszk/eslint-config-typescript": "^8.33.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.9.5",
+    "@adaliszk/typescript": "^4.9.6",
     "@swc/core": "latest",
     "eslint": "latest",
     "tsup": "latest",

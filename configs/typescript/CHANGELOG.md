@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 4.9.6
+
+### Patch Changes
+
+- 703f631: Rebuild distribution
+- Updated dependencies [703f631]
+  - @adaliszk/eslint-config-typescript@8.33.4
+
 ## 4.9.5
 
 ### Patch Changes
