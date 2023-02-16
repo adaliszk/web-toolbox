@@ -1,5 +1,13 @@
 # @adaliszk/eslint-config-qwik
 
+## 0.18.3
+
+### Patch Changes
+
+- e34098e: Update export signature
+- Updated dependencies [cb9f458]
+  - @adaliszk/eslint-config-react@18.2.9
+
 ## 0.18.2
 
 ### Patch Changes

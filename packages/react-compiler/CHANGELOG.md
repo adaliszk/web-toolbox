@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.3.4
+
+### Patch Changes
+
+- cb9f458: Update dist files
+- Updated dependencies [cb9f458]
+  - @adaliszk/web-compiler@0.5.3
+
 ## 0.3.3
 
 ### Patch Changes

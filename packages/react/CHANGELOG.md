@@ -1,5 +1,14 @@
 # @adaliszk/react
 
+## 18.3.7
+
+### Patch Changes
+
+- cb9f458: Update dist files
+- Updated dependencies [cb9f458]
+  - @adaliszk/eslint-config-react@18.2.9
+  - @adaliszk/eslint-config-typescript@8.33.3
+
 ## 18.3.6
 
 ### Patch Changes

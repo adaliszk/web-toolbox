@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.33.3
+
+### Patch Changes
+
+- cb9f458: Update dist files
+
 ## 8.33.2
 
 ### Patch Changes

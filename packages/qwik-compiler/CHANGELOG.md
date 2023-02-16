@@ -1,5 +1,13 @@
 # @adaliszk/qwik-compiler
 
+## 0.18.3
+
+### Patch Changes
+
+- e34098e: Update export signature
+- Updated dependencies [cb9f458]
+  - @adaliszk/web-compiler@0.5.3
+
 ## 0.18.2
 
 ### Patch Changes

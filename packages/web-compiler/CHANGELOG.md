@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.3
+
+### Patch Changes
+
+- cb9f458: Update dist files
+
 ## 0.5.2
 
 ### Patch Changes

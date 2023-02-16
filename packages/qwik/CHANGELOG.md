@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.18.3
+
+### Patch Changes
+
+- e34098e: Update export signature
+- Updated dependencies [e34098e]
+  - @adaliszk/eslint-config-qwik@0.18.3
+
 ## 0.18.2
 
 ### Patch Changes
