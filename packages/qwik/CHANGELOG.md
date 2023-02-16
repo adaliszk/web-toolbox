@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.18.2
+
+### Patch Changes
+
+- d517658: Fix missing peer dependency
+- Updated dependencies [d517658]
+  - @adaliszk/eslint-config-qwik@0.18.2
+
 ## 0.18.1
 
 ### Patch Changes
