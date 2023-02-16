@@ -22,6 +22,6 @@ export function qwikConfig (config?: QwikConfig): UserConfigExport
             ...(customConfig?.plugins ?? []),
             customConfig?.city ? plugin.serveQwikCity(cityConfig) : undefined,
             plugin.compileQwik(qwikConfig),
-        ],
+        ].filter(i => i !== undefined),
     })
 }
