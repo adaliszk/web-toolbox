@@ -1,5 +1,11 @@
 # @adaliszk/qwik-compiler
 
+## 0.18.4
+
+### Patch Changes
+
+- 9b25607: Apply compatiblity fix with rollup plugins that search and modify plugins
+
 ## 0.18.3
 
 ### Patch Changes
