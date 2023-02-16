@@ -6,5 +6,5 @@ import type { WebConfig } from '@adaliszk/web-compiler'
 export interface QwikConfig extends WebConfig
 {
     qwik?: QwikVitePluginOptions
-    city?: QwikCityVitePluginOptions
+    city?: QwikCityVitePluginOptions | boolean
 }

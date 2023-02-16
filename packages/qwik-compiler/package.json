@@ -9,12 +9,13 @@
   "types": "dist/compiler.d.ts",
   "module": "dist/compiler.mjs",
   "main": "dist/compiler.js",
+  "bin": "dist/cli.js",
   "files": [
     "dist",
     "*.md"
   ],
   "scripts": {
-    "build": "tsup source/compiler.ts --format cjs,esm --minify --sourcemap --dts",
+    "build": "tsup source/compiler.ts source/cli.ts --format cjs,esm --minify --sourcemap --dts",
     "lint": "eslint source/**",
     "prepublish": "yarn build"
   },
@@ -22,19 +23,21 @@
     "@adaliszk/web-compiler": "^0.5.1",
     "@builder.io/qwik": "^0.18.1",
     "@builder.io/qwik-city": "^0.2.1",
+    "undici": "^5.19",
     "vite": "^4.1"
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",
-    "@swc/core": "latest",
-    "eslint": "latest",
-    "tsup": "latest",
-    "typescript": "latest"
+    "@swc/core": "^1.3",
+    "eslint": "^8.33",
+    "tsup": "^6.6",
+    "typescript": "^4.9"
   },
   "keywords": [
     "typescript",
-    "qwik",
     "vite",
+    "qwik",
+    "web",
     "compiler"
   ]
 }

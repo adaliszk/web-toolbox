@@ -18,6 +18,7 @@
     "turbo": "turbo",
     "workspace": "yarn workspace"
   },
+  "packageManager": "yarn@3.3.1",
   "workspaces": [
     "configs/*",
     "helpers/*",
@@ -27,7 +28,7 @@
   "devDependencies": {
     "@changesets/changelog-git": "^0.1",
     "@changesets/cli": "^2.26",
-    "turbo": "^1.6"
+    "turbo": "^1.7"
   },
   "keywords": [
     "node",
@@ -37,6 +38,5 @@
     "configs",
     "plugins",
     "packs"
-  ],
-  "packageManager": "yarn@3.3.1"
+  ]
 }

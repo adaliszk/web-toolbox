@@ -8,7 +8,7 @@ Pre-configured Vite with:
 
 ### Usage
 
-1. Install the package `yarn add --dev @adaliszk/react-compiler vite`
+1. Install the package `yarn add --dev @adaliszk/react-compiler`
 2. Configure vite for development and bundling:
     ```typescript
    import { reactConfig } from '@adaliszk/react-compiler'
@@ -17,9 +17,11 @@ Pre-configured Vite with:
    ```
 3. Add vite commands to your scope:
     ```json
-   "scripts": {
-      "build": "vite build",
-      "preview": "vite preview"
-      "start": "vite"
+   {
+     "scripts": {
+       "build": "react-compiler build",
+       "preview": "react-compiler preview",
+       "start": "react-compiler"
+     }
    }
    ```

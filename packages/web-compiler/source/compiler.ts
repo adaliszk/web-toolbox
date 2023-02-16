@@ -3,6 +3,8 @@ import type { UserConfigExport, WebConfig } from './types'
 import * as plugin from './plugins'
 
 export * from 'vite'
+export * from './plugins'
+export * from './types'
 
 // noinspection JSUnusedGlobalSymbols
 export function webConfig (config?: WebConfig): UserConfigExport

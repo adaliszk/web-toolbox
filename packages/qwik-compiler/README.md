@@ -4,11 +4,11 @@ _Configuration for Qwik-based project compilation using Vite_
 
 Pre-configured Vite with:
 - `@adaliszk/web-compiler`
-- Qwik
+- Qwik and Qwik-City
 
 ### Usage
 
-1. Install the package `yarn add --dev @adaliszk/qwik-compiler vite`
+1. Install the package `yarn add --dev @adaliszk/qwik-compiler`
 2. Configure vite for development and bundling:
     ```typescript
    import { qwikConfig } from '@adaliszk/qwik-compiler'
@@ -19,12 +19,32 @@ Pre-configured Vite with:
     ```json
    {
     "scripts": {
-      "build": "vite build",
-      "preview": "vite preview",
-      "start": "vite"
+      "build": "qwik-compiler build",
+      "preview": "qwik-compiler preview",
+      "start": "qwik-compiler"
     }
    }
    ```
+
+### Configuration
+
+The `qwikConfig` factory provides a user configuration that extends vite's config, but adds additional properties. With
+this package, the additional properties are:
+
+- `qwik`: Configuration for the `qwikVite` plugin
+- `city`: Configuration for the `qwikCity` plugin, if boolean supplied it can control if the plugin is loaded or not 
+
+Example:
+```typescript
+import { qwikConfig } from '@adaliszk/qwik-compiler'
+   
+export default qwikConfig({
+    city: false,  // Disable City for projects that does not need router
+    qwik: {       // Configure Qwik as usual
+        debug: true,
+    }
+})
+```
 
 ### Versioning
 

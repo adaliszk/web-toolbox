@@ -1,5 +1,5 @@
-import react from '@vitejs/plugin-react'
+import compileReact from '@vitejs/plugin-react'
 
 export {
-    react
+    compileReact
 }
