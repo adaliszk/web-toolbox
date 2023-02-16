@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.2
+
+### Patch Changes
+
+- 063ad12: Export types and add CLI binaries
+
 ## 0.5.1
 
 ### Patch Changes

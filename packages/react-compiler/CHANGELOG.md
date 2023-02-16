@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.3.3
+
+### Patch Changes
+
+- 063ad12: Export types and add CLI binaries
+- Updated dependencies [063ad12]
+  - @adaliszk/web-compiler@0.5.2
+
 ## 0.3.2
 
 ### Patch Changes
