@@ -23,16 +23,16 @@
     "@adaliszk/eslint-config-qwik": "^0.18.4",
     "@builder.io/qwik": "^0.18.1",
     "@builder.io/qwik-city": "^0.2.1",
-    "@types/node": "^18"
+    "@types/node": "^18",
+    "undici": "^5.20"
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.6",
-    "@swc/core": "latest",
-    "eslint": "latest",
-    "tsup": "latest",
-    "typescript": "latest",
-    "undici": "latest",
-    "vite": "latest"
+    "@swc/core": "^1.3",
+    "eslint": "^8.34",
+    "tsup": "^6.6",
+    "typescript": "^4.9",
+    "vite": "^4.1"
   },
   "peerDependencies": {
     "eslint": "^8.33",

@@ -42,10 +42,10 @@
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.5",
-    "@swc/core": "latest",
-    "eslint": "latest",
-    "tsup": "latest",
-    "typescript": "latest"
+    "@swc/core": "^1.3",
+    "eslint": "^8.34",
+    "tsup": "^6.6",
+    "typescript": "^4.9"
   },
   "keywords": [
     "typescript",
