@@ -13,7 +13,7 @@ rules['react/jsx-max-depth'] = ['warn', { max: 4 }]
 rules['react/self-closing-comp'] = ['error', { component: true, html: true }]
 
 // Always wrap the properties into curly braces, but leave the contents of the components as is
-rules['react/jsx-curly-brace-presence'] = ['error', { props: 'never', children: 'never' }]
+rules['react/jsx-curly-brace-presence'] = ['error', { props: 'always', children: 'never' }]
 
 /**
  * Extend react configuration with my Typescript config
