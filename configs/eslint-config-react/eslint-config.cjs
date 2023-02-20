@@ -1,10 +1,12 @@
 const rules = {}
 
-// Use <></> fragments
+// Use shorthand fragments but only when needed
 rules['react/jsx-fragments'] = ['error', 'syntax']
+rules['react/jsx-no-useless-fragment'] = ['warn', { allowExpressions: true }]
 
-// Use 4-spaces for indentation
+// Use 4-spaces for indentation and align properties
 rules['react/jsx-indent'] = ['warn', 4, { indentLogicalExpressions: true }]
+rules['react/jsx-indent-props'] = ['warn', 'first']
 
 // Do not nest too much for each individual template
 rules['react/jsx-max-depth'] = ['warn', { max: 4 }]
@@ -14,6 +16,18 @@ rules['react/self-closing-comp'] = ['error', { component: true, html: true }]
 
 // Always wrap the properties into curly braces, but leave the contents of the components as is
 rules['react/jsx-curly-brace-presence'] = ['error', { props: 'always', children: 'never' }]
+
+// Wrap JSX within a parenthesis for most places
+rules['react/jsx-wrap-multilines'] = [
+    'error',
+    {
+        declaration: 'parens-new-line',
+        assignment: 'parens-new-line',
+        return: 'parens-new-line',
+        arrow: 'parens-new-line',
+        prop: 'parens-new-line',
+    },
+]
 
 /**
  * Extend react configuration with my Typescript config
