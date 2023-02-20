@@ -1,7 +1,7 @@
 const rules = {}
 
 // Use <></> fragments
-rules['react/jsx-fragments'] = ['error', 'element']
+rules['react/jsx-fragments'] = ['error', 'syntax']
 
 // Use 4-spaces for indentation
 rules['react/jsx-indent'] = ['warn', 4, { indentLogicalExpressions: true }]
