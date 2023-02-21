@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.6
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+
 ## 4.9.5
 
 ### Patch Changes

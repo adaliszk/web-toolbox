@@ -1,5 +1,14 @@
 # @adaliszk/react
 
+## 18.3.9
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+- Updated dependencies [81e2574]
+  - @adaliszk/eslint-config-react@18.2.11
+  - @adaliszk/eslint-config-typescript@8.34.1
+
 ## 18.3.8
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 4.9.7
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+- Updated dependencies [81e2574]
+  - @adaliszk/eslint-config-typescript@8.34.1
+
 ## 4.9.6
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.5
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+
 ## 0.5.4
 
 ### Patch Changes

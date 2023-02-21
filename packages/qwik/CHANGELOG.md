@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.18.5
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+- Updated dependencies [81e2574]
+  - @adaliszk/eslint-config-qwik@0.18.5
+
 ## 0.18.4
 
 ### Patch Changes

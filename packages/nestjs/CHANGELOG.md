@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 9.2.5
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+
 ## 9.2.4
 
 ### Patch Changes

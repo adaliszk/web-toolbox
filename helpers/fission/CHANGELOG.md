@@ -1,5 +1,11 @@
 # @adaliszk/fission
 
+## 0.2.3
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+
 ## 0.2.2
 
 ### Patch Changes

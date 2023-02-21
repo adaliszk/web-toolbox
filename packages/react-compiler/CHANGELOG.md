@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.3.6
+
+### Patch Changes
+
+- 81e2574: Update eslint and pin dependencies to minor versions
+- Updated dependencies [81e2574]
+  - @adaliszk/web-compiler@0.5.5
+
 ## 0.3.5
 
 ### Patch Changes
