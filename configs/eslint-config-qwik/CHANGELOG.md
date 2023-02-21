@@ -1,5 +1,13 @@
 # @adaliszk/eslint-config-qwik
 
+## 0.18.6
+
+### Patch Changes
+
+- 0f17907: Update versions
+- Updated dependencies [0f17907]
+  - @adaliszk/eslint-config-react@18.2.13
+
 ## 0.18.5
 
 ### Patch Changes
