@@ -29,6 +29,9 @@ rules['react/jsx-wrap-multilines'] = [
     },
 ]
 
+// Ignore the need for importing React everywhere
+rules['react/react-in-jsx-scope'] = ['off']
+
 /**
  * Extend react configuration with my Typescript config
  */
