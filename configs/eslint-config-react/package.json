@@ -1,5 +1,5 @@
 {
-  "version": "18.2.11",
+  "version": "18.2.12",
   "name": "@adaliszk/eslint-config-react",
   "description": "Configuration for ESLint usage within React Typescript",
   "repository": "github:adaliszk/node-toolbox",

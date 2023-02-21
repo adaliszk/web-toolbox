@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.12
+
+### Patch Changes
+
+- 00a6a2e: Update rules
+
 ## 18.2.11
 
 ### Patch Changes
