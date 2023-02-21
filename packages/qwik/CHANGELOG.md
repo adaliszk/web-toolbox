@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.19.1
+
+### Patch Changes
+
+- 62072c8: Update to version 0.19.0
+- Updated dependencies [62072c8]
+  - @adaliszk/eslint-config-qwik@0.19.1
+
 ## 0.18.5
 
 ### Patch Changes
