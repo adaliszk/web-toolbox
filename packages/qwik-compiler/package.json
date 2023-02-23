@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@adaliszk/web-compiler": "^0.5.5",
-    "@builder.io/qwik": "^0.19.0",
-    "@builder.io/qwik-city": "^0.3.0",
+    "@builder.io/qwik": "^0.19.1",
+    "@builder.io/qwik-city": "^0.4.0",
     "undici": "^5.20",
     "vite": "^4.1"
   },
