@@ -1,5 +1,11 @@
 # @adaliszk/qwik-compiler
 
+## 0.20.1
+
+### Patch Changes
+
+- 31ea48d: Bump Qwik to the latest
+
 ## 0.19.2
 
 ### Patch Changes
