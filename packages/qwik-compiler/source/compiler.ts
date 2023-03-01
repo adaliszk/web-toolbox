@@ -20,8 +20,8 @@ export function qwikConfig (config?: QwikConfig): UserConfigExport
         ...customConfig,
         plugins: [
             ...(customConfig?.plugins ?? []),
-            customConfig?.city ? plugin.serveQwikCity(cityConfig) : undefined,
-            plugin.compileQwik(qwikConfig),
+            customConfig?.city ? plugin.serveQwikCity({ routesDir: 'source/routes', ...cityConfig }) : undefined,
+            plugin.compileQwik({ srcDir: 'source', ...qwikConfig }),
         ].filter(i => i !== undefined),
     })
 }
