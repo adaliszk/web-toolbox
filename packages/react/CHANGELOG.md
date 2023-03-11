@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.10
+
+### Patch Changes
+
+- 919dc66: chore(react): Switching to 18.3 to reflect my versioning
+
 ## 18.3.9
 
 ### Patch Changes
