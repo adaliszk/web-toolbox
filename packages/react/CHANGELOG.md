@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.11
+
+### Patch Changes
+
+- 70ba52b: fix(react): import router and router-dom correctly
+
 ## 18.3.10
 
 ### Patch Changes
