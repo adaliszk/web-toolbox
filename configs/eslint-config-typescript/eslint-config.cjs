@@ -29,9 +29,9 @@ const ruleMap = {}
 ruleMap['indent'] = ['error', 4]
 
 // Use Allman-style for better readability by separating statements and declarations from the logic body
-ruleMap['brace-style'] = ['error', 'allman']
+ruleMap['brace-style'] = ['error', 'allman', { 'allowSingleLine': true }]
 ruleMap['function-call-argument-newline'] = ['warn', 'consistent']
-ruleMap['curly'] = ["error", "multi"]
+ruleMap['curly'] = ['error', 'multi']
 
 // Be consistent with Curly braces, and once there is too much in one line, then break it to multiline
 ruleMap['object-curly-newline'] = [
