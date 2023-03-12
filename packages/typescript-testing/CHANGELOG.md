@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.7
+
+### Patch Changes
+
+- d56299d: Update react and base rules
+
 ## 4.9.6
 
 ### Patch Changes

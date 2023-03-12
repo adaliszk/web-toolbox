@@ -1,5 +1,14 @@
 # @adaliszk/react
 
+## 18.2.12
+
+### Patch Changes
+
+- d56299d: Update react and base rules
+- Updated dependencies [d56299d]
+  - @adaliszk/eslint-config-react@18.2.14
+  - @adaliszk/eslint-config-typescript@8.34.2
+
 ## 18.3.11
 
 ### Patch Changes

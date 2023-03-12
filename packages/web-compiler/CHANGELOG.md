@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.6
+
+### Patch Changes
+
+- d56299d: Update react and base rules
+
 ## 0.5.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.34.2
+
+### Patch Changes
+
+- d56299d: Update react and base rules
+
 ## 8.34.1
 
 ### Patch Changes
