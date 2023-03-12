@@ -1,5 +1,5 @@
 {
-  "version": "0.20.1",
+  "version": "0.21.0",
   "name": "@adaliszk/qwik",
   "description": "Qwik stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -20,8 +20,8 @@
     ]
   },
   "dependencies": {
-    "@adaliszk/eslint-config-qwik": "^0.20.1",
-    "@builder.io/qwik": "^0.20.1",
+    "@adaliszk/eslint-config-qwik": "^0.21.0",
+    "@builder.io/qwik": "^0.21.0",
     "@builder.io/qwik-city": "^0.5.2",
     "@types/node": "^18",
     "undici": "^5.20"

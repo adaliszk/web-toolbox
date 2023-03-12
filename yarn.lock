@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-qwik@^0.20.1, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
+"@adaliszk/eslint-config-qwik@^0.21.0, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik"
   dependencies:
@@ -17,7 +17,7 @@ __metadata:
     eslint-plugin-import: ^2.27.5
     eslint-plugin-n: ^15.6.1
     eslint-plugin-promise: ^6.1.1
-    eslint-plugin-qwik: ^0.20.1
+    eslint-plugin-qwik: ^0.21.0
     eslint-plugin-react: ^7.32.2
     react: ^18.2.0
     typescript: ^4.9
@@ -27,12 +27,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/eslint-config-react@^18.2.11, @adaliszk/eslint-config-react@^18.2.13, @adaliszk/eslint-config-react@workspace:configs/eslint-config-react":
+"@adaliszk/eslint-config-react@^18.2.13, @adaliszk/eslint-config-react@^18.2.14, @adaliszk/eslint-config-react@workspace:configs/eslint-config-react":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-react@workspace:configs/eslint-config-react"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.34.1
-    "@adaliszk/typescript": ^4.9.7
+    "@adaliszk/eslint-config-typescript": ^8.34.2
+    "@adaliszk/typescript": ^4.9.8
     "@typescript-eslint/eslint-plugin": ^5.51.0
     "@typescript-eslint/parser": ^5.51.0
     eslint: ^8.34
@@ -48,7 +48,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/eslint-config-typescript@^8.34.1, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
+"@adaliszk/eslint-config-typescript@^8.34.2, @adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-typescript@workspace:configs/eslint-config-typescript"
   dependencies:
@@ -70,7 +70,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint@workspace:packages/eslint"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.34.1
+    "@adaliszk/eslint-config-typescript": ^8.34.2
     eslint: ^8.34
   languageName: unknown
   linkType: soft
@@ -149,8 +149,8 @@ __metadata:
   dependencies:
     "@adaliszk/typescript": ^4.9.7
     "@adaliszk/web-compiler": ^0.5.5
-    "@builder.io/qwik": ^0.20.1
-    "@builder.io/qwik-city": ^0.5.2
+    "@builder.io/qwik": ^0.21.0
+    "@builder.io/qwik-city": ^0.5.3
     "@swc/core": ^1.3
     eslint: ^8.35
     tsup: ^6.6
@@ -166,9 +166,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/qwik@workspace:packages/qwik"
   dependencies:
-    "@adaliszk/eslint-config-qwik": ^0.20.1
+    "@adaliszk/eslint-config-qwik": ^0.21.0
     "@adaliszk/typescript": ^4.9.7
-    "@builder.io/qwik": ^0.20.1
+    "@builder.io/qwik": ^0.21.0
     "@builder.io/qwik-city": ^0.5.2
     "@swc/core": ^1.3
     "@types/node": ^18
@@ -206,9 +206,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/react@workspace:packages/react"
   dependencies:
-    "@adaliszk/eslint-config-react": ^18.2.11
-    "@adaliszk/eslint-config-typescript": ^8.34.1
-    "@adaliszk/typescript": ^4.9.7
+    "@adaliszk/eslint-config-react": ^18.2.14
+    "@adaliszk/eslint-config-typescript": ^8.34.2
+    "@adaliszk/typescript": ^4.9.8
     "@swc/core": ^1.3
     "@types/react": ^18
     "@types/react-dom": ^18
@@ -229,7 +229,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript-testing@workspace:packages/typescript-testing"
   dependencies:
-    "@adaliszk/typescript": ^4.9.7
+    "@adaliszk/typescript": ^4.9.8
     "@swc/core": ^1.3
     "@testdeck/core": ^0.3
     "@testdeck/vitest": ^0.3
@@ -242,11 +242,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adaliszk/typescript@^4.9.7, @adaliszk/typescript@workspace:configs/typescript":
+"@adaliszk/typescript@^4.9.7, @adaliszk/typescript@^4.9.8, @adaliszk/typescript@workspace:configs/typescript":
   version: 0.0.0-use.local
   resolution: "@adaliszk/typescript@workspace:configs/typescript"
   dependencies:
-    "@adaliszk/eslint-config-typescript": ^8.34.1
+    "@adaliszk/eslint-config-typescript": ^8.34.2
     "@types/node": ^18.11
     ts-node: ^10.9
     tslib: ^2.4
@@ -260,7 +260,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/web-compiler@workspace:packages/web-compiler"
   dependencies:
-    "@adaliszk/typescript": ^4.9.7
+    "@adaliszk/typescript": ^4.9.8
     "@originjs/vite-plugin-federation": ^1.2
     "@swc/core": ^1.3
     eslint: ^8.34
@@ -570,14 +570,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@builder.io/qwik@npm:^0.20.1":
-  version: 0.20.1
-  resolution: "@builder.io/qwik@npm:0.20.1"
+"@builder.io/qwik-city@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "@builder.io/qwik-city@npm:0.5.3"
+  dependencies:
+    "@mdx-js/mdx": 2.3.0
+    "@types/mdx": 2.0.3
+    source-map: 0.7.4
+    vfile: 5.3.7
+    zod: ^3.20.6
+  peerDependencies:
+    "@builder.io/qwik": ">=0.20.0"
+  checksum: acac558b6881b7c66d22cc8e43a484e4729b2662503e69d35c31a4c64b6c18f47c080e74347e4ff3c411bd4c94a8b36723fcebee225e006c1e52ef93bc305509
+  languageName: node
+  linkType: hard
+
+"@builder.io/qwik@npm:^0.21.0":
+  version: 0.21.0
+  resolution: "@builder.io/qwik@npm:0.21.0"
   peerDependencies:
     undici: ^5.14.0
   bin:
     qwik: qwik.cjs
-  checksum: f0d6a2616c7b8bd170f3f9ae671f879ebb4fe95ac2fdcd2bea51e323aa7884558efd2da758a1ccf415d3365363ccc83baef9c0c9489734590b7f5217e54ff182
+  checksum: 8e4ee0f55fd7c3e627cff9f797eb558ed97be48c4f239430597c14547365ae9ad3b728a0883ad3396110a0177909d504eafeede1028c4fcf51e16da178ac3376
   languageName: node
   linkType: hard
 
@@ -4285,12 +4300,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-qwik@npm:^0.20.1":
-  version: 0.20.1
-  resolution: "eslint-plugin-qwik@npm:0.20.1"
+"eslint-plugin-qwik@npm:^0.21.0":
+  version: 0.21.0
+  resolution: "eslint-plugin-qwik@npm:0.21.0"
   peerDependencies:
     eslint: ">= 8"
-  checksum: 2708c2fae342d0599da74c3176b71aa54d7efb79618ac485fdb1f405828b89dffd703358c91d5cd612e3d17ad07b10dbf036a982b10ec96397bf8fc9ff62525e
+  checksum: c810ceda6dd67ae0fd3fc21e5d7cf988e908995cdefb914557268ca86183bdea2e10742d0514dc87be5ad36c8200e3ff14c21f2e4a949aa61ef8284e8b4b40e5
   languageName: node
   linkType: hard
 

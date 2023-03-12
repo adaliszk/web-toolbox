@@ -1,5 +1,5 @@
 {
-  "version": "0.20.1",
+  "version": "0.21.0",
   "name": "@adaliszk/qwik-compiler",
   "description": "Qwik configuration for Vite Compilation",
   "repository": "github:adaliszk/node-toolbox",
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@adaliszk/web-compiler": "^0.5.5",
-    "@builder.io/qwik": "^0.20.1",
-    "@builder.io/qwik-city": "^0.5.2",
+    "@builder.io/qwik": "^0.21.0",
+    "@builder.io/qwik-city": "^0.5.3",
     "undici": "^5.20",
     "vite": "^4.1"
   },
