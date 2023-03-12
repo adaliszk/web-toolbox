@@ -1,5 +1,5 @@
 {
-  "version": "18.3.11",
+  "version": "18.2.11",
   "name": "@adaliszk/react",
   "description": "React stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -29,10 +29,10 @@
     "@adaliszk/eslint-config-typescript": "^8.34.1",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "react": "^18.3.0-next-fecc288b7-20221025",
-    "react-dom": "^18.3.0-next-fecc288b7-20221025",
-    "react-router": "^6.9.0",
-    "react-router-dom": "^6.9.0"
+    "react": "^18.2",
+    "react-dom": "^18.2",
+    "react-router": "^6.9",
+    "react-router-dom": "^6.9"
   },
   "devDependencies": {
     "@adaliszk/typescript": "^4.9.7",
