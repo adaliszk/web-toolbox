@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 9.3.3
+
+### Patch Changes
+
+- aa506ec: Fix adapter and plugin usage
+
 ## 9.3.2
 
 ### Patch Changes
