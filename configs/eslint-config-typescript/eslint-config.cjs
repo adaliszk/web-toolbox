@@ -75,6 +75,9 @@ ruleMap['comma-dangle'] = [
 // And, in general, good to have type definitions
 ruleMap['@typescript-eslint/no-inferrable-types'] = ['off']
 
+// Allow properties to be defined in the constructor without having to define them in the class
+ruleMap['no-useless-constructor'] = ['off']
+
 // endregion
 
 module.exports = {
