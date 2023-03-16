@@ -1,5 +1,13 @@
 # @adaliszk/qwik-compiler
 
+## 0.21.2
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+- Updated dependencies [003f5eb]
+  - @adaliszk/web-compiler@0.5.7
+
 ## 0.21.1
 
 ### Patch Changes

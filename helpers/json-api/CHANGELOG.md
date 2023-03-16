@@ -1,5 +1,11 @@
 # @adaliszk/json-api
 
+## 1.1.3
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+
 ## 1.1.2
 
 ### Patch Changes

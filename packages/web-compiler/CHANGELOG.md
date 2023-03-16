@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.5.7
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+
 ## 0.5.6
 
 ### Patch Changes

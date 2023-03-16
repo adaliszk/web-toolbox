@@ -1,5 +1,13 @@
 # @adaliszk/eslint-config-qwik
 
+## 0.21.2
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+- Updated dependencies [003f5eb]
+  - @adaliszk/eslint-config-react@18.2.15
+
 ## 0.21.1
 
 ### Patch Changes

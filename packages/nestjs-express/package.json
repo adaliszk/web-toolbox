@@ -1,5 +1,5 @@
 {
-  "version": "9.3.0",
+  "version": "9.3.1",
   "name": "@adaliszk/nestjs-express",
   "description": "Nest.js Express driver for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -28,7 +28,7 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.9.7",
+    "@adaliszk/typescript": "^4.9.9",
     "@swc/core": "^1.3",
     "eslint": "^8.34",
     "tsup": "^6.6",

@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.8
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+
 ## 4.9.7
 
 ### Patch Changes

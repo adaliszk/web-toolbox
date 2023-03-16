@@ -1,5 +1,5 @@
 {
-  "version": "0.21.1",
+  "version": "0.21.2",
   "name": "@adaliszk/qwik-compiler",
   "description": "Qwik configuration for Vite Compilation",
   "repository": "github:adaliszk/node-toolbox",
@@ -20,14 +20,14 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@adaliszk/web-compiler": "^0.5.5",
+    "@adaliszk/web-compiler": "^0.5.7",
     "@builder.io/qwik": "^0.21.0",
     "@builder.io/qwik-city": "^0.5.3",
     "undici": "^5.20",
     "vite": "^4.1"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.9.7",
+    "@adaliszk/typescript": "^4.9.9",
     "@swc/core": "^1.3",
     "eslint": "^8.35",
     "tsup": "^6.6",

@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 4.9.9
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+- Updated dependencies [003f5eb]
+  - @adaliszk/eslint-config-typescript@8.34.3
+
 ## 4.9.8
 
 ### Patch Changes

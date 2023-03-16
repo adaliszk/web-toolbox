@@ -1,5 +1,11 @@
 # @adaliszk/fission
 
+## 0.2.4
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+
 ## 0.2.3
 
 ### Patch Changes

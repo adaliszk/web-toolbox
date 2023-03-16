@@ -1,5 +1,14 @@
 # @adaliszk/react
 
+## 18.2.13
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+- Updated dependencies [003f5eb]
+  - @adaliszk/eslint-config-react@18.2.15
+  - @adaliszk/eslint-config-typescript@8.34.3
+
 ## 18.2.12
 
 ### Patch Changes

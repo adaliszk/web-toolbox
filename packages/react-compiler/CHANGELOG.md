@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.3.7
+
+### Patch Changes
+
+- 003f5eb: Update eslint rules
+- Updated dependencies [003f5eb]
+  - @adaliszk/web-compiler@0.5.7
+
 ## 0.3.6
 
 ### Patch Changes
