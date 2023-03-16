@@ -1,16 +1,22 @@
-import { INestApplication, ModuleMetadata } from '@nestjs/common'
+import { ModuleMetadata, ExceptionFilter, NestInterceptor, PipeTransform, CanActivate } from '@nestjs/common'
+import { AbstractHttpAdapter } from '@nestjs/core'
 import { MicroserviceOptions } from '@nestjs/microservices'
 import { WinstonLogLevel } from './createLogger'
 
+
 export interface AppConfig extends ModuleMetadata
 {
-    adapter?: INestApplication
+    adapter?: AbstractHttpAdapter
     service?: MicroserviceOptions
     port?: number
     logger?: {
         level: WinstonLogLevel
         file: string
     }
+    globalFilters?: ExceptionFilter[]
+    globalInterceptors?: NestInterceptor[]
+    globalPipes?: PipeTransform<unknown>[]
+    globalGuards?: CanActivate[]
     redis?: {
         host: string
         port?: number

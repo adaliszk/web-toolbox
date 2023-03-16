@@ -59,4 +59,8 @@ export async function defineApplication (config?: AppConfig)
 export async function configureApplication (app: INestApplication | INestMicroservice, config?: AppConfig)
 {
     app.useGlobalPipes(new ValidationPipe())
+    app.useGlobalPipes(...(config?.globalPipes ?? []))
+    app.useGlobalFilters(...(config?.globalFilters ?? []))
+    app.useGlobalInterceptors(...(config?.globalInterceptors ?? []))
+    app.useGlobalGuards(...(config?.globalGuards ?? []))
 }
