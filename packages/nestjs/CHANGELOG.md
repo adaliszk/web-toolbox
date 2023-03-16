@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 9.3.1
+
+### Patch Changes
+
+- 34841fc: Remove autmatic listener and allow users to listen
+
 ## 9.2.5
 
 ### Patch Changes
