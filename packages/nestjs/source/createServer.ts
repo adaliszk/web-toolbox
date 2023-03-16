@@ -9,8 +9,11 @@ export async function createServer<T extends INestApplication> (config?: AppConf
 {
     const app = await defineApplication(config)
     const logger = await createLogger(config?.logger?.level ?? 'info', config?.logger?.file ?? '/tmp/server.log')
-    const server = await NestFactory.create<T>(app, { logger, ...(config?.adapter ?? {}) })
-    await configureApplication(server, config)
 
+    let server
+    if (config?.adapter) server = await NestFactory.create<T>(app, config.adapter, { logger })
+    else server = await NestFactory.create<T>(app, { logger })
+
+    await configureApplication(server, config)
     return server
 }
