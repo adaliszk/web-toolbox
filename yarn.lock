@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adaliszk/eslint-config-qwik@^0.21.0, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
+"@adaliszk/eslint-config-qwik@^0.21.1, @adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik":
   version: 0.0.0-use.local
   resolution: "@adaliszk/eslint-config-qwik@workspace:configs/eslint-config-qwik"
   dependencies:
@@ -108,11 +108,11 @@ __metadata:
   dependencies:
     "@adaliszk/typescript": ^4.9.7
     "@nestjs/bull": ^0.6.2
-    "@nestjs/common": ^9.2.1
+    "@nestjs/common": ^9.3
     "@nestjs/config": ^2.2.0
-    "@nestjs/core": ^9.2.1
+    "@nestjs/core": ^9.3
     "@nestjs/event-emitter": ^1.3.1
-    "@nestjs/microservices": ^9.2.1
+    "@nestjs/microservices": ^9.3
     "@swc/core": ^1.3
     "@types/inquirer": ^8.2.5
     body-parser: ^1.20.1
@@ -166,7 +166,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@adaliszk/qwik@workspace:packages/qwik"
   dependencies:
-    "@adaliszk/eslint-config-qwik": ^0.21.0
+    "@adaliszk/eslint-config-qwik": ^0.21.1
     "@adaliszk/typescript": ^4.9.7
     "@builder.io/qwik": ^0.21.0
     "@builder.io/qwik-city": ^0.5.2
@@ -1318,6 +1318,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lukeed/csprng@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@lukeed/csprng@npm:1.0.1"
+  checksum: fd84d6832775052d6bff3e78b0bc7f4b29b2fafa71b04826b0713f55d9a447a0b273d4eb70d02d89bb879e9d768cd9716da818dafa32ba6f7ecb639cbdc6806d
+  languageName: node
+  linkType: hard
+
 "@manypkg/find-root@npm:^1.1.0":
   version: 1.1.0
   resolution: "@manypkg/find-root@npm:1.1.0"
@@ -1489,13 +1496,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:^9.2.1":
-  version: 9.2.1
-  resolution: "@nestjs/common@npm:9.2.1"
+"@nestjs/common@npm:^9.3":
+  version: 9.3.10
+  resolution: "@nestjs/common@npm:9.3.10"
   dependencies:
     iterare: 1.2.1
-    tslib: 2.4.1
-    uuid: 9.0.0
+    tslib: 2.5.0
+    uid: 2.0.1
   peerDependencies:
     cache-manager: <=5
     class-transformer: "*"
@@ -1509,7 +1516,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 82acae70df519f1f217f5b11354c29e1f3b9e5ddd5f73385bd76705c235507230bb19c6c0eb696938565ce70c33cecb487d539c829d1c8d39121fcf3468b4d55
+  checksum: 5dc840a40ee02bf19abff2bf565910d55585e0bb9a9fa5be8d036323df943b951b6f2213f57758a11bb2291936f48d8c24f045d4f5abce4672cc1cf08e0509b5
   languageName: node
   linkType: hard
 
@@ -1529,17 +1536,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:^9.2.1":
-  version: 9.2.1
-  resolution: "@nestjs/core@npm:9.2.1"
+"@nestjs/core@npm:^9.3":
+  version: 9.3.10
+  resolution: "@nestjs/core@npm:9.3.10"
   dependencies:
     "@nuxtjs/opencollective": 0.3.2
     fast-safe-stringify: 2.1.1
     iterare: 1.2.1
-    object-hash: 3.0.0
     path-to-regexp: 3.2.0
-    tslib: 2.4.1
-    uuid: 9.0.0
+    tslib: 2.5.0
+    uid: 2.0.1
   peerDependencies:
     "@nestjs/common": ^9.0.0
     "@nestjs/microservices": ^9.0.0
@@ -1554,7 +1560,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 006edefb175840f7706e3ae755dfd984e112d40fe3ce26bd75ee019652c38b5225c751617efaf6054b07ddb1f7e044f49015520889f0003aa9aab33111d59172
+  checksum: 3fd4015e463733d20c9e1e95ebd3ccd4f7d5b7644112a898d8c17802b731a41b0c37a9d248c70d22ac599fa3d6491cc3b4eb1fa22f0f6c8983c91519f57f9759
   languageName: node
   linkType: hard
 
@@ -1571,12 +1577,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/microservices@npm:^9.2.1":
-  version: 9.2.1
-  resolution: "@nestjs/microservices@npm:9.2.1"
+"@nestjs/microservices@npm:^9.3":
+  version: 9.3.10
+  resolution: "@nestjs/microservices@npm:9.3.10"
   dependencies:
     iterare: 1.2.1
-    tslib: 2.4.1
+    tslib: 2.5.0
   peerDependencies:
     "@grpc/grpc-js": "*"
     "@nestjs/common": ^9.0.0
@@ -1610,7 +1616,7 @@ __metadata:
       optional: true
     nats:
       optional: true
-  checksum: 9f04867bcb1a968bbe8516defdd91540fa2461992588e4bbda3734c546d49a3be64eb57ede8b50591d1e29fae2fbd7b4544dc29422abd5fb3be34628cf71d58f
+  checksum: 75ce01fbebd90d90ec2f130d198c044be2192be7c9ac2fa2ef2d6a444d8c17dc859e80938ebcbf41e0f74d92a5220e8062ebe4d7e2d1ad82c94b8390a8fd4713
   languageName: node
   linkType: hard
 
@@ -7384,13 +7390,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-hash@npm:3.0.0":
-  version: 3.0.0
-  resolution: "object-hash@npm:3.0.0"
-  checksum: 80b4904bb3857c52cc1bfd0b52c0352532ca12ed3b8a6ff06a90cd209dfda1b95cee059a7625eb9da29537027f68ac4619363491eedb2f5d3dddbba97494fd6c
-  languageName: node
-  linkType: hard
-
 "object-inspect@npm:^1.12.2, object-inspect@npm:^1.9.0":
   version: 1.12.3
   resolution: "object-inspect@npm:1.12.3"
@@ -9298,6 +9297,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.5.0":
+  version: 2.5.0
+  resolution: "tslib@npm:2.5.0"
+  checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -9559,6 +9565,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uid@npm:2.0.1":
+  version: 2.0.1
+  resolution: "uid@npm:2.0.1"
+  dependencies:
+    "@lukeed/csprng": ^1.0.0
+  checksum: 0a3c697d8dd1f3b647afa35c411b11fd8fa2fb6dbd8a49fe109a4aa5214068c2c58781aa6e4516dfd16f0fc524fb7bba0833e9c1dc1ed3f1965b520349be9ad5
+  languageName: node
+  linkType: hard
+
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
   resolution: "unbox-primitive@npm:1.0.2"
@@ -9756,15 +9771,6 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
-  languageName: node
-  linkType: hard
-
-"uuid@npm:9.0.0":
-  version: 9.0.0
-  resolution: "uuid@npm:9.0.0"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 8dd2c83c43ddc7e1c71e36b60aea40030a6505139af6bee0f382ebcd1a56f6cd3028f7f06ffb07f8cf6ced320b76aea275284b224b002b289f89fe89c389b028
   languageName: node
   linkType: hard
 

@@ -14,6 +14,5 @@ export async function createMicroservice (config?: AppConfig)
         logger,
     })
     await configureApplication(server, config)
-    await server.listen()
     return server
 }

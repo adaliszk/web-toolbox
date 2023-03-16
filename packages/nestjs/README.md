@@ -36,10 +36,10 @@ import { createServer } from '@adaliszk/nestjs'
 import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify'
 import { AppModule } from './app.module'
 
-await createServer<NestFastifyApplication>({
+(await createServer<NestFastifyApplication>({
     adapter: new FastifyAdapter(),
     imports: [ AppModule ],
-})
+})).listen(3000)
 
 ```
 
@@ -49,12 +49,12 @@ await createServer<NestFastifyApplication>({
 import { createMicroservice, Transport } from '@adaliszk/nestjs'
 import { AppModule } from './app.module'
 
-await createMicroservice({
+(await createMicroservice({
     imports: [ AppModule ],
     service: {
         transport: Transport.TCP
     }
-})
+})).listen()
 
 ```
 
