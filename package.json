@@ -9,7 +9,7 @@
   "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
   "contributors": [],
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --output-logs=new-only",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "propose": "turbo run build lint test && changeset version",

@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsup source/compiler.ts source/cli.ts --format cjs,esm --minify --sourcemap --dts",
+    "build": "tsup source/compiler.ts source/cli.ts --format cjs,esm --target node18 --minify --sourcemap --dts",
     "lint": "eslint source/**",
     "prepublish": "yarn build"
   },
