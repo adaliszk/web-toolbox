@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.6.0
+
+### Minor Changes
+
+- 7016dd4: Handle declaration generation better
+
 ## 0.5.7
 
 ### Patch Changes

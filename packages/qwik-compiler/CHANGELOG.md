@@ -1,5 +1,12 @@
 # @adaliszk/qwik-compiler
 
+## 0.21.3
+
+### Patch Changes
+
+- Updated dependencies [7016dd4]
+  - @adaliszk/web-compiler@0.6.0
+
 ## 0.21.2
 
 ### Patch Changes
