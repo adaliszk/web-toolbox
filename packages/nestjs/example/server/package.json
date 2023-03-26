@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "@adaliszk/nestjs-server-example",
+  "author": "Ádám Liszkai <adam@liszkai.dev>",
+  "main": "dist/main.js",
+  "bin": "dist/main.js",
+  "scripts": {
+    "start": "nest start --watch",
+    "start:dev": "nest-compiler --watch",
+    "server": "./dist/server",
+    "preview": "node .",
+    "build": "nest-compiler && pkg --output dist/server ."
+  },
+  "dependencies": {
+    "@adaliszk/nestjs": "workspace:*",
+    "@adaliszk/nestjs-fastify": "workspace:*",
+    "reflect-metadata": "^0.1",
+    "rxjs": "^7.8"
+  },
+  "devDependencies": {
+    "@adaliszk/eslint-config-typescript": "workspace:*",
+    "@adaliszk/nestjs-compiler": "workspace:*",
+    "@adaliszk/typescript": "workspace:*",
+    "@adaliszk/typescript-testing": "workspace:*",
+    "@nestjs/schematics": "^9.0",
+    "esbuild": "^0.17",
+    "eslint": "^8.36",
+    "pino-pretty": "^10.0",
+    "pkg": "^5.3",
+    "typescript": "^4.9"
+  },
+  "pkg": {
+    "assets": "public/**/*",
+    "scripts": "dist/**/*.js",
+    "targets": [
+      "node18-alpine-x64"
+    ]
+  }
+}

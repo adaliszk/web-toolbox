@@ -1,0 +1,19 @@
+{
+  "extends": "@adaliszk/typescript",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "declaration": false,
+    "incremental": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@adaliszk/nestjs": [
+        "../../../source/bundle"
+      ]
+    }
+  },
+  "include": [
+    "vite.config.ts",
+    "src/**/*"
+  ]
+}

@@ -18,17 +18,21 @@
     "turbo": "turbo",
     "workspace": "yarn workspace"
   },
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "yarn@3.5.0",
   "workspaces": [
     "configs/*",
     "helpers/*",
     "packages/*",
+    "packages/*/example/*",
     "packs/*"
   ],
   "devDependencies": {
+    "@adaliszk/typescript": "workspace:*",
     "@changesets/changelog-git": "^0.1",
     "@changesets/cli": "^2.26",
-    "turbo": "^1.8.3"
+    "@swc/core": "^1.3",
+    "turbo": "^1.8",
+    "typescript": "^4.9"
   },
   "keywords": [
     "node",

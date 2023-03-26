@@ -1,33 +1,35 @@
-import tsconfig from '../tsconfig.json'
 import QueueEngine from 'bull'
-import Winston from 'winston'
 
-export * from '@nestjs/bull'
+
 export * as Nest from '@nestjs/core'
 export * from '@nestjs/microservices'
-export * from '@nestjs/common'
+export * from '@nestjs/common/cache'
+export * from '@nestjs/common/decorators'
+export * from '@nestjs/common/enums'
+export * from '@nestjs/common/exceptions'
+export * from '@nestjs/common/file-stream'
+export * from '@nestjs/common/module-utils'
+export * from '@nestjs/common/pipes'
+export * from '@nestjs/common/serializer'
+export * from '@nestjs/common/utils'
+
 export * from '@nestjs/config'
-export * from '@nestjs/event-emitter'
-export * from 'cache-manager'
-export * from 'cache-manager-redis-store'
 export * as ClassTransformer from 'class-transformer'
 export * as ClassValidator from 'class-validator'
-export * from 'nest-commander'
-export * from 'redis'
+
+export * as Redis from 'redis'
+export * from 'cache-manager'
+export * from 'cache-manager-redis-yet'
+export * from '@nestjs/bull'
+export * from '@nestjs/event-emitter'
+
 export * as Rx from 'rxjs'
 export * from 'reflect-metadata'
 
-export {
-    QueueEngine,
-    Winston,
-}
+export { QueueEngine }
 
 export * from './createLogger'
 export * from './createContext'
 export * from './createServer'
 export * from './defineApplication'
 export * from './types'
-
-// Export for tsconfig
-// noinspection JSUnusedGlobalSymbols
-export default tsconfig

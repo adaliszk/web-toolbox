@@ -1,14 +1,15 @@
 import type { AppConfig } from './types'
 import { NestFactory } from '@nestjs/core'
 import { defineApplication } from './defineApplication'
-import { createLogger } from './createLogger'
+import { createLoggerFactory } from './createLogger'
 
 
 export async function createContext (config?: AppConfig)
 {
-    const app = await defineApplication(config)
-    const logger = await createLogger(config?.logger?.level ?? 'info', config?.logger?.file ?? '/tmp/nestjs.log')
+    const logger = await createLoggerFactory(config)
+    const app = await defineApplication(logger, config)
+
     return await NestFactory.createApplicationContext(app, {
-        logger,
+        logger: logger(),
     })
 }
