@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 9.3.4
+
+### Patch Changes
+
+- dd8a611: Update NestJS stack
+
 ## 9.3.3
 
 ### Patch Changes
