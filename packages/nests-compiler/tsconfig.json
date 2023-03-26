@@ -1,0 +1,18 @@
+{
+  "extends": "@adaliszk/typescript",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "sourceRoot": "source",
+    "baseUrl": "source",
+    "outDir": "dist"
+  },
+  "include": [
+    "source/**/*"
+  ]
+}
