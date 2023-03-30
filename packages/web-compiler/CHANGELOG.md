@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.7.0
+
+### Minor Changes
+
+- b4b52ec: Add Tailwind and SugarSS
+
 ## 0.6.0
 
 ### Minor Changes

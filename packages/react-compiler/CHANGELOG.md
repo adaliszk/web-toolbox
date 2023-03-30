@@ -1,5 +1,16 @@
 # @adaliszk/react-compiler
 
+## 0.4.0
+
+### Minor Changes
+
+- b4b52ec: Add Tailwind and SugarSS
+
+### Patch Changes
+
+- Updated dependencies [b4b52ec]
+  - @adaliszk/web-compiler@0.7.0
+
 ## 0.3.8
 
 ### Patch Changes
