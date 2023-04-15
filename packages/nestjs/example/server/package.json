@@ -35,6 +35,5 @@
     "targets": [
       "node18-alpine-x64"
     ]
-  },
-  "version": null
+  }
 }
