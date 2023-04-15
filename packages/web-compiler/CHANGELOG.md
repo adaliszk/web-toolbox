@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.0
+
+### Minor Changes
+
+- 571a51c: feat(web-compiler): switch to SASS over SugarSS
+
 ## 0.7.2
 
 ### Patch Changes
