@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.7.1
+
+### Patch Changes
+
+- 8234404: feat(web-compiler): change parser to SugarSS
+
 ## 0.7.0
 
 ### Minor Changes
