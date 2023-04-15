@@ -20,9 +20,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
 
     const conditionalPlugins = []
     if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
-        conditionalPlugins.push(plugin.compileTypescriptDefinitions({
-            tsConfigFilePath: tsConfig
-        }))
+        conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsConfigFilePath: tsConfig }))
 
     return defineConfig({
         ...customConfig,
@@ -37,21 +35,23 @@ export function webConfig (config?: WebConfig): UserConfigExport
         },
         css: {
             postcss: {
+                parser: plugin.sugarss,
                 plugins: [
+                    plugin.cssImports,
+                    plugin.cssSimpleVariables(),
                     plugin.cssUnwrapNesting,
                     plugin.cssSimplifyCalc,
-                ]
-            }
+                    plugin.cssAutoPrefix,
+                ],
+            },
         },
         plugins: [
-            plugin.resolveTypescriptPaths({
-                projects: [tsConfig]
-            }),
+            plugin.resolveTypescriptPaths({ projects: [tsConfig] }),
             ...(customConfig?.plugins ?? []),
             plugin.lint({}),
             plugin.compressAssets(),
             plugin.generateCertificate(),
-            ...conditionalPlugins
+            ...conditionalPlugins,
         ],
     })
 }
