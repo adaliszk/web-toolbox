@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.7.2
+
+### Patch Changes
+
+- a985116: feat(web-compiler): add css plugins option
+
 ## 0.7.1
 
 ### Patch Changes

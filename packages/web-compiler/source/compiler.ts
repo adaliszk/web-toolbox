@@ -42,6 +42,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
                     plugin.cssUnwrapNesting,
                     plugin.cssSimplifyCalc,
                     plugin.cssAutoPrefix,
+                    ...(customConfig?.cssPlugins ?? []),
                 ],
             },
         },

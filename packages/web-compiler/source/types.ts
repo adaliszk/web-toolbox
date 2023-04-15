@@ -1,4 +1,5 @@
 import type { UserConfigExport, UserConfig, EsbuildTransformOptions } from 'vite'
+import type { AcceptedPlugin } from 'postcss'
 
 export interface FederationConfig
 {
@@ -64,8 +65,11 @@ export interface WebConfig extends UserConfig
      * @example { 'Button': 'atoms/Button.tsx' }
      */
     exposes?: FederationExposes
+
+    /**
+     * Pass additional PostCSS plugins to the CSS preprocessor
+     */
+    cssPlugins?: AcceptedPlugin[]
 }
 
-export {
-    UserConfigExport
-}
+export { UserConfigExport }
