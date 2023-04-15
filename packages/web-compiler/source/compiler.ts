@@ -22,6 +22,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
     if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
         conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsConfigFilePath: tsConfig }))
 
+
     return defineConfig({
         ...customConfig,
         server: {
@@ -34,15 +35,15 @@ export function webConfig (config?: WebConfig): UserConfigExport
             ...(customConfig?.build ?? {}),
         },
         css: {
+            preprocessorOptions: { sass: { indentedSyntax: true, ...(customConfig.sass ?? {}) } },
             postcss: {
-                parser: plugin.sugarss,
                 plugins: [
                     plugin.cssImports,
                     plugin.cssSimpleVariables(),
                     plugin.cssUnwrapNesting,
                     plugin.cssSimplifyCalc,
-                    plugin.cssAutoPrefix,
                     ...(customConfig?.cssPlugins ?? []),
+                    plugin.cssAutoPrefix,
                 ],
             },
         },

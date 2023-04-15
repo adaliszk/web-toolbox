@@ -7,7 +7,7 @@ import cssSimpleVariables from 'postcss-simple-vars'
 import cssImports from 'postcss-import'
 import cssUnwrapNesting from 'postcss-nested'
 import cssSimplifyCalc from 'postcss-calc'
-import sugarss from 'sugarss'
+import compileSass from 'sass'
 import cssAutoPrefix from 'autoprefixer'
 
 
@@ -17,7 +17,7 @@ export {
     lint,
     compressAssets,
     generateCertificate,
-    sugarss,
+    compileSass,
     cssImports,
     cssSimpleVariables,
     cssUnwrapNesting,
