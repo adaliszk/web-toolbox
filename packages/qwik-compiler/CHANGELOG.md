@@ -1,5 +1,11 @@
 # @adaliszk/qwik-compiler
 
+## 0.102.2
+
+### Patch Changes
+
+- c3e22c0: fix(qwik-compiler): avoid re-ordering of plugins with filters
+
 ## 0.102.1
 
 ### Patch Changes
