@@ -15,13 +15,15 @@ export function qwikConfig (config?: QwikConfig): UserConfigExport
     const customConfig = config ?? {}
     const cityConfig = typeof customConfig?.city === 'object' ? customConfig?.city : {}
     const qwikConfig = typeof customConfig?.qwik === 'object' ? customConfig?.qwik : {}
+    const plugins = customConfig?.plugins ?? []
+
+    if (customConfig?.city)
+        plugins.push(plugin.serveQwikCity({ routesDir: 'source/routes', ...cityConfig }))
+
+    plugins.push(plugin.compileQwik({ srcDir: 'source', ...qwikConfig }))
 
     return webConfig({
         ...customConfig,
-        plugins: [
-            ...(customConfig?.plugins ?? []),
-            customConfig?.city ? plugin.serveQwikCity({ routesDir: 'source/routes', ...cityConfig }) : undefined,
-            plugin.compileQwik({ srcDir: 'source', ...qwikConfig }),
-        ].filter(i => i !== undefined),
+        plugins,
     })
 }
