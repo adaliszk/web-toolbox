@@ -1,5 +1,11 @@
 # @adaliszk/qwik-compiler
 
+## 0.102.3
+
+### Patch Changes
+
+- 205b161: chore(qwik-compiler): re-publish with dist changes
+
 ## 0.102.2
 
 ### Patch Changes
