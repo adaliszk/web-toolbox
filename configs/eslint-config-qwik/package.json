@@ -1,5 +1,5 @@
 {
-  "version": "0.21.2",
+  "version": "0.102.1",
   "name": "@adaliszk/eslint-config-qwik",
   "description": "Configuration for ESLint usage within Qwik",
   "repository": "github:adaliszk/node-toolbox",
@@ -22,7 +22,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-qwik": "^0.21.0",
+    "eslint-plugin-qwik": "^0.102.0",
     "eslint-plugin-react": "^7.32.2",
     "react": "^18.2.0"
   },

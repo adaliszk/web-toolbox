@@ -1,5 +1,11 @@
 # @adaliszk/qwik-compiler
 
+## 0.102.1
+
+### Patch Changes
+
+- 66850f6: chore: update Qwik to 0.102
+
 ## 0.21.4
 
 ### Patch Changes

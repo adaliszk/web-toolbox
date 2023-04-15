@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.102.1
+
+### Patch Changes
+
+- 66850f6: chore: update Qwik to 0.102
+- Updated dependencies [66850f6]
+  - @adaliszk/eslint-config-qwik@0.102.1
+
 ## 0.21.2
 
 ### Patch Changes
