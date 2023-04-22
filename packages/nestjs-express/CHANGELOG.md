@@ -1,5 +1,11 @@
 # @adaliszk/nestjs-express
 
+## 9.3.5
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 9.3.4
 
 ### Patch Changes

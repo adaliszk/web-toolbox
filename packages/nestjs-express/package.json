@@ -1,5 +1,5 @@
 {
-  "version": "9.3.4",
+  "version": "9.3.5",
   "name": "@adaliszk/nestjs-express",
   "description": "Nest.js Express driver for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
     "lint": "eslint source/**",
-    "prepublish": "yarn build"
+    "prepublish": "pnpm build"
   },
   "dependencies": {
     "@nestjs/common": "^9.3.10",

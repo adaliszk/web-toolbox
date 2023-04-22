@@ -1,5 +1,13 @@
 # @adaliszk/react
 
+## 18.2.15
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+- Updated dependencies [74c239e]
+  - @adaliszk/eslint-config-typescript@8.39.2
+
 ## 18.2.14
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @adaliszk/nestjs-compiler
 
+## 9.3.3
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 9.3.2
 
 ### Patch Changes

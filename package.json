@@ -13,20 +13,28 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "propose": "turbo run build lint test && changeset",
-    "release": "changeset version && changeset publish"
+    "release": "turbo run build && changeset version && changeset publish"
   },
+  "packageManager": "pnpm@8.2.0",
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:*",
+    "@adaliszk/typescript": "workspace:^",
     "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.1",
     "@swc/core": "^1.3.53",
     "turbo": "^1.9.3",
+    "pkg": "^5.8.1",
+    "esbuild": "^0.17",
+    "tsup": "^6.7",
     "typescript": "^5.0.4"
   },
   "eslintConfig": {
     "extends": [
       "@adaliszk/typescript"
     ]
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8.2"
   },
   "keywords": [
     "node",

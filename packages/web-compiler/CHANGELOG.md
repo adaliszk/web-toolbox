@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.2
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 0.8.1
 
 ### Patch Changes

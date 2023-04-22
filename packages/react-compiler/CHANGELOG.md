@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.4.3
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+- Updated dependencies [74c239e]
+  - @adaliszk/web-compiler@0.8.2
+
 ## 0.4.2
 
 ### Patch Changes

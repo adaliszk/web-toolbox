@@ -1,5 +1,5 @@
 {
-  "version": "9.3.2",
+  "version": "9.3.3",
   "name": "@adaliszk/nestjs-compiler",
   "description": "Nest.js ESBuild and SWC compiler",
   "repository": "github:adaliszk/node-toolbox",
@@ -7,16 +7,16 @@
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/react",
   "license": "BSD-3-Clause",
   "main": "dist/compiler.js",
-  "bin": {
-    "nest-compiler": "dist/compiler.js"
-  },
+  "bin": "dist/compiler.js",
   "files": [
     "dist",
-    "*.mjs",
+    "*.cjs",
     "*.md"
   ],
   "scripts": {
-    "build": "tsup-node source/compiler.ts --format cjs --sourcemap --minify --keep-names --clean",
+    "clean": "rimraf dist",
+    "build:compiler": "esbuild source/compiler.ts --platform=node --format=cjs --minify --outdir=dist",
+    "build": "pnpm clean && pnpm build:compiler && chmod +x dist/compiler.js",
     "lint": "eslint source/**",
     "prepublish": "pnpm build"
   },
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@adaliszk/typescript": "workspace:~",
     "eslint": "^8.39",
-    "tsup": "^6.7",
+    "esbuild": "^0.17",
     "typescript": "^5.0"
   },
   "keywords": [

@@ -1,5 +1,5 @@
 {
-  "version": "9.3.5",
+  "version": "9.3.6",
   "name": "@adaliszk/nestjs",
   "description": "Nest.js stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
     "lint": "eslint source/**",
-    "prepublish": "yarn build"
+    "prepublish": "pnpm build"
   },
   "dependencies": {
     "@nestjs/bull": "^0.6.3",
@@ -37,7 +37,7 @@
     "class-validator": "^0.14.0",
     "cluster": "latest",
     "os": "latest",
-    "pino-syslog": "^3.0.0",
+    "pino": "^8.11.0",
     "process": "latest",
     "redis": "^4.6.5",
     "reflect-metadata": "^0.1.13",
@@ -45,7 +45,7 @@
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:*",
+    "@adaliszk/typescript": "workspace:~",
     "eslint": "^8.36",
     "tsup": "^6.7",
     "typescript": "^5.0"

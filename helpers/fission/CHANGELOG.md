@@ -1,5 +1,11 @@
 # @adaliszk/fission
 
+## 0.2.6
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 0.2.5
 
 ### Patch Changes

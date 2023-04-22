@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.39.2
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 8.39.1
 
 ### Patch Changes

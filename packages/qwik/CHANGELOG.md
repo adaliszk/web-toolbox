@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 0.103.2
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 0.103.1
 
 ### Patch Changes

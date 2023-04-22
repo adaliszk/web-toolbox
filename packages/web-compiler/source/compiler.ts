@@ -1,5 +1,7 @@
-import { defineConfig } from 'vite'
 import type { UserConfigExport, WebConfig } from './types'
+import type { UserConfig, PluginOption } from 'vite'
+
+import { defineConfig } from 'vite'
 import * as plugin from './plugins'
 
 import { readFileSync } from 'fs'
@@ -18,7 +20,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
     const tsConfigContent = JSON.parse(readFileSync(resolve(tsConfig), 'utf-8'))
     const tsConfigCompilerOptions = tsConfigContent.compilerOptions ?? { target: 'esnext', declaration: true }
 
-    const conditionalPlugins = []
+    const conditionalPlugins: PluginOption[] = []
     if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
         conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsConfigFilePath: tsConfig }))
 
@@ -55,5 +57,5 @@ export function webConfig (config?: WebConfig): UserConfigExport
             plugin.generateCertificate(),
             ...conditionalPlugins,
         ],
-    })
+    } as UserConfig)
 }

@@ -1,5 +1,5 @@
 {
-  "version": "18.2.14",
+  "version": "18.2.15",
   "name": "@adaliszk/react",
   "description": "React stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
     "lint": "eslint source/**",
-    "prepublish": "yarn build"
+    "prepublish": "pnpm build"
   },
   "eslintConfig": {
     "extends": [
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@adaliszk/eslint-config-react": "^18.2.16",
-    "@adaliszk/eslint-config-typescript": "^8.39.1",
+    "@adaliszk/eslint-config-typescript": "^8.39.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "react": "^18.2",
@@ -35,7 +35,7 @@
     "react-router-dom": "^6.10"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:*",
+    "@adaliszk/typescript": "workspace:~",
     "@swc/core": "^1.3",
     "eslint": "^8.39",
     "tsup": "^6.7",

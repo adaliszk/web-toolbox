@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.10
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 4.9.9
 
 ### Patch Changes

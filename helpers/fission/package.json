@@ -1,5 +1,5 @@
 {
-  "version": "0.2.5",
+  "version": "0.2.6",
   "name": "@adaliszk/fission",
   "description": "Types for Fission Node.js Functions",
   "repository": "github:adaliszk/node-toolbox",
@@ -15,10 +15,10 @@
   "scripts": {
     "build": "tsup source/types.ts --format cjs --minify --dts",
     "lint": "eslint source/**",
-    "prepublish": "yarn build"
+    "prepublish": "pnpm build"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:*",
+    "@adaliszk/typescript": "workspace:~",
     "@types/express": "^4.17",
     "@types/ws": "^8.5",
     "eslint": "^8.39",

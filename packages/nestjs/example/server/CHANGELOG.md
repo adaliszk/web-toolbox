@@ -1,5 +1,14 @@
 # @adaliszk/nestjs-server-example
 
+## 0.0.1
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+- Updated dependencies [74c239e]
+  - @adaliszk/nestjs-fastify@9.3.4
+  - @adaliszk/nestjs@9.3.6
+
 ## null
 
 ### Patch Changes

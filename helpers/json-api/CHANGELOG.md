@@ -1,5 +1,11 @@
 # @adaliszk/json-api
 
+## 1.1.5
+
+### Patch Changes
+
+- 74c239e: fix: resolve compilation errors
+
 ## 1.1.4
 
 ### Patch Changes

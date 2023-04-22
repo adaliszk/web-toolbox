@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from 'commander'
 import { esbuildDecorators } from 'esbuild-decorators'
 import { version, build } from 'esbuild'
@@ -9,7 +11,7 @@ import * as process from 'node:process'
 import * as path from 'node:path'
 import * as fs from 'node:fs'
 
-import pkg from '../package.json'
+import { name as pkgName, version as pkgVersion, description as pkgDescription } from '../package.json'
 
 
 const cwd = process.cwd()
@@ -22,9 +24,9 @@ const srcPath = path.resolve(cwd, srcDir)
 
 
 program
-    .name(pkg.name)
-    .version(pkg.version)
-    .description(pkg.description)
+    .name(pkgName)
+    .version(pkgVersion)
+    .description(pkgDescription)
     .option('-o, --outdir <outdir>', 'Output directory', 'dist')
     .option('--watch', 'Watch for changes', false)
     .action(async (args) =>
