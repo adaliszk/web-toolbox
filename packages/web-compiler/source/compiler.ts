@@ -39,7 +39,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
             postcss: {
                 plugins: [
                     plugin.cssImports,
-                    plugin.cssSimpleVariables(),
+                    plugin.cssSimpleVariables({ variables: {} }),
                     plugin.cssUnwrapNesting,
                     plugin.cssSimplifyCalc,
                     ...(customConfig?.cssPlugins ?? []),

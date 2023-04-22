@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 5.0.1
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+- Updated dependencies [0286cc3]
+  - @adaliszk/eslint-config-typescript@8.39.1
+
 ## 4.9.9
 
 ### Patch Changes

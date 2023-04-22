@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.39.1
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+
 ## 8.34.3
 
 ### Patch Changes

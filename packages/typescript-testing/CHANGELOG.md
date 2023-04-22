@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 4.9.9
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+
 ## 4.9.8
 
 ### Patch Changes

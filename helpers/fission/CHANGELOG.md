@@ -1,5 +1,11 @@
 # @adaliszk/fission
 
+## 0.2.5
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+
 ## 0.2.4
 
 ### Patch Changes

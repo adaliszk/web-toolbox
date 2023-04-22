@@ -2,7 +2,7 @@ _Types for JSON:API Specification_
 
 ### Usage
 
-1. Install the package `yarn add -D @adaliszk/json-api`
+1. Install the package `pnpm install -D @adaliszk/json-api`
 2. Annotate your function with types
 
 ### Versioning

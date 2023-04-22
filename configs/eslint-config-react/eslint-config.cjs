@@ -29,8 +29,11 @@ rules['react/jsx-wrap-multilines'] = [
     },
 ]
 
-// Ignore the need for importing React everywhere
+// Ignore the need for importing React everywhere to allow other frameworks to be used like Solid and Qwik
 rules['react/react-in-jsx-scope'] = ['off']
+
+// Ignore unknown properties as this config is used with Lit and Qwik amongst others that use non-react properties
+rules['react/no-unknown-property'] = ['off']
 
 /**
  * Extend react configuration with my Typescript config
@@ -41,14 +44,6 @@ module.exports = {
     parserOptions: { project: ['./tsconfig.json'] },
     settings: {
         react: { version: 'detect' },
-        linkComponents: [
-            // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
-            'Hyperlink',
-            {
-                name: 'Link',
-                linkAttribute: 'to',
-            },
-        ],
     },
     rules,
 }

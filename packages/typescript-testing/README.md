@@ -8,7 +8,7 @@ _Meta-Package for testing Typescript with Vitest_
 
 ### Usage
 
-- Install the package `yarn add -D @adaliszk/typescript-testing vitest`
+- Install the package `pnpm install -D @adaliszk/typescript-testing vitest`
 - Add a vitest config:
   ```typescript
   import { defineConfig } from '@adaliszk/typescript-testing'

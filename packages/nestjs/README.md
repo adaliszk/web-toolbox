@@ -12,7 +12,7 @@ This package provides an abstraction between your projects and the common boiler
 
 ## Usage
 
-1. Install the package `yarn add @adaliszk/nestjs @adaliszk-nestjs-compiler`
+1. Install the package `pnpm install @adaliszk/nestjs @adaliszk-nestjs-compiler`
 2. Setup your service using `@adaliszk/nestjs`
 3. 
 

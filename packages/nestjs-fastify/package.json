@@ -1,5 +1,5 @@
 {
-  "version": "9.3.2",
+  "version": "9.3.3",
   "name": "@adaliszk/nestjs-fastify",
   "description": "Nest.js Fastify driver for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -28,11 +28,11 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^4.9.9",
+    "@adaliszk/typescript": "workspace:*",
     "@swc/core": "^1.3",
-    "eslint": "^8.34",
-    "tsup": "^6.6",
-    "typescript": "^4.9"
+    "eslint": "^8.39",
+    "tsup": "^6.7",
+    "typescript": "^5.0"
   },
   "keywords": [
     "typescript",

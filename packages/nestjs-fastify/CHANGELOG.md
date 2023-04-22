@@ -1,5 +1,11 @@
 # @adaliszk/nestjs-fastify
 
+## 9.3.3
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+
 ## 9.3.2
 
 ### Patch Changes

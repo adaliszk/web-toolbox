@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.103.1
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+- Updated dependencies [0286cc3]
+  - @adaliszk/eslint-config-qwik@0.103.1
+
 ## 0.102.1
 
 ### Patch Changes

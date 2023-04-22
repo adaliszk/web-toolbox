@@ -1,5 +1,13 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.16
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+- Updated dependencies [0286cc3]
+  - @adaliszk/eslint-config-typescript@8.39.1
+
 ## 18.2.15
 
 ### Patch Changes

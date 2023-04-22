@@ -2,7 +2,7 @@ _Types for Node.js Fission Functions_
 
 ### Usage
 
-1. Install the package `yarn add -D @adaliszk/fission`
+1. Install the package `pnpm install -D @adaliszk/fission`
 2. Annotate your function with types
 3. Build your typescript function into Node.js
 4. Create the function: `fission function create --name hallo --code dist/hello.js --env nodejs`

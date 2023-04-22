@@ -9,7 +9,7 @@ typescript-based qwik linting.
 
 ### Usage
 
-- Install: `yarn add -D @adaliszk/eslint-config-qwik eslint`
+- Install: `pnpm install -D @adaliszk/eslint-config-qwik eslint`
 - Add an `.eslintrc.yml` with the content of:
   ```yaml
   extends:

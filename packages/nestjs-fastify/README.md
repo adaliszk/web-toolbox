@@ -6,7 +6,7 @@ _Bundle for Nest.js Fastify development_
 
 ### Usage
 
-1. Install the package `yarn add @adaliszk/nestjs-fastify`
+1. Install the package `pnpm install @adaliszk/nestjs-fastify`
 2. Use any of the packages from the exported types
 
 #### Creating a Nest.js Server

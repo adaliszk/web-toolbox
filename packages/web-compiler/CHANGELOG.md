@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.1
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+
 ## 0.8.0
 
 ### Minor Changes

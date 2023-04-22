@@ -18,7 +18,7 @@ adds typescript-based react linting.
 
 ### Usage
 
-- Install: `yarn add -D @adaliszk/eslint-config-react eslint`
+- Install: `pnpm install -D @adaliszk/eslint-config-react eslint`
 - Add an `.eslintrc.yml` with the content of:
   ```yaml
   extends:

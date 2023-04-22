@@ -8,7 +8,7 @@ Pre-configured Vite with:
 
 ### Usage
 
-1. Install the package `yarn add --dev @adaliszk/react-compiler`
+1. Install the package `pnpm install --dev @adaliszk/react-compiler`
 2. Configure vite for development and bundling:
     ```typescript
    import { reactConfig } from '@adaliszk/react-compiler'

@@ -7,7 +7,7 @@ _Facade for Qwik-based development_
 
 ### Usage
 
-1. Install the package `yarn add --dev @adaliszk/qwik vite`
+1. Install the package `pnpm install --dev @adaliszk/qwik vite`
 2. Update your `tsconfig.json` to extend from the new config:
    ```json
    {

@@ -4,14 +4,20 @@ _Configuration for Web-based project compilation using Vite_
 
 Pre-configured Vite with:
 - TLS Encryption
-- Typescript Path Resolution
-- PWA Manifest Generator
+- Typescript path resolution
+- PostCSS + SASS preset
 - Compression
 - Linting
 
+## TODO
+
+- [ ] Implement module federation logic for auto-resolution
+- [ ] Parse TSPaths and extend the resolution logic
+- [ ] Expose PostCSS variables configuration
+
 ### Usage
 
-1. Install the package `yarn add --dev @adaliszk/web-compiler`
+1. Install the package `pnpm install --dev @adaliszk/web-compiler vite`
 2. Configure vite for development and bundling:
     ```typescript
    import { webConfig } from '@adaliszk/web-compiler'
@@ -21,8 +27,8 @@ Pre-configured Vite with:
 3. Add vite commands to your scope:
     ```json
    "scripts": {
-      "build": "web-compiler build",
-      "preview": "web-compiler preview"
-      "start": "web-compiler"
+      "build": "vite build",
+      "preview": "vite preview"
+      "start": "vite"
    }
    ```

@@ -1,5 +1,5 @@
 {
-  "version": "9.3.4",
+  "version": "9.3.5",
   "name": "@adaliszk/nestjs",
   "description": "Nest.js stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -47,8 +47,8 @@
   "devDependencies": {
     "@adaliszk/typescript": "workspace:*",
     "eslint": "^8.36",
-    "tsup": "^6.6",
-    "typescript": "^4.9"
+    "tsup": "^6.7",
+    "typescript": "^5.0"
   },
   "keywords": [
     "typescript",

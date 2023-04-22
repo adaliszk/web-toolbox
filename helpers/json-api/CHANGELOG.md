@@ -1,5 +1,11 @@
 # @adaliszk/json-api
 
+## 1.1.4
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+
 ## 1.1.3
 
 ### Patch Changes

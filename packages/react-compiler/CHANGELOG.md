@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.4.2
+
+### Patch Changes
+
+- 0286cc3: chore: Update dependenices to the latest versions
+- Updated dependencies [0286cc3]
+  - @adaliszk/web-compiler@0.8.1
+
 ## 0.4.1
 
 ### Patch Changes

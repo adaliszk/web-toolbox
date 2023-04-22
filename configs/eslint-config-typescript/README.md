@@ -26,7 +26,7 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
 
 ### Usage
 
-- Install: `yarn add -D @adaliszk/eslint-config-typescript eslint`
+- Install: `pnpm install -D @adaliszk/eslint-config-typescript eslint`
 - Add an `.eslintrc.yml` with the content of:
   ```yaml
   extends:
