@@ -1,17 +1,19 @@
 # IDE and Editors
-.vscode
 .idea
+.vscode
 
 # Distribution
 **/dist
 **/config
 **/.env
-.env
 
-# NPM / Yarn
+# Package Manager
 **/node_modules
-node_modules
 
 # Temporary files
 **/temp
-**.log
+**/*.log
+
+# Build files
+**/.turbo
+!/.turbo

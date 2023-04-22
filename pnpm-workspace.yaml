@@ -1,0 +1,6 @@
+packages:
+  - 'configs/*'
+  - 'helpers/*'
+  - 'packages/*'
+  - 'packages/*/example/*'
+  - 'packs/*'
