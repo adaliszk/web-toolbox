@@ -3,9 +3,13 @@ lockfileVersion: '6.0'
 importers:
 
   .:
+    dependencies:
+      '@adaliszk/web-compiler':
+        specifier: workspace:^
+        version: link:packages/web-compiler
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:configs/typescript
       '@changesets/changelog-git':
         specifier: ^0.1.14
@@ -26,7 +30,7 @@ importers:
   configs/eslint-config-qwik:
     dependencies:
       '@adaliszk/eslint-config-react':
-        specifier: ^18.2.15
+        specifier: ^18.2.16
         version: link:../eslint-config-react
       '@builder.io/qwik':
         specifier: ^0.103
@@ -57,7 +61,7 @@ importers:
         version: 18.2.0
     devDependencies:
       '@adaliszk/typescript':
-        specifier: ^5.0.0
+        specifier: ^5.0.1
         version: link:../typescript
       eslint:
         specifier: ^8.39
@@ -69,7 +73,7 @@ importers:
   configs/eslint-config-react:
     dependencies:
       '@adaliszk/eslint-config-typescript':
-        specifier: ^8.39.0
+        specifier: ^8.39.1
         version: link:../eslint-config-typescript
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.59.0
@@ -94,7 +98,7 @@ importers:
         version: 18.2.0
     devDependencies:
       '@adaliszk/typescript':
-        specifier: ^5.0.0
+        specifier: ^5.0.1
         version: link:../typescript
       eslint:
         specifier: ^8.39
@@ -134,7 +138,7 @@ importers:
   configs/typescript:
     dependencies:
       '@adaliszk/eslint-config-typescript':
-        specifier: ^8.39.0
+        specifier: ^8.39.1
         version: link:../eslint-config-typescript
       '@types/node':
         specifier: ^18.15
@@ -155,7 +159,7 @@ importers:
   helpers/fission:
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@types/express':
         specifier: ^4.17
@@ -182,7 +186,7 @@ importers:
   helpers/json-api:
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -268,7 +272,7 @@ importers:
         version: 0.5.21
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       eslint:
         specifier: ^8.36
@@ -339,7 +343,7 @@ importers:
         version: 7.8.0
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -357,10 +361,10 @@ importers:
   packages/nestjs/example/server:
     dependencies:
       '@adaliszk/nestjs':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../..
       '@adaliszk/nestjs-fastify':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../../nestjs-fastify
       reflect-metadata:
         specifier: ^0.1
@@ -370,16 +374,16 @@ importers:
         version: 7.8.0
     devDependencies:
       '@adaliszk/eslint-config-typescript':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../../../configs/eslint-config-typescript
       '@adaliszk/nestjs-compiler':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../../nests-compiler
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../../../configs/typescript
       '@adaliszk/typescript-testing':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../../typescript-testing
       '@nestjs/schematics':
         specifier: ^9.0
@@ -428,7 +432,7 @@ importers:
         version: 4.4.0
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       eslint:
         specifier: ^8.39
@@ -443,7 +447,7 @@ importers:
   packages/qwik:
     dependencies:
       '@adaliszk/eslint-config-qwik':
-        specifier: ^0.103.0
+        specifier: ^0.103.1
         version: link:../../configs/eslint-config-qwik
       '@builder.io/qwik':
         specifier: ^0.103.0
@@ -459,7 +463,7 @@ importers:
         version: 5.22.0
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -480,10 +484,10 @@ importers:
   packages/react:
     dependencies:
       '@adaliszk/eslint-config-react':
-        specifier: ^18.2.15
+        specifier: ^18.2.16
         version: link:../../configs/eslint-config-react
       '@adaliszk/eslint-config-typescript':
-        specifier: ^8.39.0
+        specifier: ^8.39.1
         version: link:../../configs/eslint-config-typescript
       '@types/react':
         specifier: ^18
@@ -505,7 +509,7 @@ importers:
         version: 6.10.0(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -523,17 +527,17 @@ importers:
   packages/react-compiler:
     dependencies:
       '@adaliszk/web-compiler':
-        specifier: ^0.8.0
+        specifier: ^0.8.1
         version: link:../web-compiler
       '@vitejs/plugin-react':
-        specifier: ^3.1
-        version: 3.1.0(vite@4.3.0)
+        specifier: ^4.0
+        version: 4.0.0(vite@4.3.0)
       vite:
         specifier: ^4.3
         version: 4.3.0(@types/node@18.15.0)
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -567,7 +571,7 @@ importers:
         version: 0.30.0
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -634,7 +638,7 @@ importers:
         version: 4.2.0(typescript@4.9.3)(vite@4.3.1)
     devDependencies:
       '@adaliszk/typescript':
-        specifier: workspace:*
+        specifier: workspace:~
         version: link:../../configs/typescript
       '@swc/core':
         specifier: ^1.3
@@ -3084,16 +3088,15 @@ packages:
       eslint-visitor-keys: 3.4.0
     dev: false
 
-  /@vitejs/plugin-react@3.1.0(vite@4.3.0):
-    resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
+  /@vitejs/plugin-react@4.0.0(vite@4.3.0):
+    resolution: {integrity: sha512-HX0XzMjL3hhOYm+0s95pb0Z7F8O81G7joUHgfDd/9J/ZZf5k4xX6QAMFkKsHFxaHlf6X7GD7+XuaZ66ULiJuhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^4.1.0-beta.0
+      vite: ^4.2.0
     dependencies:
       '@babel/core': 7.21.4
       '@babel/plugin-transform-react-jsx-self': 7.21.0(@babel/core@7.21.4)
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.21.4)
-      magic-string: 0.27.0
       react-refresh: 0.14.0
       vite: 4.3.0(@types/node@18.15.0)
     transitivePeerDependencies:

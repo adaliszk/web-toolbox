@@ -18,7 +18,7 @@
   "scripts": {
     "build": "tsup-node source/compiler.ts --format cjs --sourcemap --minify --keep-names --clean",
     "lint": "eslint source/**",
-    "prepublish": "yarn build"
+    "prepublish": "pnpm build"
   },
   "dependencies": {
     "@swc/core": "^1.3",
@@ -31,7 +31,7 @@
     "rimraf": "^4.4"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:*",
+    "@adaliszk/typescript": "workspace:~",
     "eslint": "^8.39",
     "tsup": "^6.7",
     "typescript": "^5.0"
