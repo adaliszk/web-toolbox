@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 0.103.3
+
+### Patch Changes
+
+- b443d02: chore(qwik): update peer dependencies
+- Updated dependencies [b443d02]
+  - @adaliszk/eslint-config-qwik@0.103.2
+
 ## 0.103.2
 
 ### Patch Changes

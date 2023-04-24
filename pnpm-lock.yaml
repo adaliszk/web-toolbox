@@ -489,7 +489,7 @@ importers:
         specifier: ^18.2.16
         version: link:../../configs/eslint-config-react
       '@adaliszk/eslint-config-typescript':
-        specifier: ^8.39.1
+        specifier: ^8.39.2
         version: link:../../configs/eslint-config-typescript
       '@types/react':
         specifier: ^18
@@ -529,7 +529,7 @@ importers:
   packages/react-compiler:
     dependencies:
       '@adaliszk/web-compiler':
-        specifier: ^0.8.1
+        specifier: ^0.8.2
         version: link:../web-compiler
       '@vitejs/plugin-react':
         specifier: ^4.0
