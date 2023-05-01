@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.0.1
+
+### Patch Changes
+
+- 0bd9367: chore(typescript-testing): upgrade to TypeScript v5 latest
+
 ## 4.9.10
 
 ### Patch Changes

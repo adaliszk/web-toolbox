@@ -1,5 +1,5 @@
 {
-  "version": "4.9.10",
+  "version": "5.0.1",
   "name": "@adaliszk/typescript-testing",
   "description": "Meta-Package for testing Typescript Testing with Jest",
   "repository": "github:adaliszk/node-toolbox",
@@ -19,18 +19,18 @@
     "*.md"
   ],
   "dependencies": {
-    "@testdeck/core": "^0.3",
-    "@testdeck/vitest": "^0.3",
-    "@types/chai": "^4.3",
-    "chai": "^4.3",
-    "vitest": "^0.30"
+    "@testdeck/core": "^0.3.3",
+    "@testdeck/vitest": "^0.3.3",
+    "@types/chai": "^4.3.5",
+    "chai": "^4.3.7",
+    "vitest": "^0.30.1"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3",
-    "eslint": "^8.39",
-    "tsup": "^6.7",
-    "typescript": "^5.0"
+    "@adaliszk/typescript": "^5.0.1",
+    "@swc/core": "^1.3.56",
+    "eslint": "^8.39.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   },
   "keywords": [
     "typescript",

@@ -28,7 +28,7 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
+    "@adaliszk/typescript": "^5.0.1",
     "@swc/core": "^1.3",
     "eslint": "^8.39",
     "tsup": "^6.7",
