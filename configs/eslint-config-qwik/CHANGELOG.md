@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-qwik
 
+## 1.0.2
+
+### Patch Changes
+
+- 068e02f: fix(eslint-config-qwik): upgrade peer dependency to qwik
+
 ## 1.0.1
 
 ### Patch Changes
