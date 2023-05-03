@@ -11,9 +11,9 @@ _Facade for Qwik-based development_
 2. Update your `tsconfig.json` to extend from the new config:
    ```json
    {
-      "extends": "@adaliszk/qwik/config",
+      "extends": "@adaliszk/qwik",
       "compilerOptions": {
-        "baseUrl": "source",
+        "baseUrl": "src",
         "outDir": "dist"
       },
       "include": [
@@ -22,11 +22,12 @@ _Facade for Qwik-based development_
       ]
    }
    ```
-3. Use facades for quick access to React libraries
+3. Use facades or the dependent packages quick access to Qwik and Qwik-City:
    ```typescript
    import { Qwik, City } from '@adaliszk/qwik'
    // or
-   import { component$ } from '@adaliszk/qwik'
+   import { component$ } from '@builder.io/qwik'
+   import { DocumentHead } from '@builder.io/qwik-city'
    ```  
 
 ### Versioning
