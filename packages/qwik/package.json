@@ -1,5 +1,5 @@
 {
-  "version": "0.103.3",
+  "version": "1.0.1",
   "name": "@adaliszk/qwik",
   "description": "Qwik stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -10,7 +10,7 @@
   "module": "dist/bundle.mjs",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts && cp tsconfig.json config",
+    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
     "lint": "eslint source/**",
     "prepublish": "pnpm build"
   },
@@ -20,19 +20,18 @@
     ]
   },
   "dependencies": {
-    "@adaliszk/eslint-config-qwik": "^0.103.2",
-    "@builder.io/qwik": "^0.103.0",
-    "@builder.io/qwik-city": "^0.103.0",
+    "@adaliszk/eslint-config-qwik": "^1.0.1",
+    "@builder.io/qwik": "^1.0.0",
+    "@builder.io/qwik-city": "^1.0.0",
     "@types/node": "^18",
-    "undici": "^5.22"
+    "undici": "^5.22.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3",
-    "eslint": "^8.39",
-    "tsup": "^6.7",
-    "typescript": "^4.9",
-    "vite": "^4.2"
+    "@adaliszk/typescript": "^5.0.1",
+    "@swc/core": "^1.3.56",
+    "eslint": "^8.39.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   },
   "peerDependencies": {
     "eslint": "^8.39",
@@ -47,9 +46,18 @@
     "server-side renderer",
     "react-like"
   ],
+  "exports": {
+    ".": {
+      "require": "./tsconfig.json",
+      "import": "./dist/bundle.mjs"
+    },
+    "./config": {
+      "require": "./tsconfig.json",
+      "import": "./tsconfig.json"
+    }
+  },
   "files": [
     "dist",
-    "config",
     "*.json",
     "*.md"
   ]
