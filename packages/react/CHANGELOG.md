@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.2.16
+
+### Patch Changes
+
+- d5e1203: refactor(react): split client and server imports
+
 ## 18.2.15
 
 ### Patch Changes

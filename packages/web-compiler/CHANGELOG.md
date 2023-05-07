@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.3
+
+### Patch Changes
+
+- d5e1203: refactor(react): split client and server imports
+
 ## 0.8.2
 
 ### Patch Changes
