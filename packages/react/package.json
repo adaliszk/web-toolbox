@@ -1,5 +1,5 @@
 {
-  "version": "18.2.16",
+  "version": "18.2.17",
   "name": "@adaliszk/react",
   "description": "React stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -53,9 +53,13 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/bundle.cjs",
+      "require": "./tsconfig.json",
       "import": "./dist/bundle.mjs",
       "types": "./dist/bundle.d.ts"
+    },
+    "./config": {
+      "require": "./tsconfig.json",
+      "import": "./tsconfig.json"
     },
     "./server": {
       "require": "./dist/server.cjs",

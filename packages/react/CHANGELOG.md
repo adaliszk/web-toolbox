@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.2.17
+
+### Patch Changes
+
+- 6884880: fix(react): expose tsconfig through exports
+
 ## 18.2.16
 
 ### Patch Changes
