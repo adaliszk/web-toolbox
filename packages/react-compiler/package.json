@@ -14,7 +14,7 @@
     "*.md"
   ],
   "scripts": {
-    "build": "tsup source/compiler.ts --format cjs,esm --minify --sourcemap --dts",
+    "build": "pkgroll --src source --minify --sourcemap",
     "lint": "eslint source/**",
     "prepublish": "pnpm build"
   },
@@ -24,10 +24,10 @@
     "vite": "^4.2"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3",
+    "@adaliszk/typescript": "^5.0.1",
+    "esbuild": "^0.17.18",
     "eslint": "^8.39",
-    "tsup": "^6.7",
+    "pkgroll": "^1.10.0",
     "typescript": "^5.0"
   },
   "keywords": [

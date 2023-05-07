@@ -25,5 +25,11 @@ _Facade for React-based development_
    ```
 3. Use facades for quick access to React libraries
    ```typescript
-   import { React, ReactDOM } from '@adaliszk/react'
+   import { React, DOM } from '@adaliszk/react'
+   import { DOMClient } from '@adlaiszk/react/client'
    ```  
+
+### Versioning
+
+Since this is a meta-package, the versioning reflect its main provided package, in this case `react`. However, only the
+Major and Minor versions are kept in sync, and the Patch is used to bump the meta-package.
