@@ -526,7 +526,7 @@ importers:
   packages/react-compiler:
     dependencies:
       '@adaliszk/web-compiler':
-        specifier: ^0.8.2
+        specifier: ^0.8.3
         version: link:../web-compiler
       '@vitejs/plugin-react':
         specifier: ^4.0

@@ -1,5 +1,5 @@
 {
-  "version": "9.3.3",
+  "version": "9.3.4",
   "name": "@adaliszk/nestjs-compiler",
   "description": "Nest.js ESBuild and SWC compiler",
   "repository": "github:adaliszk/node-toolbox",

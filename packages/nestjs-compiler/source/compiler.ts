@@ -2,7 +2,7 @@
 
 import { program } from 'commander'
 import { esbuildDecorators } from 'esbuild-decorators'
-import { version, build } from 'esbuild'
+import { version, build, BuildOptions } from 'esbuild'
 import { rimrafSync } from 'rimraf'
 
 import * as chokidar from 'chokidar'
@@ -21,6 +21,7 @@ const nest = JSON.parse((fs.readFileSync(nestconfig)).toString())
 const mainFile = path.join(nest.entryFile ?? 'main')
 const srcDir = nest.sourceRoot ?? 'src'
 const srcPath = path.resolve(cwd, srcDir)
+const configFile = path.resolve(srcPath, 'nest-compiler.config.ts')
 
 
 program
@@ -82,14 +83,22 @@ async function watch (options: { outdir: string })
 async function compile (options: { outdir: string })
 {
     const entry = path.resolve(srcPath, mainFile + '.ts')
+    let config: BuildOptions = {}
+    if (fs.existsSync(configFile))
+    {
+        console.log('> loading configs from nest-compiler.config.ts')
+        config = (await import(configFile)).default as BuildOptions
+    }
 
     console.log(`> esbuild@${version}`)
 
     return await build({
+        ...config,
         entryPoints: [entry],
         outdir: options.outdir,
         target: 'node18',
         format: 'cjs',
+        platform: 'node',
         bundle: true,
         sourcemap: true,
         treeShaking: true,
@@ -100,6 +109,7 @@ async function compile (options: { outdir: string })
                 tsconfig,
                 cwd,
             }),
+            ...(config?.plugins ?? []),
         ],
         tsconfig,
         external: [
@@ -114,6 +124,7 @@ async function compile (options: { outdir: string })
             'kafkajs',
             'mqtt',
             'util',
+            ...(config?.external ?? []),
         ],
     })
 }

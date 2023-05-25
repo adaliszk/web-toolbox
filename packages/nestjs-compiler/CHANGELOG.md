@@ -1,5 +1,11 @@
 # @adaliszk/nestjs-compiler
 
+## 9.3.4
+
+### Patch Changes
+
+- 75d5094: feat(nestjs-compiler): add configuration file support + set platfrom to node
+
 ## 9.3.3
 
 ### Patch Changes
