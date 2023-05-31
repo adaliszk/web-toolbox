@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.1.1",
   "name": "@adaliszk/eslint-config-qwik",
   "description": "Configuration for ESLint usage within Qwik",
   "repository": "github:adaliszk/node-toolbox",
@@ -22,7 +22,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-qwik": "^1.0.0",
+    "eslint-plugin-qwik": "^1.1.4",
     "eslint-plugin-react": "^7.32.2",
     "react": "^18.2.0"
   },
@@ -34,7 +34,7 @@
   "peerDependencies": {
     "eslint": "^8.39",
     "typescript": "^5.0",
-    "@builder.io/qwik": "^1.0.0"
+    "@builder.io/qwik": "^1.1"
   },
   "keywords": [
     "eslint",

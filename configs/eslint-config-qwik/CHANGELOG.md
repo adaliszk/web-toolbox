@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-qwik
 
+## 1.1.1
+
+### Patch Changes
+
+- d003d81: feat(qwik): update to 1.1
+
 ## 1.0.2
 
 ### Patch Changes
