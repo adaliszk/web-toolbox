@@ -24,7 +24,6 @@ export function webConfig (config?: WebConfig): UserConfigExport
     if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
         conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsConfigFilePath: tsConfig }))
 
-
     return defineConfig({
         ...customConfig,
         server: {
@@ -57,5 +56,5 @@ export function webConfig (config?: WebConfig): UserConfigExport
             plugin.generateCertificate(),
             ...conditionalPlugins,
         ],
-    } as UserConfig)
+    } satisfies UserConfig)
 }

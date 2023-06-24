@@ -1,4 +1,4 @@
-import type { UserConfigExport, UserConfig } from '@adaliszk/web-compiler'
+import type { WebConfig } from '@adaliszk/web-compiler'
 import { webConfig } from '@adaliszk/web-compiler'
 import * as plugin from './plugins'
 
@@ -7,7 +7,7 @@ export * from './plugins'
 
 
 // noinspection JSUnusedGlobalSymbols
-export function reactConfig (config?: UserConfig): UserConfigExport
+export function reactConfig (config?: WebConfig)
 {
     const customConfig = config ?? {}
 
