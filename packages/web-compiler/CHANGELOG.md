@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.4
+
+### Patch Changes
+
+- be49622: feat(web-compiler): use satisifies and custom types
+
 ## 0.8.3
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.4.5
+
+### Patch Changes
+
+- be49622: feat(web-compiler): use satisifies and custom types
+- Updated dependencies [be49622]
+  - @adaliszk/web-compiler@0.8.4
+
 ## 0.4.4
 
 ### Patch Changes
