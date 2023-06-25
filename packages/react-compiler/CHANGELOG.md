@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.4.6
+
+### Patch Changes
+
+- 5cb63ad: refactor: sync compuler usage
+- Updated dependencies [5cb63ad]
+  - @adaliszk/web-compiler@0.8.6
+
 ## 0.4.5
 
 ### Patch Changes

@@ -1,5 +1,5 @@
 {
-  "version": "0.8.5",
+  "version": "0.8.6",
   "name": "@adaliszk/web-compiler",
   "description": "Web configuration for Vite using Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsup source/compiler.ts --format cjs,esm --target node18 --minify --sourcemap --dts",
+    "build": "tsup source/compiler.ts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
     "lint": "eslint source/**",
     "prepublish": "pnpm build"
   },

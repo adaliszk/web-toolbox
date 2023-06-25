@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.6
+
+### Patch Changes
+
+- 5cb63ad: refactor: sync compuler usage
+
 ## 0.8.5
 
 ### Patch Changes
