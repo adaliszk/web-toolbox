@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.8.5
+
+### Patch Changes
+
+- 8d54120: refactor(web-compiler): revert satisfies check
+
 ## 0.8.4
 
 ### Patch Changes
