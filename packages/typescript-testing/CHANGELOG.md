@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.0.2
+
+### Patch Changes
+
+- 4a1efd4: refactor(typescript-testing): expose ESM besides CommonJS
+
 ## 5.0.1
 
 ### Patch Changes

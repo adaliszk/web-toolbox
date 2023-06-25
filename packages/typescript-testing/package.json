@@ -1,5 +1,5 @@
 {
-  "version": "5.0.1",
+  "version": "5.0.2",
   "name": "@adaliszk/typescript-testing",
   "description": "Meta-Package for testing Typescript Testing with Jest",
   "repository": "github:adaliszk/node-toolbox",
@@ -8,11 +8,12 @@
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-testing",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build": "tsup source/bundle.ts --format cjs --dts",
+    "build": "tsup source/bundle.ts --clean --format cjs,esm --dts",
     "lint": "eslint source/**",
     "prepublish": "pnpm build"
   },
   "main": "dist/bundle.js",
+  "module": "dist/bundle.mjs",
   "types": "dist/bundle.d.ts",
   "files": [
     "dist",
@@ -38,5 +39,12 @@
     "jest",
     "TDD",
     "BDD"
-  ]
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/bundle.js",
+      "import": "./dist/bundle.mjs",
+      "types": "./dist/bundle.d.ts"
+    }
+  }
 }
