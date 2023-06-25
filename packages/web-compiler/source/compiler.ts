@@ -56,5 +56,5 @@ export function webConfig (config?: WebConfig): UserConfigExport
             plugin.generateCertificate(),
             ...conditionalPlugins,
         ],
-    } satisfies UserConfig)
+    } as UserConfig)
 }
