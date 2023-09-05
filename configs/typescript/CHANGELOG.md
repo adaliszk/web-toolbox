@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 5.1.1
+
+### Patch Changes
+
+- 6aebc45: chore(typescript): upgrade to 5.1.x
+- Updated dependencies [6aebc45]
+  - @adaliszk/eslint-config-typescript@8.48.1
+
 ## 5.0.1
 
 ### Patch Changes

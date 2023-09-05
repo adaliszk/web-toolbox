@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.1.1
+
+### Patch Changes
+
+- 6aebc45: chore(typescript): upgrade to 5.1.x
+
 ## 5.0.2
 
 ### Patch Changes
