@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-qwik
 
+## 1.2.1
+
+### Patch Changes
+
+- f5ab046: chore(qwik): upgrade to 1.2.x
+
 ## 1.1.1
 
 ### Patch Changes
