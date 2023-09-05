@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.2.1
+
+### Patch Changes
+
+- 4d5648e: chore(typescript): upgdrade to 5.2.x
+
 ## 5.1.1
 
 ### Patch Changes
