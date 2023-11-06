@@ -1,5 +1,13 @@
 # @adaliszk/typescript
 
+## 5.2.2
+
+### Patch Changes
+
+- a555e17: chore(typescript): upgrade eslint to 8.53
+- Updated dependencies [a555e17]
+  - @adaliszk/eslint-config-typescript@8.53.1
+
 ## 5.2.1
 
 ### Patch Changes
