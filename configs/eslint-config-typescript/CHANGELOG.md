@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.56.3
+
+### Patch Changes
+
+- 6c64b9c: feat(eslint): add pep8 plugin for consistency
+
 ## 8.56.2
 
 ### Patch Changes
