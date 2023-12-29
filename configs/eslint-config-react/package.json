@@ -1,5 +1,5 @@
 {
-  "version": "18.2.17",
+  "version": "18.2.18",
   "name": "@adaliszk/eslint-config-react",
   "description": "Configuration for ESLint usage within React Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -9,7 +9,7 @@
   "scripts": {
     "build": "echo 'Nothing to build, skipping...' && exit 0",
     "lint": "eslint ./eslint-config.cjs",
-    "fmt": "dprint fmt"
+    "fmt": "dprint fmt && eslint . --fix"
   },
   "main": "eslint-config.cjs",
   "files": [

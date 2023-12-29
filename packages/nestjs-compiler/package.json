@@ -1,5 +1,5 @@
 {
-  "version": "9.3.4",
+  "version": "10.3.1",
   "name": "@adaliszk/nestjs-compiler",
   "description": "Nest.js ESBuild and SWC compiler",
   "repository": "github:adaliszk/node-toolbox",
@@ -18,7 +18,7 @@
     "build:compiler": "esbuild source/compiler.ts --platform=node --format=cjs --minify --outdir=dist",
     "build": "pnpm clean && pnpm build:compiler && chmod +x dist/compiler.js",
     "lint": "eslint source/**",
-    "prepublish": "pnpm build"
+    "fmt": "dprint fmt && eslint . --fix"
   },
   "dependencies": {
     "@swc/core": "^1.3.101",
@@ -31,8 +31,8 @@
   },
   "devDependencies": {
     "@adaliszk/typescript": "workspace:~",
-    "eslint": "^8.56",
     "esbuild": "^0.19",
+    "eslint": "^8.56",
     "typescript": "^5.3"
   },
   "keywords": [

@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.2.3
+
+### Patch Changes
+
+- 9eb8f1f: chore: upgrade dependencies
+
 ## 5.2.2
 
 ### Patch Changes

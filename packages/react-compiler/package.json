@@ -1,11 +1,11 @@
 {
-  "version": "0.4.6",
+  "version": "0.4.7",
   "name": "@adaliszk/react-compiler",
   "description": "React configuration for Vite using Typescript",
   "repository": "github:adaliszk/node-toolbox",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
-  "license": "BSD-3-Clause",
+  "license": "BSD-2-Clause",
   "types": "dist/compiler.d.ts",
   "module": "dist/compiler.mjs",
   "main": "dist/compiler.js",
@@ -14,22 +14,22 @@
     "*.md"
   ],
   "scripts": {
-    "build": "tsup source/compiler.ts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
+    "build": "tsup source/compiler.mts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
     "lint": "eslint source/**",
-    "prepublish": "pnpm build"
+    "fmt": "dprint fmt && eslint . --fix"
   },
   "dependencies": {
-    "@adaliszk/web-compiler": "^0.8.6",
-    "@vitejs/plugin-react": "^4.0",
-    "vite": "^4.2"
+    "@adaliszk/web-compiler": "^0.8.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^4.5"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^5.0.1",
+    "@adaliszk/typescript": "workspace:~",
     "@swc/core": "^1.3",
-    "esbuild": "^0.17.18",
-    "eslint": "^8.39",
+    "esbuild": "^0.19",
+    "eslint": "^8.56",
     "tsup": "^6.7",
-    "typescript": "^5.0"
+    "typescript": "^5.3"
   },
   "keywords": [
     "typescript",

@@ -1,6 +1,9 @@
 {
   "extends": "@adaliszk/typescript",
   "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik",
     "baseUrl": "source",

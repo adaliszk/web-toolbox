@@ -23,7 +23,6 @@ export class Logger<Metadata = {}> implements LoggerService
         this.logger = pino({
             timestamp: pino.stdTimeFunctions.isoTime,
             level: this.level,
-            context,
         })
     }
 

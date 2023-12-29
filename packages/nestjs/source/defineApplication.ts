@@ -1,5 +1,6 @@
 import { BullModule } from '@nestjs/bull'
-import { CacheModule, Logger as CommonLogger, Module, ValidationPipe } from '@nestjs/common'
+import { Logger as CommonLogger, Module, ValidationPipe } from '@nestjs/common'
+import { CacheModule } from '@nestjs/cache-manager'
 import { ConfigModule } from '@nestjs/config'
 import { EventEmitterModule } from '@nestjs/event-emitter'
 import { redisStore } from 'cache-manager-redis-yet'

@@ -1,15 +1,14 @@
 import type { WebConfig } from '@adaliszk/web-compiler'
 import { webConfig } from '@adaliszk/web-compiler'
-import * as plugin from './plugins'
+import * as plugin from './plugins.mts'
 
 export * from '@adaliszk/web-compiler'
-export * from './plugins'
+export * from './plugins.mts'
 
 
-// noinspection JSUnusedGlobalSymbols
 export function reactConfig (config?: WebConfig)
 {
-    const customConfig = config ?? {}
+    const customConfig: WebConfig = config ?? {}
 
     return webConfig({
         ...customConfig,

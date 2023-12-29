@@ -11,7 +11,7 @@ _Facade for Qwik-based development_
 2. Update your `tsconfig.json` to extend from the new config:
    ```json
    {
-      "extends": "@adaliszk/qwik",
+      "extends": "@adaliszk/qwik/config",
       "compilerOptions": {
         "baseUrl": "src",
         "outDir": "dist"

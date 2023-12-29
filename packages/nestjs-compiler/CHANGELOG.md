@@ -1,5 +1,11 @@
 # @adaliszk/nestjs-compiler
 
+## 10.3.1
+
+### Patch Changes
+
+- 9eb8f1f: chore: upgrade dependencies
+
 ## 9.3.4
 
 ### Patch Changes

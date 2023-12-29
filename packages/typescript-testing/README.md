@@ -34,8 +34,10 @@ you can use them as namespace like `testdeck` and `chai`.
 For example, what normally looks like:
 
 ```typescript
-describe('MyModule', () => {
-    it('should be able to import', () => {
+describe('MyModule', () =>
+{
+    it('should be able to import', () =>
+    {
         import() /* ... */
     })
 })
@@ -47,9 +49,11 @@ Can be written with testdeck:
 import { describe, it } from '@adaliszk/typescript-testing'
 
 @describe
-class MyModule {
+class MyModule
+{
     @it
-    'should be able to import'() {
+    'should be able to import' ()
+    {
         import() /* ... */
     }
 }

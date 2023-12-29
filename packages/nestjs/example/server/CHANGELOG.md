@@ -1,5 +1,14 @@
 # @adaliszk/nestjs-server-example
 
+## 0.1.1
+
+### Patch Changes
+
+- 9eb8f1f: chore: upgrade dependencies
+- Updated dependencies [9eb8f1f]
+  - @adaliszk/nestjs-fastify@10.3.1
+  - @adaliszk/nestjs@10.3.1
+
 ## 0.0.1
 
 ### Patch Changes

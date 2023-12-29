@@ -1,15 +1,15 @@
-import type { UserConfigExport, WebConfig } from './types'
+import type { UserConfigExport, WebConfig } from './types.mts'
 import type { UserConfig, PluginOption } from 'vite'
 
 import { defineConfig } from 'vite'
-import * as plugin from './plugins'
+import * as plugin from './plugins.mts'
 
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 
 export * from 'vite'
-export * from './plugins'
-export * from './types'
+export * from './plugins.mts'
+export * from './types.mts'
 
 // noinspection JSUnusedGlobalSymbols
 export function webConfig (config?: WebConfig): UserConfigExport
@@ -22,7 +22,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
 
     const conditionalPlugins: PluginOption[] = []
     if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
-        conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsConfigFilePath: tsConfig }))
+        conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsconfigPath: tsConfig }))
 
     return defineConfig({
         ...customConfig,
@@ -53,7 +53,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
             ...(customConfig?.plugins ?? []),
             plugin.lint({}),
             plugin.compressAssets(),
-            plugin.generateCertificate(),
+            plugin.generateCertificate,
             ...conditionalPlugins,
         ],
     } as UserConfig)

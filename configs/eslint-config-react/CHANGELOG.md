@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.18
+
+### Patch Changes
+
+- 9eb8f1f: chore: upgrade dependencies
+
 ## 18.2.17
 
 ### Patch Changes

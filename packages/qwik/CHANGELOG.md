@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.3.1
+
+### Patch Changes
+
+- 9eb8f1f: chore: upgrade dependencies
+
 ## 1.2.1
 
 ### Patch Changes
