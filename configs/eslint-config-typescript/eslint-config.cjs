@@ -4,6 +4,7 @@ const currentParser = '@typescript-eslint/parser'
 
 const pluginList = [
     '@typescript-eslint',
+    'pep8-blank-lines',
 ]
 
 const extendsList = [

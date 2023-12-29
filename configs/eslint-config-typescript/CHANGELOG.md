@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.56.4
+
+### Patch Changes
+
+- 2492eef: chore(eslint): fix missing changes
+
 ## 8.56.3
 
 ### Patch Changes
