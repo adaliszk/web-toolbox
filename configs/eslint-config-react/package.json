@@ -1,14 +1,15 @@
 {
-  "version": "18.2.16",
+  "version": "18.2.17",
   "name": "@adaliszk/eslint-config-react",
   "description": "Configuration for ESLint usage within React Typescript",
   "repository": "github:adaliszk/node-toolbox",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/configs/eslint-config-react",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/eslint-config-react",
-  "license": "BSD-3-Clause",
+  "license": "BSD-2-Clause",
   "scripts": {
     "build": "echo 'Nothing to build, skipping...' && exit 0",
-    "lint": "eslint ./eslint-config.cjs"
+    "lint": "eslint ./eslint-config.cjs",
+    "fmt": "dprint fmt"
   },
   "main": "eslint-config.cjs",
   "files": [
@@ -16,23 +17,23 @@
     "*.md"
   ],
   "dependencies": {
-    "@adaliszk/eslint-config-typescript": "^8.39.1",
-    "@typescript-eslint/eslint-plugin": "^5.59.0",
-    "@typescript-eslint/parser": "^5.59.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.7.0",
+    "@adaliszk/eslint-config-typescript": "^8.56.2",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.32.2"
+    "eslint-plugin-react": "^7.33.2"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^5.0.1",
-    "eslint": "^8.39",
-    "typescript": "^5.0"
+    "@adaliszk/typescript": "workspace:~",
+    "eslint": "^8.56",
+    "typescript": "^5.3"
   },
   "peerDependencies": {
-    "eslint": "^8.39",
+    "eslint": "^8.56",
     "react": "^18.2.0",
-    "typescript": "^5.0"
+    "typescript": "^5.3"
   },
   "keywords": [
     "eslint",

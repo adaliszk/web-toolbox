@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.56.2
+
+### Patch Changes
+
+- 2bee7a0: chore(eslint): upgrade configs to latest versions
+
 ## 8.56.1
 
 ### Patch Changes

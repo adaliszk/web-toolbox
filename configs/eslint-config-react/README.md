@@ -6,6 +6,7 @@ adds typescript-based react linting.
 
 ### Provides
 
+- `@adaliszk/eslint-config-typescript`
 - `eslint-plugin-react`
 
 ### Rules

@@ -6,7 +6,5 @@
     "baseUrl": "source",
     "outDir": "dist"
   },
-  "include": [
-    "eslint-config.cjs"
-  ]
+  "include": ["eslint-config.cjs"]
 }

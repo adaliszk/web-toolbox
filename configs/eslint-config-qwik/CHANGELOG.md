@@ -1,5 +1,13 @@
 # @adaliszk/eslint-config-qwik
 
+## 1.3.1
+
+### Patch Changes
+
+- 2bee7a0: chore(eslint): upgrade configs to latest versions
+- Updated dependencies [2bee7a0]
+  - @adaliszk/eslint-config-typescript@8.56.2
+
 ## 1.2.1
 
 ### Patch Changes

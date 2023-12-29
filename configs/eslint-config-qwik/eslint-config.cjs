@@ -1,9 +1,6 @@
-/**
- * Extend react configuration with my Typescript config
- */
 module.exports = {
     extends: [
-        '@adaliszk/react',
+        '@adaliszk/typescript',
         'plugin:qwik/recommended',
     ],
     parserOptions: {
@@ -12,16 +9,5 @@ module.exports = {
         ecmaFeatures: {
             jsx: true,
         },
-    },
-    settings: {
-        react: { version: 'detect' },
-        linkComponents: [
-            // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
-            'Hyperlink',
-            {
-                name: 'Link',
-                linkAttribute: 'to',
-            },
-        ],
     },
 }

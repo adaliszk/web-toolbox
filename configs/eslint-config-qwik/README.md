@@ -1,10 +1,11 @@
 _Typescript Qwik ESLint Config_
 
-This package contains an eslint configuration that extends my [`@adaliszk/eslint-config-typescript`]() settings and adds
+This package contains an eslint configuration that extends my [`@adaliszk/eslint-config-typescript`](https://www.npmjs.com/package/@adaliszk/eslint-config-typescript) settings and adds
 typescript-based qwik linting.
 
 ### Provides
 
+- `@adaliszk/eslint-config-typescript`
 - `eslint-plugin-qwik`
 
 ### Usage
