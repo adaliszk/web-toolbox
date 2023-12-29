@@ -1,17 +1,16 @@
-import { CacheModule, ValidationPipe, Logger as CommonLogger, Module } from '@nestjs/common'
-import { ConfigModule } from '@nestjs/config'
-import { redisStore } from 'cache-manager-redis-yet'
 import { BullModule } from '@nestjs/bull'
+import { CacheModule, Logger as CommonLogger, Module, ValidationPipe } from '@nestjs/common'
+import { ConfigModule } from '@nestjs/config'
 import { EventEmitterModule } from '@nestjs/event-emitter'
+import { redisStore } from 'cache-manager-redis-yet'
 
-import { HttpExceptionFilter, ServiceInfoModule } from './helpers'
 import { Logger } from './createLogger'
-
+import { HttpExceptionFilter, ServiceInfoModule } from './helpers'
 
 import type { DynamicModule, INestApplication, INestMicroservice, LoggerService } from '@nestjs/common'
 import type { AppConfig } from './types'
 
-export async function defineApplication (logger: () => LoggerService, config?: AppConfig)
+export async function defineApplication(logger: () => LoggerService, config?: AppConfig)
 {
     const configurableImports: DynamicModule[] = []
 
@@ -24,6 +23,7 @@ export async function defineApplication (logger: () => LoggerService, config?: A
     }
 
     if (config?.redis?.enabled)
+    {
         configurableImports.push(CacheModule.registerAsync({
             useFactory: async () =>
             {
@@ -35,17 +35,22 @@ export async function defineApplication (logger: () => LoggerService, config?: A
             },
             isGlobal: true,
         }))
+    }
 
     if (config?.queues?.enabled)
+    {
         configurableImports.push(BullModule.forRoot({ ...(config?.redis?.enabled ? { redis: redisConfig } : {}) }))
+    }
 
     if (config?.eventEmitter?.enabled)
+    {
         configurableImports.push(EventEmitterModule.forRoot({
             wildcard: config?.eventEmitter?.wildcard ?? true,
             newListener: config?.eventEmitter?.newListener ?? true,
             removeListener: config?.eventEmitter?.removeListener ?? true,
             maxListeners: config?.eventEmitter?.maxListeners ?? 32,
         }))
+    }
 
     const configuration = () => ({
         appName: config?.name ?? 'NestJS Application',
@@ -70,12 +75,17 @@ export async function defineApplication (logger: () => LoggerService, config?: A
         controllers: config?.controllers ?? [],
         exports: config?.exports ?? [],
     })
-    class Server {}
+    class Server
+    {}
 
     return Server
 }
 
-export async function configureApplication (app: INestApplication | INestMicroservice, logger: LoggerService, config?: AppConfig)
+export async function configureApplication(
+    app: INestApplication | INestMicroservice,
+    logger: LoggerService,
+    config?: AppConfig,
+)
 {
     app.useGlobalPipes(new ValidationPipe())
     app.useGlobalPipes(...(config?.globalPipes ?? []))

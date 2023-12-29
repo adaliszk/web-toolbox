@@ -6,14 +6,7 @@
     "incremental": true,
     "outDir": "./dist",
     "baseUrl": "./src",
-    "paths": {
-      "@adaliszk/nestjs": [
-        "../../../source/bundle"
-      ]
-    }
+    "paths": { "@adaliszk/nestjs": ["../../../source/bundle"] }
   },
-  "include": [
-    "vite.config.ts",
-    "src/**/*"
-  ]
+  "include": ["vite.config.ts", "src/**/*"]
 }

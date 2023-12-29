@@ -1,11 +1,10 @@
-import type { AppConfig } from './types'
 import { NestFactory } from '@nestjs/core'
-import { configureApplication, defineApplication } from './defineApplication'
 import { MicroserviceOptions } from '@nestjs/microservices'
 import { createLoggerFactory } from './createLogger'
+import { configureApplication, defineApplication } from './defineApplication'
+import type { AppConfig } from './types'
 
-
-export async function createMicroservice (config?: AppConfig)
+export async function createMicroservice(config?: AppConfig)
 {
     const logger = await createLoggerFactory(config)
     const app = await defineApplication(logger, config)

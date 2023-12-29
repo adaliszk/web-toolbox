@@ -2,7 +2,11 @@
   "typescript": {
     "indentWidth": 4,
     "semiColons": "asi",
-    "quoteStyle": "preferSingle"
+    "quoteStyle": "preferSingle",
+    "useBraces": "whenNotSingleLine",
+    "bracePosition": "nextLine",
+    "constructor.spaceBeforeParentheses": true,
+    "method.spaceBeforeParentheses": true
   },
   "json": {
     "preferSingleLine": true

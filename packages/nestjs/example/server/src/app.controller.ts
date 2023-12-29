@@ -1,7 +1,6 @@
 import { Controller, Get, Logger } from '@adaliszk/nestjs'
 import { AppService } from './app.service'
 
-
 @Controller()
 export class AppController
 {

@@ -30,11 +30,5 @@
     "pkg": "^5.8.1",
     "typescript": "^4.9.5"
   },
-  "pkg": {
-    "assets": "public/**/*",
-    "scripts": "dist/**/*.js",
-    "targets": [
-      "node18-alpine-x64"
-    ]
-  }
+  "pkg": { "assets": "public/**/*", "scripts": "dist/**/*.js", "targets": ["node18-alpine-x64"] }
 }

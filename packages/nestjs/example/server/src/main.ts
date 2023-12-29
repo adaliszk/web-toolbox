@@ -3,8 +3,7 @@ import { FastifyAdapter, NestFastifyApplication } from '@adaliszk/nestjs-fastify
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 
-
-async function main ()
+async function main()
 {
     const app = await createServer<NestFastifyApplication>({
         name: 'nestjs-server-example',

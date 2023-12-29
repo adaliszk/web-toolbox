@@ -1,19 +1,17 @@
-import type { AppConfig } from './types'
 import type { INestApplication } from '@nestjs/common'
 import { NestFactory } from '@nestjs/core'
-import { configureApplication, defineApplication } from './defineApplication'
 import { createLoggerFactory } from './createLogger'
+import { configureApplication, defineApplication } from './defineApplication'
+import type { AppConfig } from './types'
 
 import cluster from 'node:cluster'
-import process from 'node:process'
 import os from 'node:os'
-
+import process from 'node:process'
 
 export const LOGICAL_CPU_COUNT = os.cpus().length
 export const NODE_ENV = process.env.NODE_ENV ?? 'production'
 
-
-export async function createServer<T extends INestApplication> (config?: AppConfig): Promise<T | undefined>
+export async function createServer<T extends INestApplication>(config?: AppConfig): Promise<T | undefined>
 {
     const logger = await createLoggerFactory(config)
     const console = logger()
@@ -23,10 +21,14 @@ export async function createServer<T extends INestApplication> (config?: AppConf
         : LOGICAL_CPU_COUNT
 
     if (DESIRED_THREAD_COUNT === 1)
+    {
         console.warn('Cannot start threads when there is only one logical core!', 'NestManager')
+    }
 
     if (NODE_ENV !== 'production')
+    {
         console.warn('Environment is not production, skipping threads...', 'NestManager')
+    }
 
     if (cluster.isPrimary && DESIRED_THREAD_COUNT > 1 && NODE_ENV === 'production')
     {
@@ -43,10 +45,9 @@ export async function createServer<T extends INestApplication> (config?: AppConf
 
     const serverLogger = logger()
     const app = await defineApplication(logger, config)
-    const server =
-        config?.adapter
-            ? await NestFactory.create<T>(app, config.adapter, { logger: serverLogger })
-            : await NestFactory.create<T>(app, { logger: serverLogger })
+    const server = config?.adapter
+        ? await NestFactory.create<T>(app, config.adapter, { logger: serverLogger })
+        : await NestFactory.create<T>(app, { logger: serverLogger })
 
     await configureApplication(server, serverLogger, config)
     return server

@@ -6,4 +6,5 @@ import { ServiceInfoController } from './ServiceInfo.controller'
     imports: [TerminusModule],
     controllers: [ServiceInfoController],
 })
-export class ServiceInfoModule {}
+export class ServiceInfoModule
+{}

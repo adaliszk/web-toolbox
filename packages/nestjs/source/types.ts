@@ -1,14 +1,17 @@
 import {
-    ModuleMetadata, ExceptionFilter, NestInterceptor, PipeTransform, CanActivate, LoggerService
+    CanActivate,
+    ExceptionFilter,
+    LoggerService,
+    ModuleMetadata,
+    NestInterceptor,
+    PipeTransform,
 } from '@nestjs/common'
 import { AbstractHttpAdapter } from '@nestjs/core'
 import { MicroserviceOptions } from '@nestjs/microservices'
-import { LogLevel } from './createLogger'
 import { HealthIndicatorResult } from '@nestjs/terminus'
-
+import { LogLevel } from './createLogger'
 
 export type HealthCheckFn = () => Promise<HealthIndicatorResult>
-
 
 export interface AppConfig extends ModuleMetadata
 {
@@ -80,7 +83,7 @@ export interface AppConfig extends ModuleMetadata
      * Configure Redis usage within the application.
      */
     redis?: {
-        enabled: boolean,
+        enabled: boolean
         ttl?: number
         host?: string
         port?: number
@@ -93,7 +96,7 @@ export interface AppConfig extends ModuleMetadata
      * Configure the EventEmitter usage within the application.
      */
     eventEmitter?: {
-        enabled: boolean,
+        enabled: boolean
         maxListeners?: number
         wildcard: boolean
         newListener: boolean

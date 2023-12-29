@@ -14,21 +14,22 @@ This package provides an abstraction between your projects and the common boiler
 
 1. Install the package `pnpm install @adaliszk/nestjs @adaliszk-nestjs-compiler`
 2. Setup your service using `@adaliszk/nestjs`
-3. 
+3.
 
 ### Creating Nest.js Context
 
 ```typescript
 import { createContext } from '@adaliszk/nestjs'
-import { AppModule } from './app.module'
 import { AppController } from './app.controller'
+import { AppModule } from './app.module'
 
-const app = createContext({ imports: [ AppModule ] })
+const app = createContext({ imports: [AppModule] })
 
 // Serve a Fission function
-const handle = (context) => {
+const handle = (context) =>
+{
     const route = app.get(AppController)
-    
+
     return route.doTheThing(context.request, context.response)
 }
 ```
@@ -37,12 +38,15 @@ const handle = (context) => {
 
 ```typescript
 import { createServer } from '@adaliszk/nestjs'
-import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify'
+import {
+    FastifyAdapter,
+    NestFastifyApplication,
+} from '@nestjs/platform-fastify'
 import { AppModule } from './app.module'
 
 await createServer<NestFastifyApplication>({
     adapter: new FastifyAdapter(),
-    imports: [ AppModule ],
+    imports: [AppModule],
     maxThreads: 4,
     port: 3000,
 })
@@ -55,10 +59,10 @@ import { createMicroservice, Transport } from '@adaliszk/nestjs'
 import { AppModule } from './app.module'
 
 await createMicroservice({
-    imports: [ AppModule ],
+    imports: [AppModule],
     maxThreads: 4,
     service: {
-        transport: Transport.TCP
+        transport: Transport.TCP,
     },
 })
 ```

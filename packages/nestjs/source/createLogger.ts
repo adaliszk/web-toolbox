@@ -4,7 +4,6 @@ import type { LoggerService } from '@nestjs/common'
 import type { Logger as PinoLogger } from 'pino'
 import type { AppConfig } from './types'
 
-
 export type LogLevel = 'fatal' | 'error' | 'info' | 'warn' | 'debug' | 'trace'
 
 /**
@@ -28,7 +27,10 @@ export class Logger<Metadata = {}> implements LoggerService
         })
     }
 
-    setContext (context?: string) { this.context = context }
+    setContext (context?: string)
+    {
+        this.context = context
+    }
 
     log (message: string | object, context?: string): void
     log (message: string | object, metadata?: Metadata): void
@@ -77,10 +79,10 @@ export class Logger<Metadata = {}> implements LoggerService
     {
         const context = typeof ctx === 'string' ? ctx : this.context
         const msg = message instanceof Error
-            ? <string>`[${message.constructor.name ?? context}] ${message.message}`
+            ? <string> `[${message.constructor.name ?? context}] ${message.message}`
             : typeof message === 'string'
-                ? <string>message
-                : '[object]'
+            ? <string> message
+            : '[object]'
 
         if (message instanceof Error || ctx instanceof Error)
         {
@@ -95,8 +97,7 @@ export class Logger<Metadata = {}> implements LoggerService
     }
 }
 
-
-export async function createLoggerFactory<T> (config?: AppConfig): Promise<() => LoggerService>
+export async function createLoggerFactory<T>(config?: AppConfig): Promise<() => LoggerService>
 {
     if (config?.logger !== undefined) return () => config.logger as LoggerService
     return () => new Logger<T>('', config?.logLevel)

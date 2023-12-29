@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common'
-import { HealthCheckService, MicroserviceHealthIndicator, HealthCheck } from '@nestjs/terminus'
 import { ConfigService } from '@nestjs/config'
 import { RedisOptions, Transport } from '@nestjs/microservices'
+import { HealthCheck, HealthCheckService, MicroserviceHealthIndicator } from '@nestjs/terminus'
 import { HealthCheckFn } from '../types'
 
 @Controller()
@@ -30,10 +30,14 @@ export class ServiceInfoController
 
         const redis = this.config.get('redis')
         if (redis?.enabled ?? false)
-            healthChecks.push(() => this.service.pingCheck('redis', {
-                transport: Transport.REDIS,
-                options: redis,
-            }))
+        {
+            healthChecks.push(() =>
+                this.service.pingCheck('redis', {
+                    transport: Transport.REDIS,
+                    options: redis,
+                })
+            )
+        }
 
         return this.health.check([
             ...(this.config.get('healthChecks') ?? []),

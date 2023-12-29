@@ -12,7 +12,5 @@
     "baseUrl": "source",
     "outDir": "dist"
   },
-  "include": [
-    "source/**/*"
-  ]
+  "include": ["source/**/*"]
 }
