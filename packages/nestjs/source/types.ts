@@ -65,6 +65,13 @@ export interface AppConfig extends ModuleMetadata
     globalFilters?: ExceptionFilter[]
 
     /**
+     * Wether the exception filter for HTTP responses should be loaded by default
+     * @default true for servers
+     * @default false for microservices
+     */
+    autoExceptionHandler?: boolean
+
+    /**
      * Pass a list of global interceptors to be used by the NestApplication instance.
      */
     globalInterceptors?: NestInterceptor[]
@@ -73,6 +80,13 @@ export interface AppConfig extends ModuleMetadata
      * Pass a list of global pipes to be used by the NestApplication instance.
      */
     globalPipes?: PipeTransform<unknown>[]
+
+    /**
+     * Wether the validation pipe should be loaded by default
+     * @default true for servers
+     * @default false for microservices
+     */
+    autoValidation?: boolean
 
     /**
      * Pass a list of global guards to be used by the NestApplication instance.

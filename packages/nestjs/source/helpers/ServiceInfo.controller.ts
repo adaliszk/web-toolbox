@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
-import { RedisOptions, Transport } from '@nestjs/microservices'
+import { Transport } from '@nestjs/microservices'
 import { HealthCheck, HealthCheckService, MicroserviceHealthIndicator } from '@nestjs/terminus'
 import { HealthCheckFn } from '../types'
 

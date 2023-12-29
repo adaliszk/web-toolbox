@@ -88,12 +88,15 @@ export async function configureApplication(
     config?: AppConfig,
 )
 {
-    app.useGlobalPipes(new ValidationPipe())
+    if (config?.autoValidation === undefined || config.autoValidation)
+        app.useGlobalPipes(new ValidationPipe())
+
     app.useGlobalPipes(...(config?.globalPipes ?? []))
-    app.useGlobalFilters(...[
-        ...(config?.globalFilters ?? []),
-        new HttpExceptionFilter(logger),
-    ])
+    app.useGlobalFilters(...(config?.globalFilters ?? []))
+
+    if (config?.autoExceptionHandler === undefined || config.autoExceptionHandler)
+        app.useGlobalFilters(new HttpExceptionFilter(logger))
+
     app.useGlobalInterceptors(...(config?.globalInterceptors ?? []))
     app.useGlobalGuards(...(config?.globalGuards ?? []))
 }

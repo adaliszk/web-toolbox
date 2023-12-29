@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 10.3.2
+
+### Patch Changes
+
+- dc76948: feat(nest): add options for autoloaded modules
+
 ## 10.3.1
 
 ### Patch Changes

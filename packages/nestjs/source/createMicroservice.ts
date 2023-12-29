@@ -15,6 +15,11 @@ export async function createMicroservice(config?: AppConfig)
         logger: serverLogger,
     })
 
-    await configureApplication(server, serverLogger, config)
+    await configureApplication(server, serverLogger, {
+        autoExceptionHandler: false,
+        autoValidation: false,
+        ...config,
+    })
+
     return server
 }
