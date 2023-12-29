@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.53.2
+
+### Patch Changes
+
+- 8e24286: chore(typescript): upgrade to 4.3
+
 ## 8.53.1
 
 ### Patch Changes

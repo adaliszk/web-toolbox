@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.2.2
+
+### Patch Changes
+
+- 8e24286: chore(typescript): upgrade to 4.3
+
 ## 5.2.1
 
 ### Patch Changes

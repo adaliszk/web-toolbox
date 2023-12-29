@@ -1,16 +1,16 @@
 {
-  "version": "5.2.1",
+  "version": "5.2.2",
   "name": "@adaliszk/typescript-testing",
   "description": "Meta-Package for testing Typescript Testing with Jest",
   "repository": "github:adaliszk/node-toolbox",
   "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
   "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stacks/typescript-testing",
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-testing",
-  "license": "BSD-3-Clause",
+  "license": "BSD-2-Clause",
   "scripts": {
     "build": "tsup source/bundle.ts --clean --format cjs,esm --dts",
     "lint": "eslint source/**",
-    "prepublish": "pnpm build"
+    "fmt": "dprint fmt"
   },
   "main": "dist/bundle.js",
   "module": "dist/bundle.mjs",
@@ -22,16 +22,16 @@
   "dependencies": {
     "@testdeck/core": "^0.3.3",
     "@testdeck/vitest": "^0.3.3",
-    "@types/chai": "^4.3.6",
-    "chai": "^4.3.8",
-    "vitest": "^0.34.3"
+    "@types/chai": "^4.3.11",
+    "chai": "^4.3.10",
+    "vitest": "^1.1.0"
   },
   "devDependencies": {
-    "@adaliszk/typescript": "^5.2.1",
-    "@swc/core": "^1.3.82",
-    "eslint": "^8.48.0",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
+    "@adaliszk/typescript": "workspace:~",
+    "@swc/core": "^1.3.101",
+    "eslint": "^8",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
   },
   "keywords": [
     "typescript",

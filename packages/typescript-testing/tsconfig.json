@@ -1,11 +1,5 @@
 {
   "extends": "@adaliszk/typescript",
-  "compilerOptions": {
-    "noEmit": false,
-    "sourceRoot": "./source",
-    "outDir": "./dist"
-  },
-  "include": [
-    "./source/**/*"
-  ]
+  "compilerOptions": { "noEmit": false, "sourceRoot": "source", "outDir": "dist" },
+  "include": ["source/**/*"]
 }

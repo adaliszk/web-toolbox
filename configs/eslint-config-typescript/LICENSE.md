@@ -1,6 +1,6 @@
-BSD 3-Clause License
+BSD 2-Clause License
 
-Copyright © 2022, Ádám Liszkai
+Copyright © 2022-2024, Ádám Liszkai
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

@@ -2,8 +2,8 @@
 
 import type * as testdeckCore from '@testdeck/core'
 import * as testdeckSrc from '@testdeck/vitest'
-import * as vitestSrc from 'vitest'
 import * as chaiSrc from 'chai'
+import * as vitestSrc from 'vitest'
 
 // region Library exports
 export { defineConfig } from 'vitest/config'

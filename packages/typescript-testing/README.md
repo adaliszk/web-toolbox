@@ -14,9 +14,9 @@ _Meta-Package for testing Typescript with Vitest_
   import { defineConfig } from '@adaliszk/typescript-testing'
 
   export default defineConfig({
-    test: {
-      // ...
-    },
+      test: {
+          // ...
+      },
   })
   ```
 - Add a script to run the tests and collect the coverage:
@@ -32,23 +32,25 @@ Furthermore, this package is a facade for the provided packages where each expor
 you can use them as namespace like `testdeck` and `chai`.
 
 For example, what normally looks like:
+
 ```typescript
 describe('MyModule', () => {
     it('should be able to import', () => {
-        import(/* ... */)
+        import() /* ... */
     })
-});
+})
 ```
 
 Can be written with testdeck:
+
 ```typescript
 import { describe, it } from '@adaliszk/typescript-testing'
 
-@describe class MyModule
-{
-    @it 'should be able to import' ()
-    {
-        import(/* ... */)
+@describe
+class MyModule {
+    @it
+    'should be able to import'() {
+        import() /* ... */
     }
 }
 ```

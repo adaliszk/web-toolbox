@@ -1,5 +1,5 @@
 {
-  "version": "8.53.1",
+  "version": "8.53.2",
   "name": "@adaliszk/eslint-config-typescript",
   "description": "Configuration for ESLint usage within Typescript",
   "repository": "github:adaliszk/node-toolbox",
@@ -8,7 +8,8 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "echo 'Nothing to build, skipping...' && exit 0",
-    "lint": "eslint ./eslint-config.cjs"
+    "lint": "eslint ./eslint-config.cjs",
+    "fmt": "dprint fmt"
   },
   "main": "eslint-config.cjs",
   "files": [
@@ -20,16 +21,16 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.53.0",
-    "typescript": "^5.2.2"
+    "eslint": "^8.56.0",
+    "typescript": "^5"
   },
   "keywords": [
     "meta-package",

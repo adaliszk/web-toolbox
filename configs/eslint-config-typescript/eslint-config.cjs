@@ -29,6 +29,8 @@ const ruleMap = {}
 ruleMap['indent'] = ['error', 4]
 
 // Use Allman-style for better readability by separating statements and declarations from the logic body
+// Read: https://stitcher.io/blog/where-a-curly-bracket-belongs
+// Watch: https://youtu.be/SUIUZ09mnwM
 ruleMap['brace-style'] = ['error', 'allman', { 'allowSingleLine': true }]
 ruleMap['function-call-argument-newline'] = ['warn', 'consistent']
 ruleMap['curly'] = ['error', 'multi']
@@ -72,7 +74,7 @@ ruleMap['comma-dangle'] = [
 ]
 
 // When using Reflection solutions the types do need to be defined even if they could be inferred
-// And, in general, good to have type definitions
+// Furthermore, eslint does not have the context to know when its good or bad to have inference
 ruleMap['@typescript-eslint/no-inferrable-types'] = ['off']
 
 // Allow properties to be defined in the constructor without having to define them in the class
