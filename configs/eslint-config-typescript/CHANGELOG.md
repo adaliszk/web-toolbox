@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.56.1
+
+### Patch Changes
+
+- 0fbafe1: chore(eslint): upgrade to 8.56
+
 ## 8.53.2
 
 ### Patch Changes
