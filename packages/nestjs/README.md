@@ -14,7 +14,7 @@ This package provides an abstraction between your projects and the common boiler
 
 1. Install the package `pnpm install @adaliszk/nestjs @adaliszk-nestjs-compiler`
 2. Setup your service using `@adaliszk/nestjs`
-3.
+3. Simplify your bootstrap file:
 
 ### Creating Nest.js Context
 
@@ -23,33 +23,45 @@ import { createContext } from '@adaliszk/nestjs'
 import { AppController } from './app.controller'
 import { AppModule } from './app.module'
 
-const app = createContext({ imports: [AppModule] })
+const App = createContext({ imports: [AppModule] })
+const Route = App.get(AppController)
 
-// Serve a Fission function
-const handle = (context) =>
-{
-    const route = app.get(AppController)
-
-    return route.doTheThing(context.request, context.response)
-}
+// Serve a function handler
+export const handle = (context) =>
+    Route.doTheThing(context.request, context.response)
 ```
 
 ### Creating a Nest.js Server
 
 ```typescript
 import { createServer } from '@adaliszk/nestjs'
-import {
-    FastifyAdapter,
-    NestFastifyApplication,
-} from '@nestjs/platform-fastify'
+import { FastifyAdapter, NestFastifyApplication} from '@nestjs/platform-fastify'
 import { AppModule } from './app.module'
 
-await createServer<NestFastifyApplication>({
+const Serve = async () => await createServer<NestFastifyApplication>({
     adapter: new FastifyAdapter(),
     imports: [AppModule],
-    maxThreads: 4,
+    threads: 4,
     port: 3000,
 })
+
+Serve().catch(console.error)
+```
+or
+```typescript
+import { createServer } from '@adaliszk/nestjs'
+import { FastifyAdapter, NestFastifyApplication} from '@nestjs/platform-fastify'
+import { AppController } from './app.controller'
+
+const Serve = async () => await createServer<NestFastifyApplication>({
+    adapter: new FastifyAdapter(),
+    // NOTE that you can use this bootstrap as your main module!
+    controllers: [AppController],
+    threads: 4,
+    port: 3000,
+})
+
+Serve().catch(console.error)
 ```
 
 #### Creating a Nest.js Microservice
@@ -58,13 +70,15 @@ await createServer<NestFastifyApplication>({
 import { createMicroservice, Transport } from '@adaliszk/nestjs'
 import { AppModule } from './app.module'
 
-await createMicroservice({
+const Serve = async () => await createMicroservice({
     imports: [AppModule],
-    maxThreads: 4,
+    threads: 4,
     service: {
         transport: Transport.TCP,
     },
 })
+
+Serve().catch(console.error)
 ```
 
 # Versioning
