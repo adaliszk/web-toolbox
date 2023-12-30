@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "name": "@adaliszk/nestjs-microservice-example",
+  "author": "Ádám Liszkai <adam@liszkai.dev>",
+  "main": "dist/main.js",
+  "bin": "dist/main.js",
+  "scripts": {
+    "start": "nest start --watch",
+    "start:dev": "nestjs-compiler --watch",
+    "server": "./dist/server",
+    "preview": "node .",
+    "build": "nest build && pkg --output dist/server .",
+    "lint": "eslint .",
+    "fmt": "dprint fmt && eslint . --fix"
+  },
+  "dependencies": {
+    "@adaliszk/nestjs": "workspace:^",
+    "reflect-metadata": "^0.1.14",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@adaliszk/eslint-config-typescript": "workspace:^",
+    "@adaliszk/nestjs-compiler": "workspace:^",
+    "@adaliszk/typescript": "workspace:^",
+    "@adaliszk/typescript-testing": "workspace:^",
+    "@nestjs/schematics": "^10.0.3",
+    "@nestjs/cli": "^10.2.1",
+    "@swc/core": "^1.3.101",
+    "esbuild": "^0.19",
+    "eslint": "^8.56",
+    "pino-pretty": "^10.3",
+    "pkg": "^5.8",
+    "typescript": "^5.3"
+  },
+  "pkg": {
+    "assets": "public/**/*",
+    "scripts": "dist/**/*.js",
+    "targets": [
+      "node18-alpine-x64"
+    ]
+  }
+}

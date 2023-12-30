@@ -1,5 +1,5 @@
 import { BullModule } from '@nestjs/bull'
-import { Logger as CommonLogger, Module, ValidationPipe } from '@nestjs/common'
+import { Logger as CommonLogger, Module } from '@nestjs/common'
 import { CacheModule } from '@nestjs/cache-manager'
 import { ConfigModule } from '@nestjs/config'
 import { EventEmitterModule } from '@nestjs/event-emitter'
@@ -11,7 +11,7 @@ import { HttpExceptionFilter, ServiceInfoModule } from './helpers'
 import type { DynamicModule, INestApplication, INestMicroservice, LoggerService } from '@nestjs/common'
 import type { AppConfig } from './types'
 
-export async function defineApplication(logger: () => LoggerService, config?: AppConfig)
+export function defineApplication(logger: () => LoggerService, config?: AppConfig)
 {
     const configurableImports: DynamicModule[] = []
 
@@ -82,15 +82,12 @@ export async function defineApplication(logger: () => LoggerService, config?: Ap
     return Server
 }
 
-export async function configureApplication(
+export function configureApplication(
     app: INestApplication | INestMicroservice,
     logger: LoggerService,
     config?: AppConfig,
 )
 {
-    if (config?.autoValidation === undefined || config.autoValidation)
-        app.useGlobalPipes(new ValidationPipe())
-
     app.useGlobalPipes(...(config?.globalPipes ?? []))
     app.useGlobalFilters(...(config?.globalFilters ?? []))
 

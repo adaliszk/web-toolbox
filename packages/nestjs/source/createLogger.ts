@@ -96,7 +96,7 @@ export class Logger<Metadata = {}> implements LoggerService
     }
 }
 
-export async function createLoggerFactory<T>(config?: AppConfig): Promise<() => LoggerService>
+export function createLoggerFactory<T>(config?: AppConfig): () => LoggerService
 {
     if (config?.logger !== undefined) return () => config.logger as LoggerService
     return () => new Logger<T>('', config?.logLevel)

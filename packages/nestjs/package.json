@@ -7,7 +7,6 @@
   "bugs": "https://github.com/adaliszk/node-toolbox/labels/nestjs",
   "license": "BSD-2-Clause",
   "types": "dist/bundle.d.ts",
-  "module": "dist/bundle.mjs",
   "main": "dist/bundle.js",
   "files": [
     "dist",
@@ -15,7 +14,7 @@
     "*.md"
   ],
   "scripts": {
-    "build": "tsup source/bundle.ts --format cjs,esm --minify --sourcemap --dts",
+    "build": "rm -rf dist && tsc",
     "lint": "eslint source/**",
     "fmt": "dprint fmt && pnpm lint --fix"
   },
@@ -48,7 +47,6 @@
     "@adaliszk/typescript": "workspace:~",
     "@adaliszk/eslint-config-typescript": "workspace:~",
     "eslint": "^8.56",
-    "tsup": "^6.7",
     "typescript": "^5.3"
   },
   "keywords": [

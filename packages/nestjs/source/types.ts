@@ -82,13 +82,6 @@ export interface AppConfig extends ModuleMetadata
     globalPipes?: PipeTransform<unknown>[]
 
     /**
-     * Wether the validation pipe should be loaded by default
-     * @default true for servers
-     * @default false for microservices
-     */
-    autoValidation?: boolean
-
-    /**
      * Pass a list of global guards to be used by the NestApplication instance.
      */
     globalGuards?: CanActivate[]

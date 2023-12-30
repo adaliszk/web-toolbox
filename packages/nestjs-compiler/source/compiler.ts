@@ -15,7 +15,7 @@ import { name as pkgName, version as pkgVersion, description as pkgDescription }
 
 
 const cwd = process.cwd()
-const tsconfig = path.resolve(cwd, 'tsconfig.json')
+const tsconfig = path.resolve(cwd, 'tsconfig.build.json') ?? path.resolve(cwd, 'tsconfig.json')
 const nestconfig = path.resolve(cwd, 'nest-cli.json')
 const nest = JSON.parse((fs.readFileSync(nestconfig)).toString())
 const mainFile = path.join(nest.entryFile ?? 'main')

@@ -5,10 +5,10 @@ import type { AppConfig } from './types'
 
 export async function createContext(config?: AppConfig)
 {
-    const logger = await createLoggerFactory(config)
-    const app = await defineApplication(logger, config)
+    const createLogger = createLoggerFactory(config)
+    const app = defineApplication(createLogger, config)
 
     return await NestFactory.createApplicationContext(app, {
-        logger: logger(),
+        logger: createLogger(),
     })
 }

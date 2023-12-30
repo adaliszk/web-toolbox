@@ -6,18 +6,17 @@ import type { AppConfig } from './types'
 
 export async function createMicroservice(config?: AppConfig)
 {
-    const logger = await createLoggerFactory(config)
-    const app = await defineApplication(logger, config)
+    const createLogger = createLoggerFactory(config)
+    const app = defineApplication(createLogger, config)
 
-    const serverLogger = logger()
+    const serverLogger = createLogger()
     const server = await NestFactory.createMicroservice<MicroserviceOptions>(app, {
         ...(config?.service ?? {}),
         logger: serverLogger,
     })
 
-    await configureApplication(server, serverLogger, {
+    configureApplication(server, serverLogger, {
         autoExceptionHandler: false,
-        autoValidation: false,
         ...config,
     })
 

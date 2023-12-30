@@ -1,4 +1,5 @@
 import QueueEngine from 'bull'
+import 'reflect-metadata'
 
 export * from '@nestjs/common/cache'
 export * from '@nestjs/common/decorators'
