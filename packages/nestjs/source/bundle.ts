@@ -17,6 +17,8 @@ export * from '@nestjs/config'
 export * as ClassTransformer from 'class-transformer'
 export * as ClassValidator from 'class-validator'
 
+export * from 'nest-commander'
+
 export * from '@nestjs/bull'
 export * from '@nestjs/event-emitter'
 export * from 'cache-manager'

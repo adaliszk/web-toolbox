@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 10.3.4
+
+### Patch Changes
+
+- 1673a52: feat(nestjs): add commander support
+
 ## 10.3.3
 
 ### Patch Changes
