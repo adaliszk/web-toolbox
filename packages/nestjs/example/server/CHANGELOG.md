@@ -1,5 +1,12 @@
 # @adaliszk/nestjs-server-example
 
+## 0.1.5
+
+### Patch Changes
+
+- Updated dependencies [a956ef9]
+  - @adaliszk/nestjs@10.3.5
+
 ## 0.1.4
 
 ### Patch Changes

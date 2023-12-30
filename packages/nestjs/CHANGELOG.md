@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 10.3.5
+
+### Patch Changes
+
+- a956ef9: chore(nestjs): fresh build
+
 ## 10.3.4
 
 ### Patch Changes

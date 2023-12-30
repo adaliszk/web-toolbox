@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "@adaliszk/nestjs-server-example",
   "author": "Ádám Liszkai <adam@liszkai.dev>",
   "main": "dist/main.js",
