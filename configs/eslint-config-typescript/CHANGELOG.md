@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-typescript
 
+## 8.56.5
+
+### Patch Changes
+
+- 2fe83f0: fix(eslint): drop forced pep8
+
 ## 8.56.4
 
 ### Patch Changes

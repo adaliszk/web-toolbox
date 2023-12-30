@@ -23,7 +23,6 @@ Furthermore, the config defines ignore pattern for `node_modules`, `temp`, and `
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`
 - `eslint-config-standard` + (`eslint-plugin-import`, `eslint-plugin-promise`, `eslint-plugin-n`)
-- `eslint-plugin-pep8-blank-lines`
 
 ### Usage
 
