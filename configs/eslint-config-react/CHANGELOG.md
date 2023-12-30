@@ -1,5 +1,11 @@
 # @adaliszk/eslint-config-react
 
+## 18.2.19
+
+### Patch Changes
+
+- 83a116f: chore: sync eslint config
+
 ## 18.2.18
 
 ### Patch Changes

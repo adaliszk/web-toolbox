@@ -1,5 +1,11 @@
 # @adaliszk/typescript
 
+## 5.3.3
+
+### Patch Changes
+
+- 83a116f: chore: sync eslint config
+
 ## 5.3.2
 
 ### Patch Changes
