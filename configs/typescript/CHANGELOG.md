@@ -1,5 +1,11 @@
 # @adaliszk/typescript
 
+## 5.3.2
+
+### Patch Changes
+
+- 1dd63ac: fix(nest): compile with metadata
+
 ## 5.3.1
 
 ### Patch Changes

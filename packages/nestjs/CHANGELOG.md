@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 10.3.3
+
+### Patch Changes
+
+- 1dd63ac: fix(nest): compile with metadata
+
 ## 10.3.2
 
 ### Patch Changes

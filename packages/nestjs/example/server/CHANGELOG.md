@@ -1,5 +1,14 @@
 # @adaliszk/nestjs-server-example
 
+## 0.1.3
+
+### Patch Changes
+
+- 1dd63ac: fix(nest): compile with metadata
+- Updated dependencies [1dd63ac]
+  - @adaliszk/nestjs@10.3.3
+  - @adaliszk/nestjs-fastify@10.3.1
+
 ## 0.1.2
 
 ### Patch Changes
