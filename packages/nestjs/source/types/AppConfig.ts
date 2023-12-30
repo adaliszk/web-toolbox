@@ -9,7 +9,7 @@ import {
 import { AbstractHttpAdapter } from '@nestjs/core'
 import { MicroserviceOptions } from '@nestjs/microservices'
 import { HealthIndicatorResult } from '@nestjs/terminus'
-import { LogLevel } from './createLogger'
+import { LogLevel } from '../createLogger'
 
 export type HealthCheckFn = () => Promise<HealthIndicatorResult>
 

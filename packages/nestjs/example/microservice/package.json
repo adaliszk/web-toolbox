@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "@adaliszk/nestjs-microservice-example",
   "author": "Ádám Liszkai <adam@liszkai.dev>",
   "main": "dist/main.js",

@@ -1,5 +1,5 @@
 {
-  "version": "10.3.5",
+  "version": "10.3.6",
   "name": "@adaliszk/nestjs",
   "description": "Nest.js stack and configuration for Development using Typescript",
   "repository": "github:adaliszk/node-toolbox",

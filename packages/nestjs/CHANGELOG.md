@@ -1,5 +1,11 @@
 # @adaliszk/nestjs
 
+## 10.3.6
+
+### Patch Changes
+
+- 66d32d1: feat(nestjs): include core hooks
+
 ## 10.3.5
 
 ### Patch Changes
