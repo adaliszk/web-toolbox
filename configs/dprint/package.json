@@ -1,5 +1,5 @@
 {
-  "version": "0.45.2",
+  "version": "0.45.3",
   "name": "@adaliszk/dprint",
   "description": "Meta-package for Dprint formatter with a default configuration",
   "repository": "github:adaliszk/node-toolbox",

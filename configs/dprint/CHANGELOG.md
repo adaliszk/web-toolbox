@@ -1,5 +1,11 @@
 # @adaliszk/dprint
 
+## 0.45.3
+
+### Patch Changes
+
+- aafa778: chore(dprint): include config changes
+
 ## 0.45.2
 
 ### Patch Changes

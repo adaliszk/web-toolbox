@@ -3,7 +3,7 @@
     "indentWidth": 4,
     "semiColons": "asi",
     "quoteStyle": "preferSingle",
-    "useBraces": "whenNotSingleLine",
+    "useBraces": "preferNone",
     "bracePosition": "nextLine",
     "constructor.spaceBeforeParentheses": true,
     "method.spaceBeforeParentheses": true
@@ -11,6 +11,9 @@
   "json": {
     "indentWidth": 2,
     "preferSingleLine": true
+  },
+  "markdown": {
+    "lineWidth": 100
   },
   "excludes": [
     "**/node_modules",
