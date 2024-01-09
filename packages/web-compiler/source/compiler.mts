@@ -17,7 +17,7 @@ export function webConfig (config?: WebConfig): UserConfigExport
     const customConfig = config ?? {}
     const tsConfig = config?.tsconfig ?? 'tsconfig.json'
 
-    const tsConfigContent = JSON.parse(readFileSync(resolve(tsConfig), 'utf-8'))
+    const tsConfigContent = JSON.parse(readFileSync(resolve(tsConfig), 'utf8'))
     const tsConfigCompilerOptions = tsConfigContent.compilerOptions ?? { target: 'esnext', declaration: true }
 
     const conditionalPlugins: PluginOption[] = []
