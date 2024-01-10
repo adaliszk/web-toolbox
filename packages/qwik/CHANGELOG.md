@@ -1,5 +1,13 @@
 # @adaliszk/qwik
 
+## 1.3.2
+
+### Patch Changes
+
+- 8e48a13: chore(qwik): update to 1.3.3
+- Updated dependencies [8e48a13]
+  - @adaliszk/eslint-config-qwik@1.3.3
+
 ## 1.3.1
 
 ### Patch Changes
