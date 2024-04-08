@@ -21,7 +21,7 @@
   "dependencies": {
     "@adaliszk/web-compiler": "^0.8.7",
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^4.5"
+    "vite": "^5.2"
   },
   "devDependencies": {
     "@adaliszk/typescript": "workspace:~",
