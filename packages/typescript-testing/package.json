@@ -1,7 +1,7 @@
 {
-    "version": "5.4.2",
+    "version": "5.4.3",
     "name": "@adaliszk/typescript-testing",
-    "description": "Meta-Package for testing Typescript Testing with Jest",
+    "description": "Meta-Package for testing Typescript Testing with Vitest",
     "repository": "github:adaliszk/node-toolbox",
     "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
     "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stacks/typescript-testing",

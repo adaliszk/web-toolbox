@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.4.3
+
+### Patch Changes
+
+- 10ad44c: docs(typescript-testing): fix wrong description
+
 ## 5.4.2
 
 ### Patch Changes
