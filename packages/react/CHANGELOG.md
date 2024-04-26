@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.4.0
+
+### Minor Changes
+
+- 1eab130: chore(react): re-release to NPM
+
 ## 18.3.1
 
 ### Patch Changes
