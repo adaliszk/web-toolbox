@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.2
+
+### Patch Changes
+
+- a9d953e: fix(web-compiler): use ssl plugin instead of passing it
+
 ## 5.2.1
 
 ### Patch Changes
