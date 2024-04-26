@@ -1,5 +1,5 @@
 {
-    "version": "1.5.2",
+    "version": "1.5.3",
     "name": "@adaliszk/qwik",
     "description": "Qwik stack and configuration for Development using Typescript",
     "repository": "github:adaliszk/node-toolbox",
@@ -10,7 +10,9 @@
     "module": "dist/bundle.mjs",
     "main": "dist/bundle.js",
     "scripts": {
-        "build": "tsup source/bundle.mts --format cjs,esm --minify --sourcemap --dts",
+        "build": "pnpm build.bundle && pnpm build.config",
+        "build.bundle": "tsup source/bundle.mts --format cjs,esm --minify --sourcemap --dts --out-dir dist",
+        "build.config": "cp tsconfig.json config",
         "lint": "biome lint --apply ./source",
         "fmt": "biome format -w ."
     },

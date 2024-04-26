@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.3
+
+### Patch Changes
+
+- 8acca41: feat(web-compiler): switch to ESM mode
+
 ## 1.5.2
 
 ### Patch Changes

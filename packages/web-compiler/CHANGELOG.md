@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.9.4
+
+### Patch Changes
+
+- 8acca41: feat(web-compiler): switch to ESM mode
+
 ## 0.9.3
 
 ### Patch Changes
