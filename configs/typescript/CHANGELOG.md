@@ -1,5 +1,11 @@
 # @adaliszk/typescript
 
+## 5.4.2
+
+### Patch Changes
+
+- 01a1ca9: chore: bump releases for NPM
+
 ## 5.4.1
 
 ### Patch Changes

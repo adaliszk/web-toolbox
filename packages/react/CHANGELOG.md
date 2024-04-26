@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.12
+
+### Patch Changes
+
+- 01a1ca9: chore: bump releases for NPM
+
 ## 18.3.11
 
 ### Patch Changes

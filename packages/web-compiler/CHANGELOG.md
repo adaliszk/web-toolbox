@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.9.2
+
+### Patch Changes
+
+- 01a1ca9: chore: bump releases for NPM
+
 ## 0.9.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.2
+
+### Patch Changes
+
+- 01a1ca9: chore: bump releases for NPM
+
 ## 1.5.1
 
 ### Patch Changes
