@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.1
+
+### Patch Changes
+
+- 9fb13fc: feat(web-compiler): replace SSL plugin with vite official
+
 ## 0.9.4
 
 ### Patch Changes

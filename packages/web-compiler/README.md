@@ -32,3 +32,8 @@ Pre-configured Vite with:
       "start": "vite"
    }
    ```
+
+### Versioning
+
+Since this is a meta-package, the versioning reflect its main provided package, in this case `vite`. However, only the
+Major and Minor versions are kept in sync, and the Patch is used to bump the meta-package.
