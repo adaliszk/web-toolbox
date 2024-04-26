@@ -4,6 +4,7 @@
 
 # Distribution
 **/dist
+**/lib
 **/config
 **/.env
 
@@ -16,5 +17,4 @@
 
 # Build files
 **/.turbo
-!/.turbo
 .turbo
