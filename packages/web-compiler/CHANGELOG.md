@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.9.3
+
+### Patch Changes
+
+- f170b56: feat(web-compiler): switch package to module mode
+
 ## 0.9.2
 
 ### Patch Changes
