@@ -1,7 +1,4 @@
-import React from 'react'
-import DOM from 'react-dom'
+import React from "react";
+import DOM from "react-dom";
 
-export {
-    React,
-    DOM
-}
+export { React, DOM };

@@ -1,5 +1,11 @@
 # @adaliszk/typescript
 
+## 5.4.1
+
+### Patch Changes
+
+- abb40db: chore: upgrade packages & switch to biome
+
 ## 5.3.3
 
 ### Patch Changes

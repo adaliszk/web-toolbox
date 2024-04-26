@@ -1,36 +1,35 @@
 {
-  "version": "5.3.3",
-  "name": "@adaliszk/typescript",
-  "description": "Meta-package for Typescript with a default configuration",
-  "repository": "github:adaliszk/node-toolbox",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript",
-  "license": "BSD-2-Clause",
-  "scripts": {
-    "build": "echo 'Nothing to build, skipping...' && exit 0",
-    "fmt": "dprint fmt"
-  },
-  "main": "tsconfig.json",
-  "files": [
-    "tsconfig.json",
-    "*.md"
-  ],
-  "peerDependencies": {
-    "eslint": "^8",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "@adaliszk/eslint-config-typescript": "^8.56.5",
-    "@types/node": "^20.10.5",
-    "tslib": "^2.6.2",
-    "tsx": "^4.7.0"
-  },
-  "keywords": [
-    "meta-package",
-    "typescript",
-    "configuration",
-    "config",
-    "esnext",
-    "commonjs"
-  ]
+    "version": "5.4.1",
+    "name": "@adaliszk/typescript",
+    "description": "Meta-package for Typescript with a default configuration",
+    "repository": "github:adaliszk/node-toolbox",
+    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/typescript",
+    "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript",
+    "license": "BSD-2-Clause",
+    "scripts": {
+        "build": "echo 'Nothing to build, skipping...' && exit 0",
+        "lint": "biome lint --apply .",
+        "fmt": "biome format -w ."
+    },
+    "main": "tsconfig.json",
+    "files": [
+        "tsconfig.json",
+        "*.md"
+    ],
+    "peerDependencies": {
+        "typescript": "^5.4"
+    },
+    "dependencies": {
+        "@types/node": "^20.12.7",
+        "tslib": "^2.6.2",
+        "tsx": "^4.7.3"
+    },
+    "keywords": [
+        "meta-package",
+        "typescript",
+        "configuration",
+        "config",
+        "esnext",
+        "commonjs"
+    ]
 }

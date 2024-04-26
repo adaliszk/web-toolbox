@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 0.9.1
+
+### Patch Changes
+
+- abb40db: chore: upgrade packages & switch to biome
+
 ## 0.8.7
 
 ### Patch Changes

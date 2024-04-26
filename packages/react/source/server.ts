@@ -1,5 +1,3 @@
-import DOMServer from 'react-dom/server'
+import DOMServer from "react-dom/server";
 
-export {
-    DOMServer
-}
+export { DOMServer };

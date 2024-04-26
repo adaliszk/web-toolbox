@@ -1,5 +1,13 @@
 # @adaliszk/react-compiler
 
+## 0.5.1
+
+### Patch Changes
+
+- abb40db: chore: upgrade packages & switch to biome
+- Updated dependencies [abb40db]
+  - @adaliszk/web-compiler@0.9.1
+
 ## 0.4.7
 
 ### Patch Changes

@@ -1,50 +1,49 @@
 {
-  "version": "5.2.3",
-  "name": "@adaliszk/typescript-testing",
-  "description": "Meta-Package for testing Typescript Testing with Jest",
-  "repository": "github:adaliszk/node-toolbox",
-  "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stacks/typescript-testing",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-testing",
-  "license": "BSD-2-Clause",
-  "scripts": {
-    "build": "tsup source/bundle.mts --clean --format cjs,esm --dts",
-    "lint": "eslint source/**",
-    "fmt": "dprint fmt && eslint . --fix"
-  },
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.mjs",
-  "types": "dist/bundle.d.ts",
-  "files": [
-    "dist",
-    "*.md"
-  ],
-  "dependencies": {
-    "@testdeck/core": "^0.3.3",
-    "@testdeck/vitest": "^0.3.3",
-    "@types/chai": "^4.3.11",
-    "chai": "^4.3.10",
-    "vitest": "^1.1.0"
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3.101",
-    "eslint": "^8",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
-  },
-  "keywords": [
-    "typescript",
-    "testing",
-    "jest",
-    "TDD",
-    "BDD"
-  ],
-  "exports": {
-    ".": {
-      "require": "./dist/bundle.js",
-      "import": "./dist/bundle.mjs",
-      "types": "./dist/bundle.d.ts"
+    "version": "5.4.1",
+    "name": "@adaliszk/typescript-testing",
+    "description": "Meta-Package for testing Typescript Testing with Jest",
+    "repository": "github:adaliszk/node-toolbox",
+    "gitHead": "ecd196c29c2338ecb4e2431f15227e611787ca9c",
+    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/stacks/typescript-testing",
+    "bugs": "https://github.com/adaliszk/node-toolbox/labels/typescript-testing",
+    "license": "BSD-2-Clause",
+    "scripts": {
+        "build": "tsup source/bundle.mts --clean --format cjs,esm --dts",
+        "lint": "eslint source/**",
+        "fmt": "dprint fmt && eslint . --fix"
+    },
+    "main": "dist/bundle.js",
+    "module": "dist/bundle.mjs",
+    "types": "dist/bundle.d.ts",
+    "files": [
+        "dist",
+        "*.md"
+    ],
+    "peerDependencies": {
+        "vitest": "^1.5"
+    },
+    "dependencies": {
+        "@testdeck/core": "^0.3.3",
+        "@testdeck/vitest": "^0.3.3",
+        "@types/chai": "^4.3.14",
+        "chai": "^5.1.0",
+        "vitest": "^1.5.2"
+    },
+    "devDependencies": {
+        "@adaliszk/typescript": "workspace:*"
+    },
+    "keywords": [
+        "typescript",
+        "testing",
+        "jest",
+        "TDD",
+        "BDD"
+    ],
+    "exports": {
+        ".": {
+            "require": "./dist/bundle.js",
+            "import": "./dist/bundle.mjs",
+            "types": "./dist/bundle.d.ts"
+        }
     }
-  }
 }

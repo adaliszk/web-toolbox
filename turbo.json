@@ -1,28 +1,9 @@
 {
-  "$schema" : "https://turborepo.org/schema.json",
-  "globalDependencies": [
-    "@swc/core",
-    "dprint",
-    "typescript",
-    "esbuild",
-    "eslint",
-    "tsup"
-  ],
-  "pipeline" : {
-    "build" : {
-      "dependsOn" : [
-        "^build"
-      ],
-      "outputs" : [
-        "dist/**",
-        "server/**"
-      ]
-    },
-    "test": {
-      "dependsOn" : ["build"]
-    },
-    "lint": {
-      "dependsOn" : ["fmt"]
+    "$schema": "https://turborepo.org/schema.json",
+    "globalDependencies": ["@swc/core", "dprint", "typescript", "esbuild", "eslint", "tsup"],
+    "pipeline": {
+        "build": { "dependsOn": ["^build"], "outputs": ["dist/**", "server/**"] },
+        "test": { "dependsOn": ["build"] },
+        "lint": { "dependsOn": ["fmt"] }
     }
-  }
 }

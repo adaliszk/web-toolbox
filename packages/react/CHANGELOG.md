@@ -1,5 +1,11 @@
 # @adaliszk/react
 
+## 18.3.1
+
+### Patch Changes
+
+- abb40db: chore: upgrade packages & switch to biome
+
 ## 18.2.17
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.1
+
+### Patch Changes
+
+- abb40db: chore: upgrade packages & switch to biome
+
 ## 1.3.2
 
 ### Patch Changes

@@ -1,63 +1,58 @@
 {
-  "version": "0.8.7",
-  "name": "@adaliszk/web-compiler",
-  "description": "Web configuration for Vite using Typescript",
-  "repository": "github:adaliszk/node-toolbox",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
-  "license": "BSD-2-Clause",
-  "types": "dist/compiler.d.ts",
-  "module": "dist/compiler.mjs",
-  "main": "dist/compiler.js",
-  "files": [
-    "dist",
-    "*.md"
-  ],
-  "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "tsup source/compiler.mts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
-    "lint": "eslint source/**",
-    "fmt": "dprint fmt && eslint . --fix"
-  },
-  "dependencies": {
-    "@originjs/vite-plugin-federation": "^1.3.3",
-    "@types/postcss-import": "^14.0.3",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "postcss-calc": "^8.2.4",
-    "postcss-import": "^15.1.0",
-    "postcss-nested": "^6.0.1",
-    "postcss-nesting": "^11.3.0",
-    "postcss-simple-vars": "^7.0.1",
-    "vite": "^4.5.2",
-    "vite-plugin-checker": "^0.6.2",
-    "vite-plugin-compression2": "^0.11.0",
-    "vite-plugin-dts": "^3.7.0",
-    "vite-plugin-mkcert": "^1.17.1",
-    "vite-tsconfig-paths": "^4.2.3"
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3",
-    "eslint": "^8.56",
-    "tsup": "^6.7",
-    "typescript": "^5.3",
-    "vite": "^4.5"
-  },
-  "peerDependencies": {
-    "eslint": "^8.56",
-    "sass": "^1.69",
-    "vite": "^4.5"
-  },
-  "keywords": [
-    "typescript",
-    "vite",
-    "web",
-    "compiler",
-    "sass",
-    "postcss",
-    "module federation",
-    "compression",
-    "tls encrpytion"
-  ]
+    "version": "0.9.1",
+    "name": "@adaliszk/web-compiler",
+    "description": "Web configuration for Vite using Typescript",
+    "repository": "github:adaliszk/node-toolbox",
+    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
+    "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
+    "license": "BSD-2-Clause",
+    "types": "dist/compiler.d.ts",
+    "module": "dist/compiler.mjs",
+    "main": "dist/compiler.js",
+    "files": [
+        "dist",
+        "*.md"
+    ],
+    "scripts": {
+        "prebuild": "rm -rf dist",
+        "build": "tsup source/compiler.mts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
+        "lint": "biome lint --apply ./source",
+        "fmt": "biome format -w ."
+    },
+    "peerDependencies": {
+        "sass": "^1.69",
+        "vite": "^5.2"
+    },
+    "dependencies": {
+        "@originjs/vite-plugin-federation": "^1.3.5",
+        "@types/postcss-import": "^14.0.3",
+        "autoprefixer": "^10.4.19",
+        "meow": "^9.0.0",
+        "postcss": "^8.4.38",
+        "postcss-calc": "^8.2.4",
+        "postcss-import": "^16.1.0",
+        "postcss-nested": "^6.0.1",
+        "postcss-nesting": "^12.1.2",
+        "postcss-simple-vars": "^7.0.1",
+        "vite": "^5.2.10",
+        "vite-plugin-checker": "^0.6.4",
+        "vite-plugin-compression2": "^1.1.0",
+        "vite-plugin-dts": "^3.9.0",
+        "vite-plugin-mkcert": "^1.17.5",
+        "vite-tsconfig-paths": "^4.3.2"
+    },
+    "devDependencies": {
+        "@adaliszk/typescript": "workspace:*"
+    },
+    "keywords": [
+        "typescript",
+        "vite",
+        "web",
+        "compiler",
+        "sass",
+        "postcss",
+        "module federation",
+        "compression",
+        "tls encrpytion"
+    ]
 }

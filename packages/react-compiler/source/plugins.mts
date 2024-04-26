@@ -1,5 +1,3 @@
-import compileReact from '@vitejs/plugin-react'
+import compileReact from "@vitejs/plugin-react";
 
-export {
-    compileReact
-}
+export { compileReact };

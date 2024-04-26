@@ -1,12 +1,10 @@
 {
-  "extends": "@adaliszk/typescript",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "baseUrl": "source",
-    "outDir": "dist"
-  },
-  "include": [
-    "source/**/*"
-  ]
+    "extends": "@adaliszk/typescript",
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
+        "baseUrl": "source",
+        "outDir": "dist"
+    },
+    "include": ["source/**/*"]
 }

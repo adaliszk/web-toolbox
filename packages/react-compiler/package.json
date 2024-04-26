@@ -1,40 +1,38 @@
 {
-  "version": "0.4.7",
-  "name": "@adaliszk/react-compiler",
-  "description": "React configuration for Vite using Typescript",
-  "repository": "github:adaliszk/node-toolbox",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
-  "license": "BSD-2-Clause",
-  "types": "dist/compiler.d.ts",
-  "module": "dist/compiler.mjs",
-  "main": "dist/compiler.js",
-  "files": [
-    "dist",
-    "*.md"
-  ],
-  "scripts": {
-    "build": "tsup source/compiler.mts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
-    "lint": "eslint source/**",
-    "fmt": "dprint fmt && eslint . --fix"
-  },
-  "dependencies": {
-    "@adaliszk/web-compiler": "^0.8.7",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^4.5"
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3",
-    "esbuild": "^0.19",
-    "eslint": "^8.56",
-    "tsup": "^6.7",
-    "typescript": "^5.3"
-  },
-  "keywords": [
-    "typescript",
-    "vite",
-    "react",
-    "compiler"
-  ]
+    "version": "0.5.1",
+    "name": "@adaliszk/react-compiler",
+    "description": "React configuration for Vite using Typescript",
+    "repository": "github:adaliszk/node-toolbox",
+    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/web-compiler",
+    "bugs": "https://github.com/adaliszk/node-toolbox/labels/web-compiler",
+    "license": "BSD-2-Clause",
+    "types": "dist/compiler.d.ts",
+    "module": "dist/compiler.mjs",
+    "main": "dist/compiler.js",
+    "files": [
+        "dist",
+        "*.md"
+    ],
+    "scripts": {
+        "build": "tsup source/compiler.mts --clean --format cjs,esm --target node18 --minify --sourcemap --dts",
+        "lint": "biome lint --apply ./source",
+        "fmt": "biome format -w ."
+    },
+    "peerDependencies": {
+        "vite": "^5.2"
+    },
+    "dependencies": {
+        "@adaliszk/web-compiler": "^0.9.1",
+        "@vitejs/plugin-react": "^4.2.1",
+        "vite": "^5.2.10"
+    },
+    "devDependencies": {
+        "@adaliszk/typescript": "workspace:*"
+    },
+    "keywords": [
+        "typescript",
+        "vite",
+        "react",
+        "compiler"
+    ]
 }

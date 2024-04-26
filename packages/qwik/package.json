@@ -1,65 +1,53 @@
 {
-  "version": "1.3.2",
-  "name": "@adaliszk/qwik",
-  "description": "Qwik stack and configuration for Development using Typescript",
-  "repository": "github:adaliszk/node-toolbox",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/qwik",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/qwik",
-  "license": "BSD-2-Clause",
-  "types": "dist/bundle.d.ts",
-  "module": "dist/bundle.mjs",
-  "main": "dist/bundle.js",
-  "scripts": {
-    "build": "tsup source/bundle.mts --format cjs,esm --minify --sourcemap --dts",
-    "lint": "eslint source/**",
-    "fmt": "dprint fmt && eslint . --fix"
-  },
-  "files": [
-    "dist",
-    "*.json",
-    "*.md"
-  ],
-  "peerDependencies": {
-    "vite": "^4.5",
-    "eslint": "^8.56",
-    "typescript": "^5.3",
-    "undici": "^5.28"
-  },
-  "dependencies": {
-    "@adaliszk/eslint-config-qwik": "^1.3.3",
-    "@builder.io/qwik": "^1.3.3",
-    "@builder.io/qwik-city": "^1.3.3",
-    "@types/node": "^20.10.5",
-    "undici": "^5.28.2"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@adaliszk/qwik"
-    ]
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "@swc/core": "^1.3",
-    "eslint": "^8.56",
-    "tsup": "^7.3",
-    "typescript": "^5.3"
-  },
-  "keywords": [
-    "typescript",
-    "qwik",
-    "resumable react",
-    "static-content generator",
-    "server-side renderer",
-    "react-like"
-  ],
-  "exports": {
-    ".": {
-      "require": "./tsconfig.json",
-      "import": "./dist/bundle.mjs"
+    "version": "1.5.1",
+    "name": "@adaliszk/qwik",
+    "description": "Qwik stack and configuration for Development using Typescript",
+    "repository": "github:adaliszk/node-toolbox",
+    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/qwik",
+    "bugs": "https://github.com/adaliszk/node-toolbox/labels/qwik",
+    "license": "BSD-2-Clause",
+    "types": "dist/bundle.d.ts",
+    "module": "dist/bundle.mjs",
+    "main": "dist/bundle.js",
+    "scripts": {
+        "build": "tsup source/bundle.mts --format cjs,esm --minify --sourcemap --dts",
+        "lint": "biome lint --apply ./source",
+        "fmt": "biome format -w ."
     },
-    "./config": {
-      "require": "./tsconfig.json",
-      "import": "./tsconfig.json"
+    "files": [
+        "dist",
+        "*.json",
+        "*.md"
+    ],
+    "peerDependencies": {
+        "typescript": "^5.4",
+        "undici": "^6.14"
+    },
+    "dependencies": {
+        "@builder.io/qwik": "^1.5.2",
+        "@builder.io/qwik-city": "^1.5.2",
+        "@types/node": "^20.12.7",
+        "undici": "^6.14.1"
+    },
+    "devDependencies": {
+        "@adaliszk/typescript": "workspace:*"
+    },
+    "keywords": [
+        "typescript",
+        "qwik",
+        "resumable react",
+        "static-content generator",
+        "server-side renderer",
+        "react-like"
+    ],
+    "exports": {
+        ".": {
+            "require": "./tsconfig.json",
+            "import": "./dist/bundle.mjs"
+        },
+        "./config": {
+            "require": "./tsconfig.json",
+            "import": "./tsconfig.json"
+        }
     }
-  }
 }

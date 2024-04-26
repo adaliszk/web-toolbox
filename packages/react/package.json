@@ -1,75 +1,64 @@
 {
-  "version": "18.2.17",
-  "name": "@adaliszk/react",
-  "description": "React stack and configuration for Development using Typescript",
-  "repository": "github:adaliszk/node-toolbox",
-  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/react",
-  "bugs": "https://github.com/adaliszk/node-toolbox/labels/react",
-  "license": "BSD-3-Clause",
-  "types": "./dist/bundle.d.ts",
-  "module": "./dist/bundle.mjs",
-  "main": "./dist/bundle.cjs",
-  "files": [
-    "dist",
-    "*.json",
-    "*.md"
-  ],
-  "scripts": {
-    "build": "rm -rf dist && pkgroll --src source --minify --sourcemap",
-    "lint": "eslint source/**",
-    "prepublish": "pnpm build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@adaliszk/typescript"
-    ]
-  },
-  "dependencies": {
-    "@adaliszk/eslint-config-react": "^18.2.19",
-    "@adaliszk/eslint-config-typescript": "^8.53.2",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^6.11.1",
-    "react-router-dom": "^6.11.1"
-  },
-  "devDependencies": {
-    "@adaliszk/typescript": "workspace:~",
-    "esbuild": "^0.17.18",
-    "eslint": "^8.39",
-    "pkgroll": "^1.10.0",
-    "typescript": "^5.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.39",
-    "typescript": "^5.0"
-  },
-  "keywords": [
-    "typescript",
-    "react",
-    "framework",
-    "bundle"
-  ],
-  "exports": {
-    ".": {
-      "require": "./tsconfig.json",
-      "import": "./dist/bundle.mjs",
-      "types": "./dist/bundle.d.ts"
+    "version": "18.3.1",
+    "name": "@adaliszk/react",
+    "description": "React stack and configuration for Development using Typescript",
+    "repository": "github:adaliszk/node-toolbox",
+    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/react",
+    "bugs": "https://github.com/adaliszk/node-toolbox/labels/react",
+    "license": "BSD-3-Clause",
+    "types": "./dist/bundle.d.ts",
+    "module": "./dist/bundle.mjs",
+    "main": "./dist/bundle.cjs",
+    "files": [
+        "dist",
+        "*.json",
+        "*.md"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "lint": "biome lint --apply ./source",
+        "fmt": "biome format -w .",
+        "prepublish": "pnpm build"
     },
-    "./config": {
-      "require": "./tsconfig.json",
-      "import": "./tsconfig.json"
+    "peerDependencies": {
+        "typescript": "^5.4"
     },
-    "./server": {
-      "require": "./dist/server.cjs",
-      "import": "./dist/server.mjs",
-      "types": "./dist/server.d.ts"
+    "dependencies": {
+        "@types/react": "^18.3.0",
+        "@types/react-dom": "^18.3.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router": "^6.23.0",
+        "react-router-dom": "^6.23.0"
     },
-    "./client": {
-      "require": "./dist/client.cjs",
-      "import": "./dist/client.mjs",
-      "types": "./dist/client.d.ts"
+    "devDependencies": {
+        "@adaliszk/typescript": "workspace:*"
+    },
+    "keywords": [
+        "typescript",
+        "react",
+        "framework",
+        "bundle"
+    ],
+    "exports": {
+        ".": {
+            "require": "./tsconfig.json",
+            "import": "./dist/bundle.mjs",
+            "types": "./dist/bundle.d.ts"
+        },
+        "./config": {
+            "require": "./tsconfig.json",
+            "import": "./tsconfig.json"
+        },
+        "./server": {
+            "require": "./dist/server.cjs",
+            "import": "./dist/server.mjs",
+            "types": "./dist/server.d.ts"
+        },
+        "./client": {
+            "require": "./dist/client.cjs",
+            "import": "./dist/client.mjs",
+            "types": "./dist/client.d.ts"
+        }
     }
-  }
 }

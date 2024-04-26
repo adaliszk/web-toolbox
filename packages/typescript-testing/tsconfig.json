@@ -1,12 +1,12 @@
 {
-  "extends": "@adaliszk/typescript",
-  "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ESNext",
-    "noEmit": false,
-    "sourceRoot": "source",
-    "outDir": "dist"
-  },
-  "include": ["source/**/*"]
+    "extends": "@adaliszk/typescript",
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ESNext",
+        "noEmit": false,
+        "sourceRoot": "source",
+        "outDir": "dist"
+    },
+    "include": ["source/**/*"]
 }

@@ -1,15 +1,13 @@
 {
-  "extends": "@adaliszk/typescript",
-  "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "allowImportingTsExtensions": true,
-    "target": "ESNext",
-    "sourceRoot": "source",
-    "baseUrl": "source",
-    "outDir": "dist"
-  },
-  "include": [
-    "source/**/*"
-  ]
+    "extends": "@adaliszk/typescript",
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "allowImportingTsExtensions": true,
+        "target": "ESNext",
+        "sourceRoot": "source",
+        "baseUrl": "source",
+        "outDir": "dist"
+    },
+    "include": ["source/**/*"]
 }
