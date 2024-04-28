@@ -1,4 +1,4 @@
-import type { UserConfigExport, UserConfig, PluginOption, EsbuildTransformOptions } from "vite";
+import type { UserConfigExport, UserConfig, PluginOption, ServerOptions, EsbuildTransformOptions } from "vite";
 import type { AcceptedPlugin, PluginCreator } from "postcss";
 import type { Options as SassOptions } from "sass";
 
@@ -21,6 +21,11 @@ export interface WebConfig extends UserConfig {
      * Array of vite plugins to use.
      */
     plugins?: PluginOption[];
+
+    /**
+     * Server specific options, e.g. host, port, https...
+     */
+    server?: ServerOptions;
 
     /**
      * Compatibility transform target. The transform is performed with esbuild

@@ -26,6 +26,7 @@ export function webConfig(config?: WebConfig): UserConfigExport {
     if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
         conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsconfigPath: tsConfig }));
 
+
     return defineConfig({
         ...customConfig,
         server: {
@@ -55,7 +56,10 @@ export function webConfig(config?: WebConfig): UserConfigExport {
             ...(customConfig?.plugins ?? []),
             plugin.lint({}),
             plugin.compressAssets(),
-            plugin.generateCertificate,
+            // @ts-expect-error - This is a valid plugin function, but typescript doesn't know about it.
+            plugin.generateCertificate({
+                domains: ["localhost"],
+            }),
             ...conditionalPlugins,
         ],
     } as UserConfig);

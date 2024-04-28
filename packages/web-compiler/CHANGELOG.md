@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.3
+
+### Patch Changes
+
+- c3bbc1a: docs(web-compiler): add server options from vite
+
 ## 5.2.2
 
 ### Patch Changes
