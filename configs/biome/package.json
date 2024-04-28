@@ -1,5 +1,5 @@
 {
-    "version": "1.7.0",
+    "version": "1.7.1",
     "name": "@adaliszk/biome",
     "description": "Meta-package for Biome  configuration",
     "repository": "github:adaliszk/node-toolbox",
@@ -11,10 +11,21 @@
         "lint": "biome lint --apply .",
         "fmt": "biome format -w ."
     },
-    "files": ["config.json", "*.md"],
+    "files": [
+        "config.json",
+        "*.md"
+    ],
     "main": "config.json",
     "dependencies": {
         "@biomejs/biome": "^1.7.1"
     },
-    "keywords": ["meta-package", "configuration", "config", "linting", "formatting", "biomejs", "biome"]
+    "keywords": [
+        "meta-package",
+        "configuration",
+        "config",
+        "linting",
+        "formatting",
+        "biomejs",
+        "biome"
+    ]
 }
