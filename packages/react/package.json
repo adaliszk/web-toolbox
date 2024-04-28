@@ -9,11 +9,7 @@
     "types": "./dist/bundle.d.ts",
     "module": "./dist/bundle.mjs",
     "main": "./dist/bundle.cjs",
-    "files": [
-        "dist",
-        "*.json",
-        "*.md"
-    ],
+    "files": ["dist", "*.json", "*.md"],
     "scripts": {
         "build": "tsup",
         "lint": "biome lint --apply ./source",
@@ -34,12 +30,7 @@
     "devDependencies": {
         "@adaliszk/typescript": "workspace:*"
     },
-    "keywords": [
-        "typescript",
-        "react",
-        "framework",
-        "bundle"
-    ],
+    "keywords": ["typescript", "react", "framework", "bundle"],
     "exports": {
         ".": {
             "require": "./tsconfig.json",

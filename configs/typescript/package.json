@@ -12,10 +12,7 @@
         "fmt": "biome format -w ."
     },
     "main": "tsconfig.json",
-    "files": [
-        "tsconfig.json",
-        "*.md"
-    ],
+    "files": ["tsconfig.json", "*.md"],
     "peerDependencies": {
         "typescript": "^5.4"
     },
@@ -24,12 +21,5 @@
         "tslib": "^2.6.2",
         "tsx": "^4.7.3"
     },
-    "keywords": [
-        "meta-package",
-        "typescript",
-        "configuration",
-        "config",
-        "esnext",
-        "commonjs"
-    ]
+    "keywords": ["meta-package", "typescript", "configuration", "config", "esnext", "commonjs"]
 }

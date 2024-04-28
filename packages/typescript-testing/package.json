@@ -15,10 +15,7 @@
     "main": "dist/bundle.js",
     "module": "dist/bundle.mjs",
     "types": "dist/bundle.d.ts",
-    "files": [
-        "dist",
-        "*.md"
-    ],
+    "files": ["dist", "*.md"],
     "peerDependencies": {
         "vitest": "^1.5"
     },
@@ -32,13 +29,7 @@
     "devDependencies": {
         "@adaliszk/typescript": "workspace:*"
     },
-    "keywords": [
-        "typescript",
-        "testing",
-        "jest",
-        "TDD",
-        "BDD"
-    ],
+    "keywords": ["typescript", "testing", "jest", "TDD", "BDD"],
     "exports": {
         ".": {
             "require": "./dist/bundle.js",

@@ -23,14 +23,18 @@ export function webConfig(config?: WebConfig): UserConfigExport {
     };
 
     const conditionalPlugins: PluginOption[] = [];
-    if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true)
+    if ((config?.tsdefinitions ?? tsConfigCompilerOptions.declaration) === true) {
         conditionalPlugins.push(plugin.compileTypescriptDefinitions({ tsconfigPath: tsConfig }));
+    }
 
+    const httpsMode = config?.https ?? true;
+    const sassEnabled = typeof customConfig?.sass === "boolean" ? customConfig.sass : true;
+    const sassConfig = typeof customConfig?.sass === "object" ? customConfig?.sass : {};
 
     return defineConfig({
         ...customConfig,
         server: {
-            https: true,
+            https: httpsMode,
             hmr: { protocol: "wss" },
             ...(customConfig?.server ?? {}),
         },
@@ -39,7 +43,11 @@ export function webConfig(config?: WebConfig): UserConfigExport {
             ...(customConfig?.build ?? {}),
         },
         css: {
-            preprocessorOptions: { sass: { indentedSyntax: true, ...(customConfig.sass ?? {}) } },
+            ...(!sassEnabled
+                ? {}
+                : {
+                      preprocessorOptions: { sass: { indentedSyntax: true, ...sassConfig } },
+                  }),
             postcss: {
                 plugins: [
                     plugin.cssImports,
@@ -57,9 +65,7 @@ export function webConfig(config?: WebConfig): UserConfigExport {
             plugin.lint({}),
             plugin.compressAssets(),
             // @ts-expect-error - This is a valid plugin function, but typescript doesn't know about it.
-            plugin.generateCertificate({
-                domains: ["localhost"],
-            }),
+            ...(httpsMode ? [plugin.generateCertificate()] : []),
             ...conditionalPlugins,
         ],
     } as UserConfig);

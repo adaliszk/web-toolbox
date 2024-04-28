@@ -16,11 +16,7 @@
         "lint": "biome lint --apply ./source",
         "fmt": "biome format -w ."
     },
-    "files": [
-        "dist",
-        "*.json",
-        "*.md"
-    ],
+    "files": ["dist", "*.json", "*.md"],
     "peerDependencies": {
         "typescript": "^5.4",
         "undici": "^6.14"

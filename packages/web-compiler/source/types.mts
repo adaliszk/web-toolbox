@@ -1,4 +1,10 @@
-import type { UserConfigExport, UserConfig, PluginOption, ServerOptions, EsbuildTransformOptions } from "vite";
+import type {
+    UserConfigExport,
+    UserConfig,
+    PluginOption,
+    ServerOptions,
+    EsbuildTransformOptions,
+} from "vite";
 import type { AcceptedPlugin, PluginCreator } from "postcss";
 import type { Options as SassOptions } from "sass";
 
@@ -23,9 +29,10 @@ export interface WebConfig extends UserConfig {
     plugins?: PluginOption[];
 
     /**
-     * Server specific options, e.g. host, port, https...
+     * Toggle the automatic TLS certificates and HTTPS server
+     * By default, this is set to true.
      */
-    server?: ServerOptions;
+    https?: boolean;
 
     /**
      * Compatibility transform target. The transform is performed with esbuild
@@ -83,7 +90,7 @@ export interface WebConfig extends UserConfig {
     /**
      * Configure the Sass preprocessor
      */
-    sass?: SassOptions<"sync">;
+    sass?: SassOptions<"sync"> | boolean;
 }
 
 export { UserConfigExport };
