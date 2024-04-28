@@ -1,5 +1,12 @@
 # @adaliszk/web-compiler
 
+## 5.2.4
+
+### Patch Changes
+
+- 6372822: feat(web-compiler): separate https and sass toggles
+- 4a8d804: docs(web-compiler): add server options from vite
+
 ## 5.2.3
 
 ### Patch Changes
