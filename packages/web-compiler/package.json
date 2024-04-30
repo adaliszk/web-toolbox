@@ -1,5 +1,5 @@
 {
-    "version": "5.2.4",
+    "version": "5.2.5",
     "name": "@adaliszk/web-compiler",
     "description": "Web configuration for Vite using Typescript",
     "repository": "github:adaliszk/node-toolbox",
@@ -9,7 +9,10 @@
     "types": "dist/compiler.d.ts",
     "main": "dist/compiler.js",
     "type": "module",
-    "files": ["dist", "*.md"],
+    "files": [
+        "dist",
+        "*.md"
+    ],
     "scripts": {
         "prebuild": "rm -rf dist",
         "build": "tsup source/compiler.mts --clean --format esm --target node20 --minify --sourcemap --dts",

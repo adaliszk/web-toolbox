@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.5
+
+### Patch Changes
+
+- 3400b37: chore(web-compiler): release brotli and biome support
+
 ## 5.2.4
 
 ### Patch Changes
