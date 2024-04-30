@@ -1,4 +1,5 @@
 import lint from "vite-plugin-checker";
+import biome from "vite-plugin-biome";
 import resolveTypescriptPaths from "vite-tsconfig-paths";
 import compileTypescriptDefinitions from "vite-plugin-dts";
 import { compression as compressAssets } from "vite-plugin-compression2";
@@ -13,6 +14,7 @@ import cssAutoPrefix from "autoprefixer";
 export {
     resolveTypescriptPaths,
     compileTypescriptDefinitions,
+    biome,
     lint,
     compressAssets,
     generateCertificate,

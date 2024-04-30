@@ -4,8 +4,9 @@ import type { UserConfig, PluginOption } from "vite";
 import { defineConfig } from "vite";
 import * as plugin from "./plugins.mts";
 
-import { readFileSync } from "fs";
-import { resolve } from "path";
+import { readFileSync, existsSync } from "node:fs";
+import { resolve } from "node:path";
+import { cwd } from "node:process";
 
 export * from "vite";
 export * from "./plugins.mts";
@@ -15,8 +16,9 @@ export * from "./types.mts";
 export function webConfig(config?: WebConfig): UserConfigExport {
     const customConfig = config ?? {};
     const tsConfig = config?.tsconfig ?? "tsconfig.json";
+    const biomeUsed = existsSync(resolve(cwd(), "biome.json"));
 
-    const tsConfigContent = JSON.parse(readFileSync(resolve(tsConfig), "utf8"));
+    const tsConfigContent = JSON.parse(readFileSync(resolve(cwd(), tsConfig), "utf8"));
     const tsConfigCompilerOptions = tsConfigContent.compilerOptions ?? {
         target: "esnext",
         declaration: true,
@@ -43,11 +45,11 @@ export function webConfig(config?: WebConfig): UserConfigExport {
             ...(customConfig?.build ?? {}),
         },
         css: {
-            ...(!sassEnabled
-                ? {}
-                : {
+            ...(sassEnabled
+                ? {
                       preprocessorOptions: { sass: { indentedSyntax: true, ...sassConfig } },
-                  }),
+                  }
+                : {}),
             postcss: {
                 plugins: [
                     plugin.cssImports,
@@ -62,8 +64,11 @@ export function webConfig(config?: WebConfig): UserConfigExport {
         plugins: [
             plugin.resolveTypescriptPaths({ projects: [tsConfig] }),
             ...(customConfig?.plugins ?? []),
+            // @ts-expect-error - This is a valid plugin function, but typescript doesn't know about it.
+            ...(biomeUsed ? [plugin.biome({ mode: "check", applyFixes: true })] : []),
             plugin.lint({}),
-            plugin.compressAssets(),
+            plugin.compressAssets({ algorithm: "brotliCompress" }),
+            plugin.compressAssets({ algorithm: "gzip" }),
             // @ts-expect-error - This is a valid plugin function, but typescript doesn't know about it.
             ...(httpsMode ? [plugin.generateCertificate()] : []),
             ...conditionalPlugins,

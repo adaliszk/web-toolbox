@@ -3,16 +3,16 @@ _Configuration for Web-based project compilation using Vite_
 ### Provides
 
 Pre-configured Vite with:
-- TLS Encryption
 - Typescript path resolution
+- Linting (TSC, Stylelint, ESLint, Biome)
+- Formatting (Biome)
+- Compression (Brotli and Gzip)
 - PostCSS + SASS preset
-- Compression
-- Linting
+- TLS Encryption
 
 ## TODO
 
 - [ ] Implement module federation logic for auto-resolution
-- [ ] Parse TSPaths and extend the resolution logic
 - [ ] Expose PostCSS variables configuration
 
 ### Usage
