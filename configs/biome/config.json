@@ -1,24 +1,27 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
-  "organizeImports": { "enabled": true },
-  "formatter": {
-    "indentStyle": "space",
-    "indentWidth": 4,
-    "lineWidth": 100
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    }
-  },
-  "javascript": {
+    "$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
+    "organizeImports": { "enabled": true },
     "formatter": {
-      "enabled": true,
-      "bracketSameLine": true,
-      "lineWidth": 100
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 100
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "enabled": true,
+            "bracketSameLine": true,
+            "lineWidth": 100
+        }
+    },
+    "json": { "formatter": { "enabled": true } },
+    "css": { "formatter": { "enabled": true } },
+    "files": {
+        "ignore": ["**/.turbo/**", "**/node_modules/**", "**/dist/**", "**/temp/**", "**/lib/**"]
     }
-  },
-  "json": { "formatter": { "enabled": true } },
-  "css": { "formatter": { "enabled": true } }
 }

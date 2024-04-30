@@ -17,6 +17,7 @@
     },
     "engines": { "node": ">=20", "pnpm": ">=9.0" },
     "devDependencies": {
+        "@adaliszk/biome": "workspace:*",
         "@adaliszk/typescript": "workspace:*",
         "@biomejs/biome": "^1.7.1",
         "@changesets/changelog-git": "^0.2.0",

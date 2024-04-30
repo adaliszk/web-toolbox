@@ -1,18 +1,5 @@
 {
-    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "organizeImports": { "enabled": true },
-    "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 4, "lineWidth": 100 },
-    "linter": {
-        "enabled": true,
-        "rules": {
-            "recommended": true
-        }
-    },
-    "javascript": {
-        "formatter": { "enabled": true, "bracketSameLine": true, "lineWidth": 100 }
-    },
-    "json": { "formatter": { "enabled": true } },
-    "css": { "formatter": { "enabled": true } },
+    "extends": ["@adaliszk/biome"],
     "files": {
         "ignore": ["**/.turbo/**", "**/node_modules/**", "**/dist/**", "**/temp/**", "**/lib/**"]
     }
