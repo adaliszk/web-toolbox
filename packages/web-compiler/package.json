@@ -9,15 +9,12 @@
     "types": "dist/compiler.d.ts",
     "main": "dist/compiler.js",
     "type": "module",
-    "files": [
-        "dist",
-        "*.md"
-    ],
+    "files": ["dist", "*.md"],
     "scripts": {
         "prebuild": "rm -rf dist",
         "build": "tsup source/compiler.mts --clean --format esm --target node20 --minify --sourcemap --dts",
         "lint": "biome lint --apply ./source",
-        "fmt": "biome format -w ."
+        "fmt": "biome format . --write"
     },
     "peerDependencies": {
         "sass": "^1.69",
@@ -36,13 +33,13 @@
         "postcss-nesting": "^12.1.2",
         "postcss-simple-vars": "^7.0.1",
         "vite": "^5.2.10",
-        "vite-plugin-biome": "^1.0.9",
         "vite-plugin-checker": "^0.6.4",
         "vite-plugin-compression2": "^1.1.0",
         "vite-plugin-dts": "^3.9.0",
         "vite-tsconfig-paths": "^4.3.2"
     },
     "devDependencies": {
+        "@adaliszk/biome": "workspace:*",
         "@adaliszk/typescript": "workspace:*"
     },
     "keywords": [
