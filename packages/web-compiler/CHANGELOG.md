@@ -1,5 +1,12 @@
 # @adaliszk/web-compiler
 
+## 5.2.8
+
+### Patch Changes
+
+- 15d0295: feat(web-compiler): add automatic Tailwind detection
+- 8d96843: remove(web-compiler): drop sass support
+
 ## 5.2.7
 
 ### Patch Changes
