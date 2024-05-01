@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.6
+
+### Patch Changes
+
+- 2f9a577: fix(web-compiler): set websocket protocol with https mode
+
 ## 5.2.5
 
 ### Patch Changes
