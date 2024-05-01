@@ -1,5 +1,11 @@
 # @adaliszk/biome
 
+## 1.7.3
+
+### Patch Changes
+
+- 3846e08: chore(biome): format source files
+
 ## 1.7.2
 
 ### Patch Changes
