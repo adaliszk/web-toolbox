@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.7
+
+### Patch Changes
+
+- b362c77: remove(web-compiler): drop biome execution
+
 ## 5.2.6
 
 ### Patch Changes
