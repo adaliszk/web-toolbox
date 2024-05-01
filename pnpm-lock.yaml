@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@adaliszk/biome':
+        specifier: workspace:*
+        version: link:configs/biome
       '@adaliszk/typescript':
         specifier: workspace:*
         version: link:configs/typescript
@@ -173,6 +176,9 @@ importers:
       vite:
         specifier: ^5.2.10
         version: 5.2.10(@types/node@20.12.7)(sass@1.75.0)
+      vite-plugin-biome:
+        specifier: ^1.0.9
+        version: 1.0.9(@biomejs/biome@1.7.1)
       vite-plugin-checker:
         specifier: ^0.6.4
         version: 0.6.4(eslint@9.1.1)(meow@9.0.0)(optionator@0.9.4)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(sass@1.75.0))(vue-tsc@1.8.27(typescript@5.4.5))
@@ -3387,6 +3393,11 @@ packages:
     resolution: {integrity: sha512-Y8p91kz9zU+bWtF7HGt6DVw2JbhyuB2RlZix3FPYAYmUyZ3n7iTp8eSyLyY6sxtPegvxQtmlTMhfPhUfCUF93A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
+
+  vite-plugin-biome@1.0.9:
+    resolution: {integrity: sha512-poI+b5cZQPkJxgy1cUd89NuWLeFCFMp5SdZ8f4EP9DFqpdrivk7GKROO8vlc3jmb/7xSN+2kEAZPlQ3DJWBHxA==}
+    peerDependencies:
+      '@biomejs/biome': ^1.4.1
 
   vite-plugin-checker@0.6.4:
     resolution: {integrity: sha512-2zKHH5oxr+ye43nReRbC2fny1nyARwhxdm0uNYp/ERy4YvU9iZpNOsueoi/luXw5gnpqRSvjcEPxXbS153O2wA==}
@@ -7232,6 +7243,10 @@ snapshots:
       - sugarss
       - supports-color
       - terser
+
+  vite-plugin-biome@1.0.9(@biomejs/biome@1.7.1):
+    dependencies:
+      '@biomejs/biome': 1.7.1
 
   vite-plugin-checker@0.6.4(eslint@9.1.1)(meow@9.0.0)(optionator@0.9.4)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(sass@1.75.0))(vue-tsc@1.8.27(typescript@5.4.5)):
     dependencies:
