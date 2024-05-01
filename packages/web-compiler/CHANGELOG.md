@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.9
+
+### Patch Changes
+
+- ebb3b4b: chore(web-compiler): remove unused sass compiler
+
 ## 5.2.8
 
 ### Patch Changes

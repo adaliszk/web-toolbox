@@ -1,5 +1,5 @@
 {
-    "version": "5.2.8",
+    "version": "5.2.9",
     "name": "@adaliszk/web-compiler",
     "description": "Web configuration for Vite using Typescript",
     "repository": "github:adaliszk/node-toolbox",
@@ -15,7 +15,7 @@
     ],
     "scripts": {
         "prebuild": "rm -rf dist",
-        "build": "tsup source/compiler.mts --clean --format esm --target node20 --minify --sourcemap --dts",
+        "build": "tsup source/compiler.ts --clean --format esm --target node20 --dts",
         "lint": "biome lint --apply ./source",
         "fmt": "biome format . --write"
     },
@@ -50,7 +50,7 @@
         "vite",
         "web",
         "compiler",
-        "sass",
+        "tailwind",
         "postcss",
         "module federation",
         "compression",
