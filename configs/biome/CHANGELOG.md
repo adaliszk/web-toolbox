@@ -1,5 +1,11 @@
 # @adaliszk/biome
 
+## 1.7.4
+
+### Patch Changes
+
+- 0dafa00: chore: fresh-build with the latest changes
+
 ## 1.7.3
 
 ### Patch Changes

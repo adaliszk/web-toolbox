@@ -1,5 +1,11 @@
 # @adaliszk/web-compiler
 
+## 5.2.10
+
+### Patch Changes
+
+- 0dafa00: chore: fresh-build with the latest changes
+
 ## 5.2.9
 
 ### Patch Changes

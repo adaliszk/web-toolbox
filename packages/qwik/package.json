@@ -1,5 +1,5 @@
 {
-    "version": "1.5.3",
+    "version": "1.5.4",
     "name": "@adaliszk/qwik",
     "description": "Qwik stack and configuration for Development using Typescript",
     "repository": "github:adaliszk/node-toolbox",
@@ -16,16 +16,20 @@
         "lint": "biome lint --apply ./source",
         "fmt": "biome format -w ."
     },
-    "files": ["dist", "*.json", "*.md"],
+    "files": [
+        "dist",
+        "*.json",
+        "*.md"
+    ],
     "peerDependencies": {
         "typescript": "^5.4",
-        "undici": "^6.14"
+        "undici": "^6.15"
     },
     "dependencies": {
-        "@builder.io/qwik": "^1.5.2",
-        "@builder.io/qwik-city": "^1.5.2",
-        "@types/node": "^20.12.7",
-        "undici": "^6.14.1"
+        "@builder.io/qwik": "^1.5.3",
+        "@builder.io/qwik-city": "^1.5.3",
+        "@types/node": "^20.12.8",
+        "undici": "^6.15.0"
     },
     "devDependencies": {
         "@adaliszk/typescript": "workspace:*"

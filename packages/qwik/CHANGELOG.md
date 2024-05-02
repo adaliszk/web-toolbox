@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.4
+
+### Patch Changes
+
+- ce199f6: chore(qwik): upgrade to 1.5.3
+
 ## 1.5.3
 
 ### Patch Changes
