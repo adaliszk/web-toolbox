@@ -7,8 +7,8 @@ import cssSimpleVariables from "postcss-simple-vars";
 import cssImports from "postcss-import";
 import cssUnwrapNesting from "postcss-nested";
 import cssSimplifyCalc from "postcss-calc";
-import compileSass from "sass";
 import cssAutoPrefix from "autoprefixer";
+import cssTailwind from "tailwindcss";
 
 export {
     resolveTypescriptPaths,
@@ -16,10 +16,10 @@ export {
     lint,
     compressAssets,
     generateCertificate,
-    compileSass,
     cssImports,
     cssSimpleVariables,
     cssUnwrapNesting,
     cssSimplifyCalc,
     cssAutoPrefix,
+    cssTailwind,
 };

@@ -15,7 +15,10 @@
         "lint": "turbo run lint",
         "fmt": "biome format --write ."
     },
-    "engines": { "node": ">=20", "pnpm": ">=9.0" },
+    "engines": {
+        "node": ">=20",
+        "pnpm": ">=9.0"
+    },
     "devDependencies": {
         "@adaliszk/biome": "workspace:*",
         "@adaliszk/typescript": "workspace:*",

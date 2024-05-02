@@ -1,12 +1,5 @@
-import type {
-    UserConfigExport,
-    UserConfig,
-    PluginOption,
-    ServerOptions,
-    EsbuildTransformOptions,
-} from "vite";
+import type { UserConfigExport, UserConfig, PluginOption, EsbuildTransformOptions } from "vite";
 import type { AcceptedPlugin, PluginCreator } from "postcss";
-import type { Options as SassOptions } from "sass";
 
 export interface FederationConfig {
     [organisation: string]: string;
@@ -86,11 +79,6 @@ export interface WebConfig extends UserConfig {
      * Pass additional PostCSS plugins to the CSS preprocessor
      */
     cssPlugins?: CssPlugin[];
-
-    /**
-     * Configure the Sass preprocessor
-     */
-    sass?: SassOptions<"sync"> | boolean;
 }
 
 export { UserConfigExport };

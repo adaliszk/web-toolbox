@@ -4,16 +4,14 @@ _Configuration for Web-based project compilation using Vite_
 
 Pre-configured Vite with:
 - Typescript path resolution
-- Linting (TSC, Stylelint, ESLint, Biome)
-- Formatting (Biome)
+- PostCSS preset with Tailwind detection
+- Linting (TSC, Stylelint, ESLint)
 - Compression (Brotli and Gzip)
-- PostCSS + SASS preset
 - TLS Encryption
 
 ## TODO
 
 - [ ] Implement module federation logic for auto-resolution
-- [ ] Expose PostCSS variables configuration
 
 ### Usage
 
