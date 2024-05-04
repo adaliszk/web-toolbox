@@ -1,0 +1,35 @@
+{
+  "version": "8.0.0",
+  "name": "@adaliszk/qwik-storybook",
+  "description": "Storybook bundle for Qwik packages",
+  "repository": "github:adaliszk/node-toolbox",
+  "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/qwik-storybooks",
+  "bugs": "https://github.com/adaliszk/node-toolbox/labels/qwik",
+  "license": "BSD-2-Clause",
+  "types": "dist/bundle.d.ts",
+  "main": "dist/bundle.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup source/bundle.ts --clean --format esm --minify --sourcemap --dts --out-dir dist",
+    "lint": "biome lint --apply ./source",
+    "fmt": "biome format -w ."
+  },
+  "peerDependencies": {
+    "typescript": "^5.4",
+    "undici": "^6.15"
+  },
+  "dependencies": {
+    "@storybook/addon-console": "^3.0.0",
+    "@storybook/addon-designs": "^8.0.1",
+    "@storybook/addon-essentials": "^8.0.9",
+    "@storybook/addon-interactions": "^8.0.9",
+    "@storybook/addon-links": "^8.0.9",
+    "@storybook/addon-storysource": "^8.0.9",
+    "@storybook/addon-themes": "^8.0.9",
+    "@storybook/blocks": "^8.0.9",
+    "@storybook/manager-api": "^8.0.9",
+    "@storybook/theming": "^8.0.9",
+    "storybook-framework-qwik": "^0.4.0",
+    "storybook": "^8.0.9"
+  }
+}

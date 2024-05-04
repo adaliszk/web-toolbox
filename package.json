@@ -22,7 +22,6 @@
     "devDependencies": {
         "@adaliszk/biome": "workspace:*",
         "@adaliszk/typescript": "workspace:*",
-        "@biomejs/biome": "^1.7.1",
         "@changesets/changelog-git": "^0.2.0",
         "@changesets/cli": "^2.27.1",
         "@swc/core": "^1.5.0",
