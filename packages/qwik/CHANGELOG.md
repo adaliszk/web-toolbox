@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.6
+
+### Patch Changes
+
+- 5087fdc: chore(qwik): move builder.io into dev-dependencies
+
 ## 1.5.5
 
 ### Patch Changes
