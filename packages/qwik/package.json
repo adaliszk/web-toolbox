@@ -1,5 +1,5 @@
 {
-    "version": "1.5.4",
+    "version": "1.5.5",
     "name": "@adaliszk/qwik",
     "description": "Qwik stack and configuration for Development using Typescript",
     "repository": "github:adaliszk/node-toolbox",
@@ -18,10 +18,13 @@
     },
     "files": [
         "dist",
+        "config",
         "*.json",
         "*.md"
     ],
     "peerDependencies": {
+        "@builder.io/qwik": "^1.5",
+        "@builder.io/qwik-city": "^1.5",
         "typescript": "^5.4",
         "undici": "^6.15"
     },

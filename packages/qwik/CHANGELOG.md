@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.5
+
+### Patch Changes
+
+- 9b870ec: chore(qwik): add builder.io as peer dependency
+
 ## 1.5.4
 
 ### Patch Changes
