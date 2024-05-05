@@ -1,5 +1,5 @@
 {
-    "version": "1.5.5",
+    "version": "1.5.6",
     "name": "@adaliszk/qwik",
     "description": "Qwik stack and configuration for Development using Typescript",
     "repository": "github:adaliszk/node-toolbox",
@@ -29,13 +29,13 @@
         "undici": "^6.15"
     },
     "dependencies": {
-        "@builder.io/qwik": "^1.5.3",
-        "@builder.io/qwik-city": "^1.5.3",
-        "@types/node": "^20.12.8",
-        "undici": "^6.15.0"
+        "@types/node": "^20.12.8"
     },
     "devDependencies": {
-        "@adaliszk/typescript": "workspace:*"
+        "@adaliszk/typescript": "workspace:*",
+        "@builder.io/qwik": "^1.5.3",
+        "@builder.io/qwik-city": "^1.5.3",
+        "undici": "^6.15.0"
     },
     "keywords": [
         "typescript",
