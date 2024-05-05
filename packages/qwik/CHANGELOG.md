@@ -1,5 +1,11 @@
 # @adaliszk/qwik
 
+## 1.5.7
+
+### Patch Changes
+
+- 537c7b7: refactor(qwik): use peer dependencies
+
 ## 1.5.6
 
 ### Patch Changes

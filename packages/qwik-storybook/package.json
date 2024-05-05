@@ -1,5 +1,5 @@
 {
-  "version": "8.0.1",
+  "version": "8.0.2",
   "name": "@adaliszk/qwik-storybook",
   "description": "Storybook bundle for Qwik packages",
   "repository": "github:adaliszk/node-toolbox",
@@ -14,7 +14,11 @@
     "lint": "biome lint --apply ./source",
     "fmt": "biome format -w ."
   },
+  "optionalDependencies": {
+    "@builder.io/qwik-city": "^1.5"
+  },
   "peerDependencies": {
+    "@builder.io/qwik": "^1.5",
     "typescript": "^5.4",
     "undici": "^6.15"
   },
