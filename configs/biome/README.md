@@ -1,22 +1,12 @@
 _Meta-package for configuring Biome formatter and linter_
 
-### Provides
-
-- `@biomejs/biome`
-
 ### Usage
 
-- Install the package `pnpm install -D @adaliszk/biome`
+- Install the package `pnpm install -D @adaliszk/biome @biomejs/biome`
 - Add an `biome.json` with:
   ```json
   {
-    "extends": "@adaliszk/biome"
-  }
-  ```
-  or
-  ```json
-  {
-    "extends": "https://unpkg.com/@adaliszk/biome@latest/config.json"
+    "extends": ["@adaliszk/biome"]
   }
   ```
 

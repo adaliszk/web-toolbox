@@ -1,5 +1,5 @@
 {
-    "version": "1.7.4",
+    "version": "1.7.5",
     "name": "@adaliszk/biome",
     "description": "Meta-package for Biome  configuration",
     "repository": "github:adaliszk/node-toolbox",
@@ -17,7 +17,7 @@
     ],
     "main": "config.json",
     "dependencies": {
-        "@biomejs/biome": "^1.7.1"
+        "@biomejs/biome": "^1.7.3"
     },
     "keywords": [
         "meta-package",

@@ -1,5 +1,11 @@
 # @adaliszk/biome
 
+## 1.7.5
+
+### Patch Changes
+
+- 22fd760: feat(biome): upgrade to 1.7.3
+
 ## 1.7.4
 
 ### Patch Changes
