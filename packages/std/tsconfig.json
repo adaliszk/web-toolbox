@@ -1,0 +1,7 @@
+{
+    "extends": "@adaliszk/typescript",
+    "include": ["*.config.ts", "prelude.ts", "src/**/*"],
+    "compilerOptions": {
+        "removeComments": false
+    }
+}
