@@ -3,7 +3,7 @@ import { type Options, defineConfig } from "tsup";
 const sharedConfig: Partial<Options> = {
     platform: "node",
     target: "node18",
-    format: "esm",
+    format: ["esm", "cjs"],
     tsconfig: "./tsconfig.json",
     minify: true,
     sourcemap: true,
@@ -15,12 +15,6 @@ export default defineConfig([
     {
         name: "bundle",
         entry: ["./src/bundle.ts"],
-        outDir: "./dist",
-        ...sharedConfig,
-    },
-    {
-        name: "helpers",
-        entry: ["./src/helpers.ts"],
         outDir: "./dist",
         ...sharedConfig,
     },

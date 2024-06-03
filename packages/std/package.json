@@ -19,13 +19,11 @@
     "main": "./dist/bundle.js",
     "exports": {
         "./prelude": "./prelude.ts",
-        "./helpers": {
-            "types": "./dist/helpers.d.ts",
-            "import": "./dist/helpers.js"
-        },
         ".": {
+            "typescript": "./src/bundle.ts",
             "types": "./dist/bundle.d.ts",
-            "import": "./dist/bundle.js"
+            "import": "./dist/bundle.js",
+            "require": "./dist/bundle.cjs"
         }
     }
 }
