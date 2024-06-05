@@ -9,10 +9,7 @@
     "types": "dist/compiler.d.ts",
     "main": "dist/compiler.js",
     "type": "module",
-    "files": [
-        "dist",
-        "*.md"
-    ],
+    "files": ["dist", "*.md"],
     "scripts": {
         "prebuild": "rm -rf dist",
         "build": "tsup source/compiler.ts --clean --format esm --target node20 --dts",

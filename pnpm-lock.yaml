@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      corepack:
+        specifier: ^0.28
+        version: 0.28.2
     devDependencies:
       '@adaliszk/biome':
         specifier: workspace:*
@@ -44,6 +48,12 @@ importers:
       '@biomejs/biome':
         specifier: ^1.7.3
         version: 1.7.3
+
+  configs/dprint:
+    dependencies:
+      dprint:
+        specifier: ^0.46.1
+        version: 0.46.1
 
   configs/typescript:
     dependencies:
@@ -1037,6 +1047,41 @@ packages:
   '@discoveryjs/json-ext@0.5.7':
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
+
+  '@dprint/darwin-arm64@0.46.1':
+    resolution: {integrity: sha512-dycE/uE++NGKYhKwSOrm1EculcD48GM12A1BF0f3Q2OW1ZNUqvlui/99lrohjPulJaIYX/QZQJ4hzTnaa6EDUA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@dprint/darwin-x64@0.46.1':
+    resolution: {integrity: sha512-q4Q8TQj51OU+SXhHCzP6jxUtwyCR6Vsmla7yyJVZKryA5l2WUqsSPimkq7Tt4K6ciDficTNxi5aaN/DMXBND2w==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@dprint/linux-arm64-glibc@0.46.1':
+    resolution: {integrity: sha512-kT6UHU8nN516nfk42IpxvQ9yRHg+lVcWyaGU6Pk/Wn0t/9UDqS2SWXfNNYFvq3A+IVsOAEY6ZvD40D1uXey0Pg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@dprint/linux-arm64-musl@0.46.1':
+    resolution: {integrity: sha512-Qo71XzmL7GWEKPKKTFDf27WUO8mO+eXEvKY4gRiFuV2lOPw0VCfadc4iqlTCPj8Wp9qIKK7z/NgQXkVjPMbx5Q==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@dprint/linux-x64-glibc@0.46.1':
+    resolution: {integrity: sha512-ZDgJaCTY8Cb9F2FUlBgpN++stVamGKvy7MfdkKvvahAdkCQvba7kJg91aLGHNhDilDTo1IPgLcXLEP4xPhXMyA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@dprint/linux-x64-musl@0.46.1':
+    resolution: {integrity: sha512-6I+ubsGL89k9Vezo6AwWoLDHMoyGdBiHvVvfopF3GwDW1y4jRFXqSeVt3IGoeNa2PXZBEzhGzgiNl1YFFjao/A==}
+    cpu: [x64]
+    os: [linux]
+
+  '@dprint/win32-x64@0.46.1':
+    resolution: {integrity: sha512-ugdhmL3Lo9n6Si/7eBtj1Rgo3Hbmf+9G0JxsWvuZBRA7Y+Xa9vtxbU4XqpUfG8rict5wR3b0i2X0iexVUgMYxA==}
+    cpu: [x64]
+    os: [win32]
 
   '@emnapi/runtime@1.1.1':
     resolution: {integrity: sha512-3bfqkzuR1KLx57nZfjr2NLnFOobvyS0aTszaEGCGqmYMVDRaGvgIZbjGSV/MHSSmLgQ/b9JFHQ5xm5WRZYd+XQ==}
@@ -2696,6 +2741,11 @@ packages:
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
+  corepack@0.28.2:
+    resolution: {integrity: sha512-YOo8PWW/SOQs7mqDIP6dDp9KoIyFvOJaoTofrXQEOIAZ5D24OpgKQ6JeW1HhXsRCMm1t1AunC/hXyqfT9G+5GQ==}
+    engines: {node: ^18.17.1 || >=20.10.0}
+    hasBin: true
+
   cross-spawn@5.1.0:
     resolution: {integrity: sha512-pTgQJ5KC0d2hcY8eyL1IzlBPYjTkyH72XRZPnLyKus2mBfNjQs3klqbJU2VILqZryAZUt9JOb3h/mWMy23/f5A==}
 
@@ -2913,6 +2963,10 @@ packages:
   dotenv@16.4.5:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
+
+  dprint@0.46.1:
+    resolution: {integrity: sha512-OdILoUitGxbykCYcTijUOtY7bD4kNoSSzm4kHd5sYNh6f64P8Zfcr+e/Dh4oEn89wHIl10TTrrUs7ny5MELKkQ==}
+    hasBin: true
 
   duplexify@3.7.1:
     resolution: {integrity: sha512-07z8uv2wMyS51kKhD1KsdXJg5WQ6t93RneqRxUHnskXVtlYYkLqM0gqStQZ3pj073g687jPCHrqNfCzawLYh5g==}
@@ -6974,6 +7028,27 @@ snapshots:
 
   '@discoveryjs/json-ext@0.5.7': {}
 
+  '@dprint/darwin-arm64@0.46.1':
+    optional: true
+
+  '@dprint/darwin-x64@0.46.1':
+    optional: true
+
+  '@dprint/linux-arm64-glibc@0.46.1':
+    optional: true
+
+  '@dprint/linux-arm64-musl@0.46.1':
+    optional: true
+
+  '@dprint/linux-x64-glibc@0.46.1':
+    optional: true
+
+  '@dprint/linux-x64-musl@0.46.1':
+    optional: true
+
+  '@dprint/win32-x64@0.46.1':
+    optional: true
+
   '@emnapi/runtime@1.1.1':
     dependencies:
       tslib: 2.6.2
@@ -8917,6 +8992,8 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
+  corepack@0.28.2: {}
+
   cross-spawn@5.1.0:
     dependencies:
       lru-cache: 4.1.5
@@ -9145,6 +9222,16 @@ snapshots:
   dotenv-expand@10.0.0: {}
 
   dotenv@16.4.5: {}
+
+  dprint@0.46.1:
+    optionalDependencies:
+      '@dprint/darwin-arm64': 0.46.1
+      '@dprint/darwin-x64': 0.46.1
+      '@dprint/linux-arm64-glibc': 0.46.1
+      '@dprint/linux-arm64-musl': 0.46.1
+      '@dprint/linux-x64-glibc': 0.46.1
+      '@dprint/linux-x64-musl': 0.46.1
+      '@dprint/win32-x64': 0.46.1
 
   duplexify@3.7.1:
     dependencies:

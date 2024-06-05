@@ -1,11 +1,11 @@
 {
     "private": true,
-    "name": "@adaliszk/node-toolbox",
+    "name": "@adaliszk/web-toolbox",
     "description": "AdaLiszk's frequently used NPM packages wrapped up into easy-to-use packs",
     "keywords": ["node", "npm", "toolbox", "packages", "configs", "plugins", "packs"],
-    "repository": "github:adaliszk/node-toolbox",
-    "homepage": "https://github.com/adaliszk/node-toolbox",
-    "bugs": "https://github.com/adaliszk/node-toolbox/issues",
+    "repository": "github:adaliszk/web-toolbox",
+    "homepage": "https://github.com/adaliszk/web-toolbox",
+    "bugs": "https://github.com/adaliszk/web-toolbox/issues",
     "license": "BSD-2-Clause",
     "author": "Ádám Liszkai <node-toolbox@adaliszk.dev>",
     "contributors": [],
@@ -15,9 +15,14 @@
         "lint": "turbo run lint",
         "fmt": "biome format --write ."
     },
+    "packageManager": "pnpm@9.2.0+sha256.94fab213df221c55b6956b14a2264c21c6203cca9f0b3b95ff2fe9b84b120390",
     "engines": {
+        "corepack": ">=0.24",
         "node": ">=20",
         "pnpm": ">=9.0"
+    },
+    "peerDependencies": {
+        "corepack": "^0.28"
     },
     "devDependencies": {
         "@adaliszk/biome": "workspace:*",

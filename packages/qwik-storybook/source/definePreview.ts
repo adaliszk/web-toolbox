@@ -1,8 +1,8 @@
-import { qwikCityDecorator } from "storybook-framework-qwik/qwik-city-decorator"
+import { qwikCityDecorator } from "storybook-framework-qwik/qwik-city-decorator";
 import type { ThemeVars, ThemeVarsPartial } from "@storybook/theming";
-import type { Preview, Decorator } from "storybook-framework-qwik"
+import type { Preview, Decorator } from "storybook-framework-qwik";
 
-import { withThemeByDataAttribute } from "@storybook/addon-themes"
+import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import { create } from "@storybook/theming/create";
 
 export function definePreview(config?: Preview & { theme: ThemeVarsPartial }): Preview {
@@ -38,7 +38,7 @@ export function definePreview(config?: Preview & { theme: ThemeVarsPartial }): P
                     restoreScroll: true,
                 },
             },
-            actions: { argTypesRegex: '^on[A-Z].*' },
+            actions: { argTypesRegex: "^on[A-Z].*" },
             controls: {
                 sort: "requiredFirst",
                 exclude: ["class"],
@@ -50,5 +50,5 @@ export function definePreview(config?: Preview & { theme: ThemeVarsPartial }): P
             },
             ...(config?.parameters ?? {}),
         },
-    }
+    };
 }

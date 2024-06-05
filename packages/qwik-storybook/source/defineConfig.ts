@@ -1,8 +1,13 @@
-import type { StorybookConfig } from "storybook-framework-qwik"
+import type { StorybookConfig } from "storybook-framework-qwik";
 
 export function defineConfig(config?: StorybookConfig): StorybookConfig {
     return {
-        stories: ["../*.mdx", "../docs/**/*.mdx", "../src/**/Overview.mdx", "../src/**/*.stories.tsx"],
+        stories: [
+            "../*.mdx",
+            "../docs/**/*.mdx",
+            "../src/**/Overview.mdx",
+            "../src/**/*.stories.tsx",
+        ],
         ...(config ?? {}),
         core: {
             renderer: "storybook-framework-qwik",
@@ -35,5 +40,5 @@ export function defineConfig(config?: StorybookConfig): StorybookConfig {
             defaultName: "Overview",
             autodocs: true,
         },
-    }
+    };
 }

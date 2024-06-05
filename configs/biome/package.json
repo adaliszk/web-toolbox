@@ -11,10 +11,7 @@
         "lint": "biome lint --apply .",
         "fmt": "biome format -w ."
     },
-    "files": [
-        "config.json",
-        "*.md"
-    ],
+    "files": ["config.json", "*.md"],
     "main": "config.json",
     "dependencies": {
         "@biomejs/biome": "^1.7.3"

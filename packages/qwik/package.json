@@ -16,12 +16,7 @@
         "lint": "biome lint --apply ./source",
         "fmt": "biome format -w ."
     },
-    "files": [
-        "dist",
-        "config",
-        "*.json",
-        "*.md"
-    ],
+    "files": ["dist", "config", "*.json", "*.md"],
     "peerDependencies": {
         "@builder.io/qwik": "^1.5",
         "@builder.io/qwik-city": "^1.5",
