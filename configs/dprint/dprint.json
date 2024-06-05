@@ -1,0 +1,39 @@
+{
+    "excludes": [
+        "**/node_modules",
+        "**/*-lock.json",
+        "**/*-lock.yaml",
+        "**/*.log",
+        "**/.astro",
+        "**/.turbo",
+        "**/dist",
+        "**/temp"
+    ],
+    "exec": {
+        "commands": [
+            {
+                "command": "biome lint --stdin-file-path={{file_path}} --apply-unsafe < {{file_path}}",
+                "exts": ["astro", "css", "js", "ts", "json"]
+            },
+            {
+                "command": "biome format --stdin-file-path={{file_path}} < {{file_path}}",
+                "exts": ["astro", "css", "js", "ts", "json"]
+            },
+            {
+                "command": "rustfmt --edition 2021",
+                "exts": ["rs"]
+            }
+        ]
+    },
+    "json": {
+        "indentWidth": 2,
+        "preferSingleLine": true
+    },
+    "plugins": [
+        "https://plugins.dprint.dev/dockerfile-0.3.2.wasm",
+        "https://plugins.dprint.dev/exec-0.4.4.json@c207bf9b9a4ee1f0ecb75c594f774924baf62e8e53a2ce9d873816a408cecbf7",
+        "https://plugins.dprint.dev/json-0.19.3.wasm",
+        "https://plugins.dprint.dev/markdown-0.17.1.wasm",
+        "https://plugins.dprint.dev/ruff-0.3.6.wasm"
+    ]
+}
