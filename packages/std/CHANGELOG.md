@@ -1,5 +1,11 @@
 # @adaliszk/std
 
+## 0.1.1
+
+### Patch Changes
+
+- 9aa6ca2: feat(std): add RequiredAtLeastOne helper
+
 ## 0.1.0
 
 ### Minor Changes

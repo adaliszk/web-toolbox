@@ -65,3 +65,10 @@ export type ULID = CustomString<"ulid">;
  */
 export const createULIDLike = parseCustomString("ulid-like", z.string().regex(ULID_PATTERN));
 export type ULIDLike = CustomString<"ulid-like">;
+
+/**
+ * Type helper to ensure that a type is at least one of the given keys.
+ */
+export type RequiredAtLeastOne<T, Keys extends keyof T = keyof T> = Keys extends keyof T
+    ? { [K in Keys]-?: Required<Pick<T, K>> & Partial<Omit<T, K>> }
+    : never;
