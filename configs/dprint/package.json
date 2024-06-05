@@ -1,5 +1,5 @@
 {
-    "version": "0.46.0",
+    "version": "0.46.1",
     "name": "@adaliszk/dprint",
     "description": "Meta-package for Dprint formatter with a default configuration",
     "repository": "github:adaliszk/node-toolbox",
@@ -11,12 +11,21 @@
         "fmt": "dprint fmt"
     },
     "main": "config.json",
-    "files": ["config.json", "*.md"],
+    "files": [
+        "config.json",
+        "*.md"
+    ],
     "peerDependencies": {
         "dprint": "^0.46"
     },
     "dependencies": {
         "dprint": "^0.46.1"
     },
-    "keywords": ["meta-package", "dprint", "configuration", "config", "formatter"]
+    "keywords": [
+        "meta-package",
+        "dprint",
+        "configuration",
+        "config",
+        "formatter"
+    ]
 }
