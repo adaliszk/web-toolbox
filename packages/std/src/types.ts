@@ -68,7 +68,32 @@ export type ULIDLike = CustomString<"ulid-like">;
 
 /**
  * Type helper to ensure that a type is at least one of the given keys.
+ *
+ * ```typescript
+ * import type { RequireAtLeastOne } from "@adaliszk/std";
+ *
+ * type Foo = RequireAtLeastOne<{ a?: string; b?: number; c?: boolean }>;
+ * //   ^? Foo requires at least one of the keys "a", "b", or "c" to be defined
+ * ```
  */
 export type RequiredAtLeastOne<T, Keys extends keyof T = keyof T> = Keys extends keyof T
     ? { [K in Keys]-?: Required<Pick<T, K>> & Partial<Omit<T, K>> }
     : never;
+
+/**
+ * Type helper to bypass `any` declaration in user-land code where the inference
+ * will overwrite the TYPE and thus require the user to explicitly type it.
+ *
+ * ```typescript
+ * import type { RequireGeneric } from "@adaliszk/std";
+ *
+ * // Library-land
+ * type Foo<T extends RequireGeneric<string> = { bar: T };
+ * type Bar = Foo<any>;
+ *
+ * // User-land
+ * const bar: Bar<string> = { bar: "baz" };
+ * //            ^? Generic is required because it can never be undefined
+ * ```
+ */
+export type RequireGeneric<TYPE> = TYPE extends undefined ? never : TYPE;
