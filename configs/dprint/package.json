@@ -2,13 +2,13 @@
     "version": "0.46.1",
     "name": "@adaliszk/dprint",
     "description": "Meta-package for Dprint formatter with a default configuration",
-    "repository": "github:adaliszk/node-toolbox",
-    "homepage": "https://github.com/adaliszk/node-toolbox/tree/release/packages/dprint",
-    "bugs": "https://github.com/adaliszk/node-toolbox/labels/dprint",
+    "repository": "github:adaliszk/web-toolbox",
+    "homepage": "https://github.com/adaliszk/web-toolbox/tree/release/packages/dprint",
+    "bugs": "https://github.com/adaliszk/web-toolbox/labels/dprint",
     "license": "BSD-2-Clause",
     "scripts": {
         "build": "echo 'Nothing to build, skipping...' && exit 0",
-        "fmt": "dprint fmt"
+        "fmt": "biome format --write ."
     },
     "main": "config.json",
     "files": [
