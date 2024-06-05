@@ -1,5 +1,11 @@
 # @adaliszk/std
 
+## 0.2.1
+
+### Patch Changes
+
+- f152934: fix(std): adjust slow-types
+
 ## 0.2.0
 
 ### Minor Changes
