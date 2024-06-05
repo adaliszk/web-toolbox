@@ -1,15 +1,18 @@
+import type { NonFalsy } from "./types";
+import type { Result } from "./result";
+
 /**
  * Choose a random element from the array.
  * Inspired by Python's random.choice.
  */
-export function chooseItem<T>(array: T[]) {
+export function chooseItem<T>(array: T[]): T {
     return array[Math.floor(Math.random() * array.length)];
 }
 
 /**
  * Pick a random amount of elements from the array.
  */
-export function pickItems<T>(array: T[], amount = 1) {
+export function pickItems<T>(array: T[], amount = 1): T[] {
     const pickAmount = Math.min(amount, array.length);
     const available = new Set<number>([...array.keys()]);
     const picked = new Set<T>();
@@ -26,7 +29,7 @@ export function pickItems<T>(array: T[], amount = 1) {
 /**
  * Sort the array by the specified key.
  */
-export function sortByKey<T>(array: T[], key: keyof T) {
+export function sortByKey<T>(array: T[], key: keyof T): T[] {
     return array.toSorted((a, b) => {
         const aValue = a[key];
         const bValue = b[key];
@@ -38,10 +41,17 @@ export function sortByKey<T>(array: T[], key: keyof T) {
 }
 
 /**
- * Filter out all the elements that are not Ok.
+ * Filter out all the elements that are falsy.
  */
-export function filterOk<T>(array: T[]) {
+export function filterNonFalsy<T>(array: T[]): NonFalsy<T>[] {
     return array.filter(Boolean);
+}
+
+/**
+ * Filter out all the elements that are NOT OK results.
+ */
+export function filterOk<T, E extends Result<T, Error>>(array: E[]): E[] {
+    return array.filter((result) => result.isOk());
 }
 
 /**

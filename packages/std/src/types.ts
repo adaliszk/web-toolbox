@@ -19,6 +19,11 @@ export type CustomString<K extends CustomStringTypes> = string & {
 };
 
 /**
+ * Helper type to annotate the parser functions
+ */
+export type CustomStringParser<T extends CustomStringTypes> = (raw: string) => Result<CustomString<T>, TypeError>;
+
+/**
  * Generate a string parser that runs Zod and wraps the output into a Result object
  */
 export function parseCustomString<T extends CustomStringTypes>(
@@ -43,27 +48,27 @@ export function parseCustomString<T extends CustomStringTypes>(
 /**
  * Check a regular string type against the format of UUID string
  */
-export const createUUID = parseCustomString("uuid", z.string().uuid());
+export const createUUID: CustomStringParser<"uuid"> = parseCustomString("uuid", z.string().uuid());
 export type UUID = CustomString<"uuid">;
 
 /**
  * Check a regular string type against the format of UUID-Like string that only mimics the format
  * This means that the uniqueness has to be maintained by you!
  */
-export const createUUIDLike = parseCustomString("uuid", z.string().regex(UUID_PATTERN));
+export const createUUIDLike: CustomStringParser<"uuid-like"> = parseCustomString("uuid-like", z.string().regex(UUID_PATTERN));
 export type UUIDLike = CustomString<"uuid">;
 
 /**
  * Check a regular string type against the format of ULID string
  */
-export const createULID = parseCustomString("ulid", z.string().ulid());
+export const createULID: CustomStringParser<"ulid"> = parseCustomString("ulid", z.string().ulid());
 export type ULID = CustomString<"ulid">;
 
 /**
  * Check a regular string type against the format of ULID-Like string that only mimics the format.
  * This means that the lexical and uniqueness has to be maintained by you!
  */
-export const createULIDLike = parseCustomString("ulid-like", z.string().regex(ULID_PATTERN));
+export const createULIDLike: CustomStringParser<"ulid-like"> = parseCustomString("ulid-like", z.string().regex(ULID_PATTERN));
 export type ULIDLike = CustomString<"ulid-like">;
 
 /**
@@ -97,3 +102,11 @@ export type RequiredAtLeastOne<T, Keys extends keyof T = keyof T> = Keys extends
  * ```
  */
 export type RequireGeneric<TYPE> = TYPE extends undefined ? never : TYPE;
+
+/**
+ * Type helper filter out all falsy values
+ * Ported from https://github.com/total-typescript/ts-reset
+ */
+export type NonFalsy<T> = T extends false | 0 | "" | null | undefined | 0n
+    ? never
+    : T;

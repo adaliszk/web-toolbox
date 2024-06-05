@@ -1,7 +1,7 @@
 import type { Err, Ok, Result as PlainResult } from "option-t/PlainResult";
 import { unwrapErr, unwrapOk, unwrapOrForResult } from "option-t/PlainResult";
 
-export type ResultHelpers<T, E> = {
+type ResultHelpers<T, E> = {
     unwrap(): T;
     unwrapOr(defaultValue: T | undefined): T | undefined;
     unwrapErr(): E | undefined;
@@ -9,9 +9,19 @@ export type ResultHelpers<T, E> = {
     isErr(): boolean;
 };
 
+/**
+ * Custom Result type that is more aligned with Rust's Result type by
+ * having a few helper functions to unwrap the value or error.
+ *
+ * Under the hood, it is using the `option-t` library,
+ * and is fully compatible with it.
+ */
 export type Result<T, E> = PlainResult<T, E> & ResultHelpers<T, E>;
 
-export function createOk<T = undefined>(val: T): Ok<T> & ResultHelpers<T, undefined> {
+/**
+ * Creates an OK result with a few helper actions to unwrap the value
+ */
+export function createOk<T = unknown>(val: T): Ok<T> & ResultHelpers<T, undefined> {
     const result: Ok<T> = {
         ok: true,
         err: null,
@@ -27,7 +37,10 @@ export function createOk<T = undefined>(val: T): Ok<T> & ResultHelpers<T, undefi
     };
 }
 
-export function createErr<T = undefined, E = Error>(err: E): Err<E> & ResultHelpers<T, E> {
+/**
+ * Creates an ERR result with a few helper actions to unwrap the error
+ */
+export function createErr<T = unknown, E = Error>(err: E): Err<E> & ResultHelpers<T, E> {
     const result: Err<E> = {
         ok: false,
         val: null,
