@@ -44,7 +44,7 @@ export function sortByKey<T>(array: T[], key: keyof T): T[] {
  * Filter out all the elements that are falsy.
  */
 export function filterNonFalsy<T>(array: T[]): NonFalsy<T>[] {
-    return array.filter(Boolean);
+    return array.filter(Boolean) as NonFalsy<T>[];
 }
 
 /**
