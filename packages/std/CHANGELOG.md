@@ -1,5 +1,11 @@
 # @adaliszk/std
 
+## 0.3.0
+
+### Minor Changes
+
+- b48b04c: feat(std): fixed match types & new crypto functions
+
 ## 0.2.1
 
 ### Patch Changes
