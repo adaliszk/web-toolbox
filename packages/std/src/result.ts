@@ -1,5 +1,6 @@
 import type { Err, Ok, Result as PlainResult } from "option-t/PlainResult";
 import { unwrapErr, unwrapOk, unwrapOrForResult } from "option-t/PlainResult";
+import type { NotUndefined } from "./types";
 
 type ResultHelpers<T, E> = {
     unwrap(): T;
@@ -21,7 +22,7 @@ export type Result<T, E> = PlainResult<T, E> & ResultHelpers<T, E>;
 /**
  * Creates an OK result with a few helper actions to unwrap the value
  */
-export function createOk<T = unknown>(val: T): Ok<T> & ResultHelpers<T, undefined> {
+export function createOk<T = NotUndefined<unknown>>(val: T): Ok<T> & ResultHelpers<T, undefined> {
     const result: Ok<T> = {
         ok: true,
         err: null,
@@ -40,7 +41,9 @@ export function createOk<T = unknown>(val: T): Ok<T> & ResultHelpers<T, undefine
 /**
  * Creates an ERR result with a few helper actions to unwrap the error
  */
-export function createErr<T = unknown, E = Error>(err: E): Err<E> & ResultHelpers<T, E> {
+export function createErr<T = NotUndefined<unknown>, E = Error>(
+    err: E,
+): Err<E> & ResultHelpers<T, E> {
     const result: Err<E> = {
         ok: false,
         val: null,

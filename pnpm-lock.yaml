@@ -180,9 +180,16 @@ importers:
       option-t:
         specifier: ^43.0.0
         version: 43.2.1
+      ulid:
+        specifier: ^2.3.0
+        version: 2.3.0
       zod:
         specifier: ^3.23.8
         version: 3.23.8
+    devDependencies:
+      '@adaliszk/typescript-testing':
+        specifier: workspace:*
+        version: link:../typescript-testing
 
   packages/typescript-testing:
     dependencies:
@@ -5532,6 +5539,10 @@ packages:
   uglify-js@3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
     engines: {node: '>=0.8.0'}
+    hasBin: true
+
+  ulid@2.3.0:
+    resolution: {integrity: sha512-keqHubrlpvT6G2wH0OEfSW4mquYRcbe/J8NMmveoQOjUqmo+hXtO+ORCpWhdbZ7k72UtY61BL7haGxW6enBnjw==}
     hasBin: true
 
   unbox-primitive@1.0.2:
@@ -12570,6 +12581,8 @@ snapshots:
 
   uglify-js@3.17.4:
     optional: true
+
+  ulid@2.3.0: {}
 
   unbox-primitive@1.0.2:
     dependencies:

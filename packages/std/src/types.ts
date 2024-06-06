@@ -110,3 +110,8 @@ export type RequireGeneric<TYPE> = TYPE extends undefined ? never : TYPE;
 export type NonFalsy<T> = T extends false | 0 | "" | null | undefined | 0n
     ? never
     : T;
+
+/**
+ * Type helper to declare that a type cannot be undefined but anything else is allowed
+ */
+export type NotUndefined<T> = T extends undefined ? never : T;

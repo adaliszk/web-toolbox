@@ -7,9 +7,10 @@
  */
 
 import { type Result, createErr, createOk } from "./result";
+import type { NotUndefined } from "./types";
 
 type ParentType<T> = T extends infer U ? U : never;
-type MatchFn<DATA extends object | string, RESULT = ParentType<DATA[keyof DATA]>> = (
+type MatchFn<DATA extends object | string | number, RESULT = ParentType<DATA[keyof DATA]>> = (
     data: DATA,
 ) => RESULT;
 
@@ -28,7 +29,7 @@ type MatchCaseHandlers<
 /**
  * Internal function to handle the match case handlers
  */
-function _handleMatch<RESULT, SOURCE extends object | string>(
+function _handleMatch<RESULT extends NotUndefined<unknown>, SOURCE extends object | string | number>(
     source: SOURCE,
     handler?: MatchFn<SOURCE, RESULT>,
     defaultHandler?: MatchFn<SOURCE, RESULT>,
@@ -63,14 +64,14 @@ function _handleMatch<RESULT, SOURCE extends object | string>(
  * but its value will be ignored.
  */
 export function matchByKey<
-    RESULT,
+    RESULT extends NotUndefined<unknown>,
     SOURCE extends Record<string, string | number | boolean>,
     PROPERTY extends keyof SOURCE,
     CASES extends MatchCaseHandlers<RESULT, SOURCE, SOURCE[PROPERTY] & string>,
->(source: SOURCE, property: PROPERTY, cases: CASES): Result<RESULT | undefined, TypeError> {
+>(source: SOURCE, property: PROPERTY, cases: CASES): Result<RESULT, TypeError> {
     const scenarioValue = source[property] as SOURCE[PROPERTY] & string;
     const handler = cases[scenarioValue];
-    return _handleMatch(source, handler, cases._);
+    return _handleMatch(source, handler, cases._) as Result<RESULT, TypeError>;
 }
 
 /**
@@ -83,14 +84,14 @@ export function matchByKey<
  * but its value will be ignored.
  */
 export function matchByValue<
-    RESULT,
+    RESULT extends NotUndefined<unknown>,
     SOURCE extends string = string,
     CASES extends MatchCaseHandlers<RESULT, SOURCE, SOURCE> = MatchCaseHandlers<
         RESULT,
         SOURCE,
         SOURCE
     >,
->(scenarioValue: SOURCE, cases: CASES): Result<RESULT | undefined, TypeError> {
+>(scenarioValue: SOURCE, cases: CASES): Result<RESULT, TypeError> {
     const handler = cases[scenarioValue];
-    return _handleMatch(scenarioValue, handler, cases._);
+    return _handleMatch(scenarioValue, handler, cases._) as Result<RESULT, TypeError>;
 }
