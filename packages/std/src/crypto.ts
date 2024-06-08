@@ -17,7 +17,7 @@ export function md5(str: string): string {
  * generating ULID-like strings from other sources to keep the visual similarity of ULIDs.
  */
 export function ulid(hash?: string): Result<ULID | ULIDLike, TypeError> {
-    if (!(z.string().min(26).safeParse(hash).success)) {
+    if (hash !== undefined && !(z.string().min(26).safeParse(hash).success)) {
         return createErr(new TypeError("The provided hash input needs to be at least 26 characters!"));
     }
     return hash ? createULIDLike(hash.slice(-26)) : createULID(generateULID());
