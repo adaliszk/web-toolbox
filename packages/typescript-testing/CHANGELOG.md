@@ -1,5 +1,11 @@
 # @adaliszk/typescript-testing
 
+## 5.4.4
+
+### Patch Changes
+
+- a2423e0: feat(typescript-testing): add coverage package
+
 ## 5.4.3
 
 ### Patch Changes
