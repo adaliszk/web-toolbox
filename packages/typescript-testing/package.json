@@ -23,6 +23,7 @@
         "@testdeck/core": "^0.3.3",
         "@testdeck/vitest": "^0.3.3",
         "@types/chai": "^4.3.14",
+        "@vitest/coverage-v8": "^1.6.0",
         "chai": "^5.1.0",
         "vitest": "^1.5.2"
     },
