@@ -24,7 +24,7 @@
         "undici": "^6.15"
     },
     "dependencies": {
-        "@types/node": "^20.12.8"
+        "@types/node": "^20.14.2"
     },
     "devDependencies": {
         "@adaliszk/typescript": "workspace:*",
