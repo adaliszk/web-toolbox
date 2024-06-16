@@ -1,5 +1,11 @@
 # @adaliszk/std
 
+## 0.4.0
+
+### Minor Changes
+
+- 8d8537d: feat(std): ensure that node is excluded from the bundle
+
 ## 0.3.1
 
 ### Patch Changes
