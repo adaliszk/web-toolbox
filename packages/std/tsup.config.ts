@@ -2,12 +2,13 @@ import { type Options, defineConfig } from "tsup";
 
 const sharedConfig: Partial<Options> = {
     platform: "node",
-    target: "node18",
+    target: "node20",
     format: ["esm", "cjs"],
     tsconfig: "./tsconfig.json",
     minify: true,
     sourcemap: true,
     dts: true,
+    external: ["node:crypto"],
 };
 
 // noinspection JSUnusedGlobalSymbols - Used by tsup
