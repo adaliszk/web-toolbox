@@ -30,7 +30,7 @@
         "@changesets/changelog-git": "^0.2.0",
         "@changesets/cli": "^2.27.1",
         "@swc/core": "^1.5.0",
-        "esbuild": "^0.20.2",
+        "esbuild": "^0.23.0",
         "eslint": "^9.1.1",
         "tsup": "^8.0.2",
         "turbo": "^1.13.3",
