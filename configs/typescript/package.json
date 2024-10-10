@@ -1,5 +1,5 @@
 {
-    "version": "5.4.2",
+    "version": "5.6.0",
     "name": "@adaliszk/typescript",
     "description": "Meta-package for Typescript with a default configuration",
     "repository": "github:adaliszk/node-toolbox",
@@ -14,12 +14,12 @@
     "main": "tsconfig.json",
     "files": ["tsconfig.json", "*.md"],
     "peerDependencies": {
-        "typescript": "^5.4"
+        "typescript": "^5.6"
     },
     "dependencies": {
-        "@types/node": "^20.12.7",
-        "tslib": "^2.6.2",
-        "tsx": "^4.7.3"
+        "@types/node": "^22.7.5",
+        "tslib": "^2.7.0",
+        "tsx": "^4.19.1"
     },
     "keywords": ["meta-package", "typescript", "configuration", "config", "esnext", "commonjs"]
 }

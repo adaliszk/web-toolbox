@@ -1,8 +1,10 @@
+> [!WARNING]
+> This package is deprecated as I moved to use `deno` where these kind of preset configs are no longer required.
+
 _Meta-package for Typescript with a default configuration_
 
 ### Provides
 
-- `@adaliszk/eslint-config-typescript`
 - `typescript`, `tslib`, and `@types/node`
 - `tsx`
 
