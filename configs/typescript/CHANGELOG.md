@@ -1,5 +1,11 @@
 # @adaliszk/typescript
 
+## 5.6.1
+
+### Patch Changes
+
+- 70fd105: ychore(typescript): release one last version with a deprecation warning
+
 ## 5.4.2
 
 ### Patch Changes
