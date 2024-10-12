@@ -29,7 +29,7 @@
         "autoprefixer": "^10.4.19",
         "meow": "^9.0.0",
         "postcss": "^8.4.38",
-        "postcss-calc": "^8.2.4",
+        "postcss-calc": "^10.0.2",
         "postcss-import": "^16.1.0",
         "postcss-nested": "^6.0.1",
         "postcss-nesting": "^12.1.2",
